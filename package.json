@@ -1,0 +1,12 @@
+{
+  "name": "maya-translator",
+  "version": "0.1.0",
+  "description": "Maya hieroglyphic translator based on verified epigraphic data",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3300",
+    "build": "next build",
+    "start": "next start --port 3300",
+    "validate-data": "node scripts/validate-data.js"
+  }
+}

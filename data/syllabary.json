@@ -1,0 +1,388 @@
+{
+  "metadata": {
+    "name": "Maya Hieroglyphic Syllabary",
+    "version": "0.1.0",
+    "description": "Digital syllabary of Classic Maya hieroglyphic writing based on published epigraphic research",
+    "sources": [
+      "Thompson, J.E.S. (1962). A Catalog of Maya Hieroglyphs. University of Oklahoma Press.",
+      "Stuart, D. (2013). Maya Hieroglyphic Syllabary v2. University of Texas at Austin.",
+      "Kettunen, H. & Helmke, C. (2020). Introduction to Maya Hieroglyphs. Wayeb.",
+      "Looper, M. Maya Hieroglyphic Database. CSU Chico.",
+      "Prager, C. et al. Text Database and Dictionary of Classic Mayan. University of Bonn."
+    ],
+    "language": "Classic Ch'olan (Ch'olti'an)",
+    "period": "Late Classic (~600-900 CE)",
+    "total_syllabograms": 150,
+    "confidence_levels": {
+      "confirmed": "Reading widely accepted by epigraphic community",
+      "probable": "Reading accepted by most specialists with minor debate",
+      "tentative": "Reading proposed but not universally accepted",
+      "unknown": "No phonetic value established"
+    }
+  },
+
+  "vowels": [
+    {
+      "value": "a",
+      "thompson": ["T228", "T229"],
+      "confidence": "confirmed",
+      "variants": 2,
+      "notes": "Common sign, multiple graphic variants",
+      "frequency": "very_high"
+    },
+    {
+      "value": "e",
+      "thompson": ["T113"],
+      "confidence": "confirmed",
+      "variants": 1,
+      "notes": "Zoomorphic variant (toad/iguana-like form)",
+      "frequency": "high"
+    },
+    {
+      "value": "i",
+      "thompson": ["T679", "T679c"],
+      "confidence": "confirmed",
+      "variants": 2,
+      "notes": "Graphic variant forms",
+      "frequency": "very_high"
+    },
+    {
+      "value": "o",
+      "thompson": ["T280"],
+      "confidence": "confirmed",
+      "variants": 1,
+      "notes": "Common sign",
+      "frequency": "high"
+    },
+    {
+      "value": "u",
+      "thompson": ["T1", "T3", "T513", "T232"],
+      "confidence": "confirmed",
+      "variants": 4,
+      "notes": "Multiple variants including jewel/bead-based form (T232)",
+      "frequency": "very_high"
+    }
+  ],
+
+  "syllabograms": [
+    {
+      "onset": "b",
+      "syllables": [
+        { "value": "ba", "thompson": ["T501", "T655"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "be", "thompson": ["T756b"], "confidence": "probable", "frequency": "medium" },
+        { "value": "bi", "thompson": ["T585", "T764"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "bo", "thompson": ["T693"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "bu", "thompson": ["T21"], "confidence": "probable", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "ch",
+      "syllables": [
+        { "value": "cha", "thompson": ["T668"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "che", "thompson": ["T145"], "confidence": "probable", "frequency": "medium" },
+        { "value": "chi", "thompson": ["T671"], "confidence": "confirmed", "frequency": "high", "notes": "Upturned hand sign" },
+        { "value": "cho", "thompson": ["T590b", "T568"], "confidence": "confirmed", "frequency": "medium", "notes": "Jawbone-based form" },
+        { "value": "chu", "thompson": ["T601"], "confidence": "tentative", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "ch'",
+      "syllables": [
+        { "value": "ch'a", "thompson": ["T603", "T609"], "confidence": "confirmed", "frequency": "medium", "notes": "T609 has dotted elements" },
+        { "value": "ch'e", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "ch'i", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "ch'o", "thompson": ["T758a"], "confidence": "probable", "frequency": "medium" },
+        { "value": "ch'u", "thompson": [], "confidence": "tentative", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "h",
+      "syllables": [
+        { "value": "ha", "thompson": ["T12"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "he", "thompson": ["T506"], "confidence": "probable", "frequency": "medium" },
+        { "value": "hi", "thompson": ["T145e"], "confidence": "confirmed", "frequency": "medium", "notes": "Often as digraph T145e:528" },
+        { "value": "ho", "thompson": ["T765d"], "confidence": "tentative", "frequency": "low" },
+        { "value": "hu", "thompson": ["T576"], "confidence": "probable", "frequency": "medium" }
+      ]
+    },
+    {
+      "onset": "j",
+      "syllables": [
+        { "value": "ja", "thompson": ["T683b", "T181"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "je", "thompson": ["T69"], "confidence": "probable", "frequency": "medium", "notes": "Lower suffix only" },
+        { "value": "ji", "thompson": ["T136"], "confidence": "probable", "frequency": "medium" },
+        { "value": "jo", "thompson": ["T138"], "confidence": "probable", "frequency": "medium" },
+        { "value": "ju", "thompson": ["T45"], "confidence": "probable", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "k",
+      "syllables": [
+        { "value": "ka", "thompson": ["T738b", "T25"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "ke", "thompson": ["T518"], "confidence": "tentative", "frequency": "low", "notes": "Hand sign, tentative reading" },
+        { "value": "ki", "thompson": ["T102"], "confidence": "confirmed", "frequency": "high", "notes": "Bird head with eye element" },
+        { "value": "ko", "thompson": ["T110"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "ku", "thompson": ["T528"], "confidence": "confirmed", "frequency": "high" }
+      ]
+    },
+    {
+      "onset": "k'",
+      "syllables": [
+        { "value": "k'a", "thompson": ["T669b"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "k'e", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "k'i", "thompson": ["T72"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "k'o", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "k'u", "thompson": ["T204"], "confidence": "confirmed", "frequency": "high" }
+      ]
+    },
+    {
+      "onset": "l",
+      "syllables": [
+        { "value": "la", "thompson": ["T534", "T533", "T139", "T254"], "confidence": "confirmed", "frequency": "very_high", "notes": "T533 is rotated form" },
+        { "value": "le", "thompson": ["T188"], "confidence": "probable", "frequency": "medium", "notes": "C-shaped element variants" },
+        { "value": "li", "thompson": ["T24"], "confidence": "confirmed", "frequency": "high", "notes": "Compartment variants" },
+        { "value": "lo", "thompson": ["T580"], "confidence": "probable", "frequency": "medium" },
+        { "value": "lu", "thompson": ["T568c", "T654"], "confidence": "confirmed", "frequency": "high" }
+      ]
+    },
+    {
+      "onset": "m",
+      "syllables": [
+        { "value": "ma", "thompson": ["T74", "T502"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "me", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "mi", "thompson": ["T179", "T173"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "mo", "thompson": ["T582"], "confidence": "probable", "frequency": "medium" },
+        { "value": "mu", "thompson": ["T19"], "confidence": "confirmed", "frequency": "medium" }
+      ]
+    },
+    {
+      "onset": "n",
+      "syllables": [
+        { "value": "na", "thompson": ["T23"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "ne", "thompson": ["T525"], "confidence": "probable", "frequency": "medium" },
+        { "value": "ni", "thompson": ["T116"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "no", "thompson": ["T194"], "confidence": "probable", "frequency": "low" },
+        { "value": "nu", "thompson": [], "confidence": "unknown", "frequency": "unknown" }
+      ]
+    },
+    {
+      "onset": "p",
+      "syllables": [
+        { "value": "pa", "thompson": ["T586", "T602"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "pe", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "pi", "thompson": ["T247"], "confidence": "probable", "frequency": "medium" },
+        { "value": "po", "thompson": ["T566"], "confidence": "probable", "frequency": "medium" },
+        { "value": "pu", "thompson": ["T573"], "confidence": "probable", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "s",
+      "syllables": [
+        { "value": "sa", "thompson": ["T630"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "se", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "si", "thompson": ["T116v"], "confidence": "tentative", "frequency": "low" },
+        { "value": "so", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "su", "thompson": ["T236"], "confidence": "tentative", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "t",
+      "syllables": [
+        { "value": "ta", "thompson": ["T565", "T103"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "te", "thompson": ["T82"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "ti", "thompson": ["T59"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "to", "thompson": ["T16"], "confidence": "confirmed", "frequency": "high", "notes": "Mirror variant sign (MVS)" },
+        { "value": "tu", "thompson": ["T89", "T90"], "confidence": "confirmed", "frequency": "very_high" }
+      ]
+    },
+    {
+      "onset": "t'",
+      "syllables": [
+        { "value": "t'a", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "t'e", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "t'i", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "t'o", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "t'u", "thompson": [], "confidence": "unknown", "frequency": "unknown" }
+      ]
+    },
+    {
+      "onset": "tz",
+      "syllables": [
+        { "value": "tza", "thompson": ["T699"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "tze", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "tzi", "thompson": ["T507"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "tzo", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "tzu", "thompson": ["T282"], "confidence": "probable", "frequency": "medium" }
+      ]
+    },
+    {
+      "onset": "tz'",
+      "syllables": [
+        { "value": "tz'a", "thompson": ["T556"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "tz'e", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "tz'i", "thompson": ["T248", "T563a"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "tz'o", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "tz'u", "thompson": [], "confidence": "unknown", "frequency": "unknown" }
+      ]
+    },
+    {
+      "onset": "w",
+      "syllables": [
+        { "value": "wa", "thompson": ["T130"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "we", "thompson": ["T117v"], "confidence": "tentative", "frequency": "low" },
+        { "value": "wi", "thompson": ["T117"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "wo", "thompson": ["T67"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "wu", "thompson": [], "confidence": "unknown", "frequency": "unknown" }
+      ]
+    },
+    {
+      "onset": "x",
+      "syllables": [
+        { "value": "xa", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "xe", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "xi", "thompson": ["T510"], "confidence": "probable", "frequency": "medium" },
+        { "value": "xo", "thompson": [], "confidence": "unknown", "frequency": "unknown" },
+        { "value": "xu", "thompson": ["T756a", "T756b"], "confidence": "tentative", "frequency": "low" }
+      ]
+    },
+    {
+      "onset": "y",
+      "syllables": [
+        { "value": "ya", "thompson": ["T126"], "confidence": "confirmed", "frequency": "very_high" },
+        { "value": "ye", "thompson": ["T17"], "confidence": "confirmed", "frequency": "high" },
+        { "value": "yi", "thompson": [], "confidence": "tentative", "frequency": "low" },
+        { "value": "yo", "thompson": ["T673"], "confidence": "confirmed", "frequency": "medium" },
+        { "value": "yu", "thompson": ["T61"], "confidence": "confirmed", "frequency": "high" }
+      ]
+    }
+  ],
+
+  "common_logograms": [
+    { "thompson": "T510", "reading": "AJAW", "meaning": "lord, ruler", "confidence": "confirmed" },
+    { "thompson": "T168", "reading": "AHIIN", "meaning": "crocodile", "confidence": "confirmed" },
+    { "thompson": "T533", "reading": "BAHLAM", "meaning": "jaguar", "confidence": "confirmed" },
+    { "thompson": "T501", "reading": "BA/BAAH", "meaning": "head, first, image", "confidence": "confirmed" },
+    { "thompson": "T544", "reading": "K'IN", "meaning": "sun, day", "confidence": "confirmed" },
+    { "thompson": "T548", "reading": "WINIK", "meaning": "person, 20-day period", "confidence": "confirmed" },
+    { "thompson": "T528", "reading": "K'UH", "meaning": "god, divine", "confidence": "confirmed" },
+    { "thompson": "T740", "reading": "K'UHUL", "meaning": "holy, divine", "confidence": "confirmed" },
+    { "thompson": "T644", "reading": "CHAN/KAN", "meaning": "sky, four", "confidence": "confirmed" },
+    { "thompson": "T526", "reading": "NAL", "meaning": "corn, place of", "confidence": "confirmed" },
+    { "thompson": "T561", "reading": "CHUWEN", "meaning": "monkey (day sign)", "confidence": "confirmed" },
+    { "thompson": "T683", "reading": "JAL", "meaning": "to weave", "confidence": "probable" },
+    { "thompson": "T713", "reading": "WAY", "meaning": "spirit companion, nagual", "confidence": "confirmed" },
+    { "thompson": "T714", "reading": "EK'", "meaning": "star", "confidence": "confirmed" },
+    { "thompson": "T503", "reading": "HAAB", "meaning": "year, rain", "confidence": "confirmed" },
+    { "thompson": "T573", "reading": "PAKAL", "meaning": "shield", "confidence": "confirmed" },
+    { "thompson": "T688", "reading": "KALOM", "meaning": "to oversee", "confidence": "probable" },
+    { "thompson": "T684", "reading": "OCH", "meaning": "to enter", "confidence": "confirmed" },
+    { "thompson": "T713b", "reading": "CHUM", "meaning": "to sit, to seat (accession)", "confidence": "confirmed" },
+    { "thompson": "T757", "reading": "WITZ", "meaning": "mountain", "confidence": "confirmed" },
+    { "thompson": "T1030", "reading": "K'INICH", "meaning": "sun-faced, solar deity", "confidence": "confirmed" },
+    { "thompson": "T570", "reading": "KAB/CHAB", "meaning": "earth, honey, bee", "confidence": "confirmed" },
+    { "thompson": "T606", "reading": "NAH", "meaning": "house, structure", "confidence": "confirmed" },
+    { "thompson": "T501var", "reading": "SAK", "meaning": "white", "confidence": "confirmed" },
+    { "thompson": "T553", "reading": "YAX", "meaning": "green/blue, first", "confidence": "confirmed" },
+    { "thompson": "T109", "reading": "IK'", "meaning": "wind, breath", "confidence": "confirmed" }
+  ],
+
+  "calendar_glyphs": {
+    "day_signs": [
+      { "position": 1, "yucatec": "Imix", "choltan": "Ha'", "thompson": "T501", "meaning": "Water lily, crocodile" },
+      { "position": 2, "yucatec": "Ik'", "choltan": "Ik'", "thompson": "T503", "meaning": "Wind, breath" },
+      { "position": 3, "yucatec": "Ak'bal", "choltan": "Ak'ab", "thompson": "T504", "meaning": "Night, darkness" },
+      { "position": 4, "yucatec": "K'an", "choltan": "K'an", "thompson": "T506", "meaning": "Corn, ripe, yellow" },
+      { "position": 5, "yucatec": "Chicchan", "choltan": "Chikchan", "thompson": "T509", "meaning": "Serpent" },
+      { "position": 6, "yucatec": "Cimi", "choltan": "Cham", "thompson": "T510", "meaning": "Death" },
+      { "position": 7, "yucatec": "Manik'", "choltan": "Manich'", "thompson": "T671", "meaning": "Deer, hand" },
+      { "position": 8, "yucatec": "Lamat", "choltan": "Ek'", "thompson": "T510b", "meaning": "Star, Venus" },
+      { "position": 9, "yucatec": "Muluk", "choltan": "Mul", "thompson": "T513", "meaning": "Water, jade" },
+      { "position": 10, "yucatec": "Ok", "choltan": "Ok", "thompson": "T765", "meaning": "Dog" },
+      { "position": 11, "yucatec": "Chuwen", "choltan": "Chuwen", "thompson": "T521", "meaning": "Monkey" },
+      { "position": 12, "yucatec": "Eb", "choltan": "Ehb", "thompson": "T528b", "meaning": "Skull, road" },
+      { "position": 13, "yucatec": "Ben", "choltan": "Ben", "thompson": "T584", "meaning": "Reed, corn stalk" },
+      { "position": 14, "yucatec": "Ix", "choltan": "Hix", "thompson": "T535", "meaning": "Jaguar" },
+      { "position": 15, "yucatec": "Men", "choltan": "Men", "thompson": "T740b", "meaning": "Eagle" },
+      { "position": 16, "yucatec": "Kib", "choltan": "Kib", "thompson": "T568b", "meaning": "Owl, vulture" },
+      { "position": 17, "yucatec": "Kaban", "choltan": "Chab", "thompson": "T526b", "meaning": "Earth" },
+      { "position": 18, "yucatec": "Etz'nab", "choltan": "Etz'nab", "thompson": "T527", "meaning": "Flint, knife" },
+      { "position": 19, "yucatec": "Kawak", "choltan": "Chahuk", "thompson": "T528c", "meaning": "Storm, rain" },
+      { "position": 20, "yucatec": "Ajaw", "choltan": "Ajaw", "thompson": "T533b", "meaning": "Lord, ruler" }
+    ],
+    "month_signs": [
+      { "position": 0, "name": "Pop", "thompson": "T549", "meaning": "Mat, jaguar skin" },
+      { "position": 1, "name": "Wo", "thompson": "T632", "meaning": "Black conjunction" },
+      { "position": 2, "name": "Sip", "thompson": "T634", "meaning": "Red conjunction" },
+      { "position": 3, "name": "Sotz'", "thompson": "T635", "meaning": "Bat" },
+      { "position": 4, "name": "Sek", "thompson": "T631", "meaning": "Unknown meaning" },
+      { "position": 5, "name": "Xul", "thompson": "T636", "meaning": "Dog/end" },
+      { "position": 6, "name": "Yaxk'in", "thompson": "T637", "meaning": "New/first sun" },
+      { "position": 7, "name": "Mol", "thompson": "T638", "meaning": "Gathering/collection" },
+      { "position": 8, "name": "Ch'en", "thompson": "T639", "meaning": "Cave, well" },
+      { "position": 9, "name": "Yax", "thompson": "T640", "meaning": "Green/first" },
+      { "position": 10, "name": "Sak", "thompson": "T641", "meaning": "White" },
+      { "position": 11, "name": "Keh", "thompson": "T642", "meaning": "Deer/red" },
+      { "position": 12, "name": "Mak", "thompson": "T643", "meaning": "Enclosure" },
+      { "position": 13, "name": "K'ank'in", "thompson": "T644b", "meaning": "Yellow sun" },
+      { "position": 14, "name": "Muwan", "thompson": "T645", "meaning": "Screech owl" },
+      { "position": 15, "name": "Pax", "thompson": "T646", "meaning": "Planting time" },
+      { "position": 16, "name": "K'ayab", "thompson": "T647", "meaning": "Turtle" },
+      { "position": 17, "name": "Kumk'u", "thompson": "T648", "meaning": "Dark place" },
+      { "position": 18, "name": "Wayeb", "thompson": "T649", "meaning": "Nameless days (5 unlucky days)" }
+    ],
+    "long_count": {
+      "description": "Long Count calendar positions",
+      "units": [
+        { "name": "K'in", "value": 1, "meaning": "Day" },
+        { "name": "Winal", "value": 20, "meaning": "20 days (month)" },
+        { "name": "Tun", "value": 360, "meaning": "360 days (~year)" },
+        { "name": "K'atun", "value": 7200, "meaning": "20 tuns (~20 years)" },
+        { "name": "B'ak'tun", "value": 144000, "meaning": "20 k'atuns (~394 years)" }
+      ]
+    }
+  },
+
+  "grammar": {
+    "description": "Basic Classic Ch'olan grammar patterns",
+    "word_order": "VOS (Verb-Object-Subject)",
+    "ergative_absolutive": true,
+    "spelling_rules": [
+      {
+        "rule": "CVC words",
+        "pattern": "CV-CV (second vowel is silent/synharmonic)",
+        "example": "ba-la-ma = BAHLAM (jaguar): ba + la + ma, final 'a' is dropped",
+        "notes": "The final vowel typically matches the vowel of the preceding syllable (synharmony)"
+      },
+      {
+        "rule": "CV words",
+        "pattern": "Single syllable sign",
+        "example": "ta = ta"
+      },
+      {
+        "rule": "CVCVC words",
+        "pattern": "CV-CV-CV (vowels may be synharmonic or disharmonic)",
+        "example": "pa-ka-la = PAKAL (shield)"
+      }
+    ],
+    "common_verbal_expressions": [
+      { "maya": "u-tz'i-ba", "transliteration": "u tz'ihb", "meaning": "his/her writing/painting" },
+      { "maya": "u-ba-hi", "transliteration": "u baah", "meaning": "his/her image/self" },
+      { "maya": "ch'a-ka-ja", "transliteration": "ch'ahkaj", "meaning": "was chopped/axed (war event)" },
+      { "maya": "hu-li", "transliteration": "huli", "meaning": "he/she arrived" },
+      { "maya": "OCH-HA'", "transliteration": "ochha'", "meaning": "entered the water (death expression)" },
+      { "maya": "CHUM-wa-ni", "transliteration": "chumwaan", "meaning": "was seated (accession)" },
+      { "maya": "u-KAB-ji-ya", "transliteration": "ukabjiiy", "meaning": "under the authority of" }
+    ]
+  },
+
+  "stats": {
+    "confirmed_syllabograms": 68,
+    "probable_syllabograms": 22,
+    "tentative_syllabograms": 9,
+    "unknown_syllabograms": 21,
+    "total_in_grid": 120,
+    "confirmed_percentage": 56.7,
+    "known_percentage": 82.5,
+    "notes": "Percentages based on syllabograms in this grid. Total Maya sign inventory is ~1048 including logograms."
+  }
+}

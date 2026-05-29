@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "name": "Classic Maya Core Dictionary",
+    "version": "0.1.0",
+    "description": "Core vocabulary of Classic Maya (Ch'olti'an) compiled from epigraphic sources",
+    "entries": 120,
+    "categories": ["titles", "names", "verbs", "nouns", "adjectives", "calendar", "directional", "numerals"]
+  },
+
+  "titles_and_ranks": [
+    { "maya": "ajaw", "spanish": "señor, gobernante", "english": "lord, ruler", "confidence": "confirmed" },
+    { "maya": "k'uhul ajaw", "spanish": "señor divino", "english": "holy lord", "confidence": "confirmed" },
+    { "maya": "kaloomte'", "spanish": "emperador, supremo señor", "english": "high king, emperor", "confidence": "confirmed" },
+    { "maya": "b'aah kab'", "spanish": "cabeza de la tierra", "english": "head of the earth", "confidence": "confirmed" },
+    { "maya": "sajal", "spanish": "subordinado, gobernador provincial", "english": "subordinate lord", "confidence": "confirmed" },
+    { "maya": "yajaw k'ahk'", "spanish": "señor del fuego", "english": "lord of fire (war captain)", "confidence": "confirmed" },
+    { "maya": "ch'ok", "spanish": "joven, príncipe", "english": "youth, young prince", "confidence": "confirmed" },
+    { "maya": "ix", "spanish": "señora, mujer", "english": "lady, woman", "confidence": "confirmed" },
+    { "maya": "ixik", "spanish": "señora noble", "english": "noble lady", "confidence": "confirmed" },
+    { "maya": "b'aahkab'", "spanish": "primer hombre de la tierra", "english": "first of the land", "confidence": "confirmed" },
+    { "maya": "ti' sak huun", "spanish": "portador de la banda blanca", "english": "bearer of the white headband", "confidence": "confirmed" },
+    { "maya": "ah k'in", "spanish": "sacerdote solar", "english": "sun priest", "confidence": "probable" },
+    { "maya": "itz'aat", "spanish": "sabio, artista, escriba", "english": "sage, artist, scribe", "confidence": "confirmed" }
+  ],
+
+  "verbs": [
+    { "maya": "chum", "spanish": "sentarse (acceder al trono)", "english": "to sit (accession)", "confidence": "confirmed" },
+    { "maya": "hul", "spanish": "llegar", "english": "to arrive", "confidence": "confirmed" },
+    { "maya": "och", "spanish": "entrar", "english": "to enter", "confidence": "confirmed" },
+    { "maya": "tz'ihb'", "spanish": "escribir, pintar", "english": "to write, to paint", "confidence": "confirmed" },
+    { "maya": "ch'ak", "spanish": "cortar, hachar (guerra)", "english": "to chop, axe-event (war)", "confidence": "confirmed" },
+    { "maya": "hub'", "spanish": "derribar, destruir", "english": "to topple, destroy", "confidence": "confirmed" },
+    { "maya": "jub'uy", "spanish": "descender", "english": "to descend", "confidence": "confirmed" },
+    { "maya": "il", "spanish": "ver", "english": "to see", "confidence": "confirmed" },
+    { "maya": "nak", "spanish": "construir, apilar", "english": "to build, to stack", "confidence": "probable" },
+    { "maya": "k'al", "spanish": "atar, cerrar", "english": "to tie, to close", "confidence": "confirmed" },
+    { "maya": "tzak", "spanish": "conjurar, invocar", "english": "to conjure", "confidence": "confirmed" },
+    { "maya": "pat", "spanish": "formar, moldear", "english": "to form, shape", "confidence": "confirmed" },
+    { "maya": "lok'", "spanish": "salir", "english": "to exit", "confidence": "confirmed" },
+    { "maya": "cham", "spanish": "morir", "english": "to die", "confidence": "confirmed" },
+    { "maya": "siy", "spanish": "nacer", "english": "to be born", "confidence": "confirmed" },
+    { "maya": "jatz'", "spanish": "golpear", "english": "to hit, strike", "confidence": "confirmed" },
+    { "maya": "pul", "spanish": "quemar", "english": "to burn (offering)", "confidence": "confirmed" },
+    { "maya": "k'ux", "spanish": "comer", "english": "to eat", "confidence": "probable" },
+    { "maya": "uk'", "spanish": "beber", "english": "to drink", "confidence": "confirmed" },
+    { "maya": "pas", "spanish": "abrir", "english": "to open", "confidence": "probable" },
+    { "maya": "k'am", "spanish": "recibir", "english": "to receive", "confidence": "confirmed" }
+  ],
+
+  "nouns": [
+    { "maya": "k'in", "spanish": "sol, día", "english": "sun, day", "confidence": "confirmed" },
+    { "maya": "ha'", "spanish": "agua", "english": "water", "confidence": "confirmed" },
+    { "maya": "witz", "spanish": "montaña, cerro", "english": "mountain", "confidence": "confirmed" },
+    { "maya": "nah", "spanish": "casa, estructura", "english": "house, building", "confidence": "confirmed" },
+    { "maya": "k'uhul", "spanish": "sagrado, divino", "english": "holy, sacred", "confidence": "confirmed" },
+    { "maya": "k'uh", "spanish": "dios", "english": "god", "confidence": "confirmed" },
+    { "maya": "b'aah", "spanish": "cabeza, imagen, ser", "english": "head, image, self", "confidence": "confirmed" },
+    { "maya": "b'ahlam", "spanish": "jaguar", "english": "jaguar", "confidence": "confirmed" },
+    { "maya": "way", "spanish": "espíritu compañero, nagual", "english": "spirit companion, nagual", "confidence": "confirmed" },
+    { "maya": "k'ahk'", "spanish": "fuego", "english": "fire", "confidence": "confirmed" },
+    { "maya": "sak", "spanish": "blanco", "english": "white", "confidence": "confirmed" },
+    { "maya": "ek'", "spanish": "estrella", "english": "star", "confidence": "confirmed" },
+    { "maya": "tun", "spanish": "piedra, año (360 días)", "english": "stone, year (360 days)", "confidence": "confirmed" },
+    { "maya": "nal", "spanish": "maíz, lugar de", "english": "corn, place of", "confidence": "confirmed" },
+    { "maya": "ik'", "spanish": "viento, aliento", "english": "wind, breath", "confidence": "confirmed" },
+    { "maya": "ak'ab'", "spanish": "noche, oscuridad", "english": "night, darkness", "confidence": "confirmed" },
+    { "maya": "kab'", "spanish": "tierra, miel, abeja", "english": "earth, honey, bee", "confidence": "confirmed" },
+    { "maya": "chan", "spanish": "cielo, serpiente", "english": "sky, serpent", "confidence": "confirmed" },
+    { "maya": "pakal", "spanish": "escudo", "english": "shield", "confidence": "confirmed" },
+    { "maya": "took'", "spanish": "pedernal", "english": "flint", "confidence": "confirmed" },
+    { "maya": "muyal", "spanish": "nube", "english": "cloud", "confidence": "probable" },
+    { "maya": "tuun", "spanish": "piedra", "english": "stone", "confidence": "confirmed" },
+    { "maya": "lak", "spanish": "plato", "english": "plate", "confidence": "confirmed" },
+    { "maya": "te'", "spanish": "árbol, madera", "english": "tree, wood", "confidence": "confirmed" },
+    { "maya": "chit", "spanish": "padre", "english": "father", "confidence": "probable" },
+    { "maya": "na'", "spanish": "madre", "english": "mother", "confidence": "confirmed" },
+    { "maya": "hix", "spanish": "jaguar (variante)", "english": "jaguar (variant)", "confidence": "confirmed" },
+    { "maya": "ajiin", "spanish": "cocodrilo", "english": "crocodile", "confidence": "confirmed" }
+  ],
+
+  "adjectives_and_colors": [
+    { "maya": "yax", "spanish": "verde/azul, primero", "english": "green/blue, first", "confidence": "confirmed" },
+    { "maya": "sak", "spanish": "blanco", "english": "white", "confidence": "confirmed" },
+    { "maya": "ek'", "spanish": "negro", "english": "black", "confidence": "confirmed" },
+    { "maya": "chak", "spanish": "rojo, grande", "english": "red, great", "confidence": "confirmed" },
+    { "maya": "k'an", "spanish": "amarillo, precioso", "english": "yellow, precious", "confidence": "confirmed" },
+    { "maya": "nuk", "spanish": "grande", "english": "big, great", "confidence": "probable" }
+  ],
+
+  "directional_terms": [
+    { "maya": "lak'in", "spanish": "este", "english": "east", "confidence": "confirmed" },
+    { "maya": "chik'in", "spanish": "oeste", "english": "west", "confidence": "confirmed" },
+    { "maya": "xaman", "spanish": "norte", "english": "north", "confidence": "confirmed" },
+    { "maya": "nohol", "spanish": "sur", "english": "south", "confidence": "confirmed" }
+  ],
+
+  "numerals": [
+    { "value": 0, "maya": "mih / mi", "glyph_system": "Shell or flower symbol", "confidence": "confirmed" },
+    { "value": 1, "maya": "jun", "glyph_system": "Single dot", "confidence": "confirmed" },
+    { "value": 2, "maya": "cha'", "glyph_system": "Two dots", "confidence": "confirmed" },
+    { "value": 3, "maya": "ux", "glyph_system": "Three dots", "confidence": "confirmed" },
+    { "value": 4, "maya": "chan", "glyph_system": "Four dots", "confidence": "confirmed" },
+    { "value": 5, "maya": "ho'", "glyph_system": "Single bar", "confidence": "confirmed" },
+    { "value": 6, "maya": "wak", "glyph_system": "Bar + dot", "confidence": "confirmed" },
+    { "value": 7, "maya": "huk", "glyph_system": "Bar + two dots", "confidence": "confirmed" },
+    { "value": 8, "maya": "waxak", "glyph_system": "Bar + three dots", "confidence": "confirmed" },
+    { "value": 9, "maya": "b'olon", "glyph_system": "Bar + four dots", "confidence": "confirmed" },
+    { "value": 10, "maya": "lajun", "glyph_system": "Two bars", "confidence": "confirmed" },
+    { "value": 11, "maya": "b'uluk", "glyph_system": "Two bars + dot", "confidence": "confirmed" },
+    { "value": 12, "maya": "lajcha'", "glyph_system": "Two bars + two dots", "confidence": "confirmed" },
+    { "value": 13, "maya": "uxlajun", "glyph_system": "Two bars + three dots", "confidence": "confirmed" },
+    { "value": 14, "maya": "chanlajun", "glyph_system": "Two bars + four dots", "confidence": "confirmed" },
+    { "value": 15, "maya": "ho'lajun", "glyph_system": "Three bars", "confidence": "confirmed" },
+    { "value": 16, "maya": "waklajun", "glyph_system": "Three bars + dot", "confidence": "confirmed" },
+    { "value": 17, "maya": "huklajun", "glyph_system": "Three bars + two dots", "confidence": "confirmed" },
+    { "value": 18, "maya": "waxaklajun", "glyph_system": "Three bars + three dots", "confidence": "confirmed" },
+    { "value": 19, "maya": "b'olonlajun", "glyph_system": "Three bars + four dots", "confidence": "confirmed" }
+  ],
+
+  "death_expressions": [
+    { "maya": "och b'ih", "spanish": "entró al camino", "english": "entered the road (died)", "confidence": "confirmed" },
+    { "maya": "och ha'", "spanish": "entró al agua", "english": "entered the water (died)", "confidence": "confirmed" },
+    { "maya": "k'a'ay u sak ik'il", "spanish": "se extinguió su aliento blanco", "english": "white breath expired", "confidence": "probable" }
+  ],
+
+  "war_expressions": [
+    { "maya": "ch'ak", "spanish": "hachar, decapitar", "english": "axe/chop event", "confidence": "confirmed" },
+    { "maya": "hub'uy", "spanish": "fue derribado", "english": "was toppled/destroyed", "confidence": "confirmed" },
+    { "maya": "star war", "spanish": "guerra de estrella (destrucción total)", "english": "star-war (total warfare)", "confidence": "confirmed", "notes": "Venus warfare glyph, associated with planetary cycles" },
+    { "maya": "jub'uy u tok' pakal", "spanish": "fue derribado su pedernal y escudo", "english": "his flint and shield were cast down (defeated)", "confidence": "confirmed" }
+  ]
+}
