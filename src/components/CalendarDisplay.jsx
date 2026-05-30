@@ -1,5 +1,6 @@
 'use client'
 import { useMode } from '@/lib/modes'
+import { useLang } from '@/lib/lang'
 import DotBarNumeral from './DotBarNumeral'
 import { thompsonToChar } from '@/lib/glyphs'
 import { getGlyphImage } from '@/lib/glyph-images'
@@ -34,6 +35,7 @@ function CalendarGlyph({ name, thompson }) {
 
 export default function CalendarDisplay({ result }) {
   const { mode } = useMode()
+  const { t } = useLang()
 
   if (!result) return null
 
@@ -43,7 +45,7 @@ export default function CalendarDisplay({ result }) {
     <div className="space-y-4">
       {/* Long Count */}
       <div className="bg-maya-surface rounded-xl p-4 border border-maya-border">
-        <div className="text-xs text-maya-muted mb-2">Cuenta Larga</div>
+        <div className="text-xs text-maya-muted mb-2">{t.longCount}</div>
         <div className="text-2xl font-bold text-maya-gold tracking-wider">{longCountStr}</div>
         {mode !== 'explorador' && (
           <div className="flex gap-3 mt-3">
@@ -109,7 +111,7 @@ export default function CalendarDisplay({ result }) {
 
       {/* Calendar Round */}
       <div className="bg-maya-surface rounded-xl p-4 border border-maya-border">
-        <div className="text-xs text-maya-muted mb-2">Rueda Calend&aacute;rica</div>
+        <div className="text-xs text-maya-muted mb-2">{t.calendarRound}</div>
         <div className="flex items-center gap-3">
           <CalendarGlyph
             name={tzolkin.sign.choltan}
@@ -127,12 +129,12 @@ export default function CalendarDisplay({ result }) {
 
       {/* Direction & Color */}
       <div className="bg-maya-surface rounded-xl p-4 border border-maya-border">
-        <div className="text-xs text-maya-muted mb-2">Direcci&oacute;n y color</div>
+        <div className="text-xs text-maya-muted mb-2">{t.directionAndColor}</div>
         <div className="text-sm">
-          <span className="text-maya-muted">Direcci&oacute;n: </span><span>{direction}</span>
+          <span className="text-maya-muted">{t.direction}: </span><span>{direction}</span>
         </div>
         <div className="text-sm">
-          <span className="text-maya-muted">Color: </span><span>{color}</span>
+          <span className="text-maya-muted">{t.color}: </span><span>{color}</span>
         </div>
       </div>
 
