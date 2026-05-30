@@ -288,30 +288,109 @@ function GuideSection() {
 
 export default function MathPage() {
   const [decimal, setDecimal] = useState('365')
-  const [numA, setNumA] = useState('400')
-  const [numB, setNumB] = useState('125')
-  const [operator, setOperator] = useState('+')
   const [showGuide, setShowGuide] = useState(false)
   const { lang, t } = useLang()
+
+  // Calculator state
+  const [display, setDisplay] = useState('0')
+  const [prevValue, setPrevValue] = useState(null)
+  const [pendingOp, setPendingOp] = useState(null)
+  const [waitingForOperand, setWaitingForOperand] = useState(false)
+  const [history, setHistory] = useState(null) // { a, op, b, result }
+
+  function inputDigit(digit) {
+    if (waitingForOperand) {
+      setDisplay(String(digit))
+      setWaitingForOperand(false)
+    } else {
+      setDisplay(display === '0' ? String(digit) : display + digit)
+    }
+  }
+
+  function inputDot() {
+    if (waitingForOperand) {
+      setDisplay('0.')
+      setWaitingForOperand(false)
+      return
+    }
+    if (!display.includes('.')) setDisplay(display + '.')
+  }
+
+  function clearAll() {
+    setDisplay('0')
+    setPrevValue(null)
+    setPendingOp(null)
+    setWaitingForOperand(false)
+    setHistory(null)
+  }
+
+  function handleBackspace() {
+    if (display.length > 1) {
+      setDisplay(display.slice(0, -1))
+    } else {
+      setDisplay('0')
+    }
+  }
+
+  function performOperation(nextOp) {
+    const current = parseFloat(display) || 0
+
+    if (prevValue !== null && pendingOp && !waitingForOperand) {
+      let result
+      switch (pendingOp) {
+        case '+': result = prevValue + current; break
+        case '-': result = Math.max(0, prevValue - current); break
+        case '×': result = prevValue * current; break
+        case '÷': result = current !== 0 ? Math.floor(prevValue / current) : 0; break
+        default: result = current
+      }
+      setHistory({ a: prevValue, op: pendingOp, b: current, result })
+      setDisplay(String(result))
+      setPrevValue(result)
+    } else {
+      setPrevValue(current)
+    }
+
+    setPendingOp(nextOp)
+    setWaitingForOperand(true)
+  }
+
+  function handleEquals() {
+    const current = parseFloat(display) || 0
+    if (prevValue === null || !pendingOp) return
+
+    let result
+    switch (pendingOp) {
+      case '+': result = prevValue + current; break
+      case '-': result = Math.max(0, prevValue - current); break
+      case '×': result = prevValue * current; break
+      case '÷': result = current !== 0 ? Math.floor(prevValue / current) : 0; break
+      default: result = current
+    }
+    setHistory({ a: prevValue, op: pendingOp, b: current, result })
+    setDisplay(String(result))
+    setPrevValue(null)
+    setPendingOp(null)
+    setWaitingForOperand(true)
+  }
 
   // Section A: Converter
   const decNum = parseInt(decimal) || 0
   const vigesimalDigits = useMemo(() => toPureVigesimal(Math.max(0, decNum)), [decNum])
   const vigesimalStr = vigesimalDigits ? vigesimalDigits.join('.') : '0'
 
-  // Section B: Calculator
-  const a = parseInt(numA) || 0
-  const b = parseInt(numB) || 0
-  const calcResult = operator === '+' ? a + b : Math.max(0, a - b)
-  const digitsA = useMemo(() => toPureVigesimal(Math.max(0, a)), [a])
-  const digitsB = useMemo(() => toPureVigesimal(Math.max(0, b)), [b])
-  const digitsResult = useMemo(() => toPureVigesimal(calcResult), [calcResult])
+  // Calculator display in Maya
+  const displayNum = Math.max(0, Math.floor(parseFloat(display) || 0))
+  const displayDigits = useMemo(() => toPureVigesimal(displayNum), [displayNum])
 
-  // Pad arrays to same length for visual alignment
-  const maxLen = Math.max(digitsA?.length || 1, digitsB?.length || 1, digitsResult?.length || 1)
+  // History display
+  const historyDigitsA = useMemo(() => history ? toPureVigesimal(Math.max(0, Math.floor(history.a))) : null, [history])
+  const historyDigitsB = useMemo(() => history ? toPureVigesimal(Math.max(0, Math.floor(history.b))) : null, [history])
+  const historyDigitsR = useMemo(() => history ? toPureVigesimal(Math.max(0, Math.floor(history.result))) : null, [history])
+  const historyMaxLen = history ? Math.max(historyDigitsA?.length || 1, historyDigitsB?.length || 1, historyDigitsR?.length || 1) : 1
   const padded = (arr) => {
-    if (!arr) return Array(maxLen).fill(0)
-    return [...Array(maxLen - arr.length).fill(0), ...arr]
+    if (!arr) return Array(historyMaxLen).fill(0)
+    return [...Array(historyMaxLen - arr.length).fill(0), ...arr]
   }
 
   // Position labels for pure vigesimal
@@ -385,81 +464,100 @@ export default function MathPage() {
       <div className="bg-maya-surface rounded-xl p-5 border border-maya-border mb-6">
         <h2 className="text-lg font-bold text-maya-gold mb-3">{t.calculator}</h2>
 
-        <div className="flex flex-wrap items-center gap-2 mb-4">
-          <input
-            type="number"
-            value={numA}
-            onChange={e => setNumA(e.target.value)}
-            min="0"
-            className="flex-1 min-w-[80px] bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
-          />
-          <select
-            value={operator}
-            onChange={e => setOperator(e.target.value)}
-            className="bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-xl text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
-          >
-            <option value="+">+</option>
-            <option value="-">−</option>
-          </select>
-          <input
-            type="number"
-            value={numB}
-            onChange={e => setNumB(e.target.value)}
-            min="0"
-            className="flex-1 min-w-[80px] bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
-          />
-          <div className="text-xl text-maya-gold font-bold">=</div>
-          <div className="flex-1 min-w-[80px] bg-maya-deep border border-maya-gold rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center">
-            {calcResult.toLocaleString()}
+        <div className="max-w-xs mx-auto">
+          {/* Display */}
+          <div className="bg-maya-deep rounded-lg p-4 mb-3 border border-maya-border">
+            {pendingOp && prevValue !== null && (
+              <div className="text-xs text-maya-muted text-right mb-1">
+                {prevValue.toLocaleString()} {pendingOp}
+              </div>
+            )}
+            <div className="text-3xl text-maya-gold font-bold text-right font-mono truncate">
+              {parseFloat(display).toLocaleString()}
+            </div>
+          </div>
+
+          {/* Maya representation of current display */}
+          <div className="flex justify-center gap-2 mb-3">
+            {displayDigits && displayDigits.map((digit, i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                  <DotBarNumeral value={digit} />
+                </div>
+                <span className="text-[9px] text-maya-muted mt-0.5">
+                  {posLabels[displayDigits.length - 1 - i]?.split(' ')[0] || ''}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* Buttons */}
+          <div className="grid grid-cols-4 gap-2">
+            <button onClick={clearAll} className="bg-red-900/40 text-red-300 rounded-lg py-3 text-lg font-bold hover:bg-red-900/60 transition-colors">C</button>
+            <button onClick={handleBackspace} className="bg-maya-border text-maya-muted rounded-lg py-3 text-lg font-bold hover:bg-maya-gold/20 transition-colors">⌫</button>
+            <button onClick={() => performOperation('÷')} className={`rounded-lg py-3 text-lg font-bold transition-colors ${pendingOp === '÷' ? 'bg-maya-gold text-maya-bg' : 'bg-maya-border text-maya-gold hover:bg-maya-gold/20'}`}>÷</button>
+            <button onClick={() => performOperation('×')} className={`rounded-lg py-3 text-lg font-bold transition-colors ${pendingOp === '×' ? 'bg-maya-gold text-maya-bg' : 'bg-maya-border text-maya-gold hover:bg-maya-gold/20'}`}>×</button>
+
+            <button onClick={() => inputDigit(7)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">7</button>
+            <button onClick={() => inputDigit(8)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">8</button>
+            <button onClick={() => inputDigit(9)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">9</button>
+            <button onClick={() => performOperation('-')} className={`rounded-lg py-3 text-lg font-bold transition-colors ${pendingOp === '-' ? 'bg-maya-gold text-maya-bg' : 'bg-maya-border text-maya-gold hover:bg-maya-gold/20'}`}>−</button>
+
+            <button onClick={() => inputDigit(4)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">4</button>
+            <button onClick={() => inputDigit(5)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">5</button>
+            <button onClick={() => inputDigit(6)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">6</button>
+            <button onClick={() => performOperation('+')} className={`rounded-lg py-3 text-lg font-bold transition-colors ${pendingOp === '+' ? 'bg-maya-gold text-maya-bg' : 'bg-maya-border text-maya-gold hover:bg-maya-gold/20'}`}>+</button>
+
+            <button onClick={() => inputDigit(1)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">1</button>
+            <button onClick={() => inputDigit(2)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">2</button>
+            <button onClick={() => inputDigit(3)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">3</button>
+            <button onClick={handleEquals} className="bg-maya-gold text-maya-bg rounded-lg py-3 text-lg font-bold hover:bg-maya-gold/80 transition-colors row-span-2">=</button>
+
+            <button onClick={() => inputDigit(0)} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors col-span-2">0</button>
+            <button onClick={inputDot} className="bg-maya-deep text-maya-text rounded-lg py-3 text-lg font-bold hover:bg-maya-border transition-colors">.</button>
           </div>
         </div>
 
-        {/* Visual calculation with dot-bar numerals */}
-        <div className="flex items-start justify-center gap-2 sm:gap-4 overflow-x-auto">
-          {/* Number A */}
-          <div className="flex flex-col items-center gap-1 flex-shrink-0">
-            {padded(digitsA).map((d, i) => (
-              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded flex items-center justify-center">
-                <DotBarNumeral value={d} />
+        {/* Last operation visualization */}
+        {history && (
+          <div className="mt-6">
+            <div className="text-xs text-maya-muted text-center mb-3">
+              {history.a.toLocaleString()} {history.op} {history.b.toLocaleString()} = {history.result.toLocaleString()}
+            </div>
+            <div className="flex items-start justify-center gap-2 sm:gap-4 overflow-x-auto">
+              <div className="flex flex-col items-center gap-1 flex-shrink-0">
+                {padded(historyDigitsA).map((d, i) => (
+                  <div key={i} className="w-11 h-11 bg-white rounded flex items-center justify-center">
+                    <DotBarNumeral value={d} />
+                  </div>
+                ))}
+                <div className="text-xs text-maya-muted mt-1">{Math.floor(history.a).toLocaleString()}</div>
               </div>
-            ))}
-            <div className="text-xs text-maya-muted mt-1">{a.toLocaleString()}</div>
-          </div>
-
-          {/* Operator */}
-          <div className="flex items-center justify-center pt-4 flex-shrink-0">
-            <span className="text-xl sm:text-2xl text-maya-gold font-bold">{operator === '+' ? '+' : '−'}</span>
-          </div>
-
-          {/* Number B */}
-          <div className="flex flex-col items-center gap-1 flex-shrink-0">
-            {padded(digitsB).map((d, i) => (
-              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded flex items-center justify-center">
-                <DotBarNumeral value={d} />
+              <div className="flex items-center justify-center pt-4 flex-shrink-0">
+                <span className="text-xl text-maya-gold font-bold">{history.op}</span>
               </div>
-            ))}
-            <div className="text-xs text-maya-muted mt-1">{b.toLocaleString()}</div>
-          </div>
-
-          {/* Equals */}
-          <div className="flex items-center justify-center pt-4 flex-shrink-0">
-            <span className="text-xl sm:text-2xl text-maya-gold font-bold">=</span>
-          </div>
-
-          {/* Result */}
-          <div className="flex flex-col items-center gap-1 flex-shrink-0">
-            {padded(digitsResult).map((d, i) => (
-              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
-                <DotBarNumeral value={d} />
+              <div className="flex flex-col items-center gap-1 flex-shrink-0">
+                {padded(historyDigitsB).map((d, i) => (
+                  <div key={i} className="w-11 h-11 bg-white rounded flex items-center justify-center">
+                    <DotBarNumeral value={d} />
+                  </div>
+                ))}
+                <div className="text-xs text-maya-muted mt-1">{Math.floor(history.b).toLocaleString()}</div>
               </div>
-            ))}
-            <div className="text-xs text-maya-gold font-bold mt-1">{calcResult.toLocaleString()}</div>
+              <div className="flex items-center justify-center pt-4 flex-shrink-0">
+                <span className="text-xl text-maya-gold font-bold">=</span>
+              </div>
+              <div className="flex flex-col items-center gap-1 flex-shrink-0">
+                {padded(historyDigitsR).map((d, i) => (
+                  <div key={i} className="w-11 h-11 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
+                    <DotBarNumeral value={d} />
+                  </div>
+                ))}
+                <div className="text-xs text-maya-gold font-bold mt-1">{Math.floor(history.result).toLocaleString()}</div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3">
-          <span className="text-maya-gold">{lang === 'es' ? 'Sistema vigesimal:' : 'Vigesimal system:'}</span> {lang === 'es' ? 'Cada posición vale 20 veces más que la anterior. Cuando un dígito supera 19, se "acarrea" 1 a la posición superior (como pasar de 9 a 10 en decimal, pero aquí de 19 a 1.0 en vigesimal).' : 'Each position is worth 20 times more than the previous one. When a digit exceeds 19, carry 1 to the upper position (like going from 9 to 10 in decimal, but here from 19 to 1.0 in vigesimal).'}
-        </div>
+        )}
       </div>
 
       {/* Section C: Reference Grid */}
