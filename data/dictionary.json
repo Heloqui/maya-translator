@@ -3,7 +3,7 @@
     "name": "Classic Maya Core Dictionary",
     "version": "0.3.0",
     "description": "Core vocabulary of Classic Maya (Ch'olti'an) compiled from epigraphic sources",
-    "entries": 198,
+    "entries": 300,
     "categories": ["titles_and_ranks", "verbs", "nouns", "adjectives_and_colors", "directional_terms", "numerals", "death_expressions", "war_expressions", "kinship", "architecture", "flora_fauna", "astronomy", "rituals", "toponyms", "body_parts", "time_periods"]
   },
 
@@ -162,6 +162,88 @@
       "usage_examples": ["itz'aat of the royal court"],
       "inscriptions": ["copan-hieroglyphic-stairway"],
       "subcategory": "intellectual",
+      "frequency": "low"
+    },
+    {
+      "maya": "k'inich",
+      "spanish": "rostro solar, resplandeciente",
+      "english": "sun-faced, radiant (royal epithet)",
+      "confidence": "confirmed",
+      "thompson": ["T1016"],
+      "etymology": "Compound: k'in (sun) + ich (eye/face); 'sun-eyed' or 'radiant'; prefixed to royal names to denote solar divinity",
+      "cognates": { "yucatec": "k'inich" },
+      "usage_examples": ["K'inich Janaab Pakal", "K'inich Yax K'uk' Mo'", "K'inich Kan B'alam"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross", "copan-stela-a"],
+      "subcategory": "royalty",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "ix kaloomte'",
+      "spanish": "kaloomte' femenina, emperatriz",
+      "english": "female kaloomte', empress",
+      "confidence": "confirmed",
+      "etymology": "Compound: ix (female prefix) + kaloomte' (supreme lord); highest female military-political title in Classic Maya epigraphy",
+      "usage_examples": ["Ix Kaloomte' Yohl Ik'nal of Palenque"],
+      "inscriptions": ["palenque-tablet-cross", "palenque-tablet-palace"],
+      "subcategory": "royalty",
+      "frequency": "low"
+    },
+    {
+      "maya": "yajaw te'",
+      "spanish": "señor del árbol",
+      "english": "lord of the tree",
+      "confidence": "confirmed",
+      "etymology": "Compound: y-ajaw (his lord) + te' (tree/wood); title of a subordinate lord, possibly a forest or regional governor",
+      "usage_examples": ["yajaw te' title at Yaxchilan"],
+      "inscriptions": ["yaxchilan-lintel-24", "yaxchilan-lintel-26"],
+      "subcategory": "political",
+      "frequency": "low"
+    },
+    {
+      "maya": "aj tz'ihb'",
+      "spanish": "el escriba",
+      "english": "the scribe",
+      "confidence": "confirmed",
+      "etymology": "Compound: aj (agent prefix) + tz'ihb' (to write/paint); 'he who writes'; title for royal scribes and painters",
+      "cognates": { "yucatec": "ah tz'iib'" },
+      "usage_examples": ["aj tz'ihb' title in Copán hieroglyphic stairway", "court scribe designation"],
+      "inscriptions": ["copan-hieroglyphic-stairway", "copan-altar-q"],
+      "subcategory": "intellectual",
+      "frequency": "medium"
+    },
+    {
+      "maya": "aj k'in",
+      "spanish": "sacerdote del sol, guardián del calendario",
+      "english": "daykeeper, sun priest",
+      "confidence": "confirmed",
+      "thompson": ["T521"],
+      "etymology": "Compound: aj (agent prefix) + k'in (sun/day); 'he of the sun/day'; priestly title for calendar specialists",
+      "cognates": { "yucatec": "ah k'in" },
+      "usage_examples": ["aj k'in in calendrical ritual contexts", "daykeeper priest"],
+      "inscriptions": ["copan-stela-a", "palenque-96-glyphs"],
+      "subcategory": "religious",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ux yop huun",
+      "spanish": "banda de tres hojas",
+      "english": "three-leaf headband",
+      "confidence": "confirmed",
+      "etymology": "Compound: ux (three) + yop (leaf) + huun (headband/paper); the three-leaf headband worn by rulers in Period Ending contexts",
+      "usage_examples": ["ux yop huun in accession imagery"],
+      "inscriptions": ["palenque-tablet-cross", "copan-stela-a"],
+      "subcategory": "royalty",
+      "frequency": "low"
+    },
+    {
+      "maya": "k'ahk' ti' ch'ok",
+      "spanish": "joven de boca de fuego",
+      "english": "fire-mouthed youth",
+      "confidence": "confirmed",
+      "etymology": "Compound: k'ahk' (fire) + ti' (mouth) + ch'ok (youth); epithet for royal heirs engaged in warfare or fire rituals",
+      "usage_examples": ["k'ahk' ti' ch'ok in warrior prince contexts"],
+      "inscriptions": ["yaxchilan-lintel-26", "bonampak-murals"],
+      "subcategory": "military",
       "frequency": "low"
     }
   ],
@@ -421,6 +503,142 @@
       "inscriptions": ["copan-altar-q", "tikal-stela-31"],
       "subcategory": "accession",
       "frequency": "medium"
+    },
+    {
+      "maya": "pak'",
+      "spanish": "plantar, sembrar",
+      "english": "to plant",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *pak' 'to plant'; used in agricultural and metaphorical contexts for founding or establishing",
+      "cognates": { "yucatec": "pak'", "tzotzil": "pak'" },
+      "usage_examples": ["pak'-aj (planting event)", "pak' tun (planting of the stone)"],
+      "subcategory": "creation",
+      "frequency": "low"
+    },
+    {
+      "maya": "tz'ap",
+      "spanish": "plantar, erigir (estela)",
+      "english": "to plant, erect (a stela)",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *tz'ap 'to plant, set upright'; the primary verb for erecting stelae and monuments",
+      "cognates": { "yucatec": "tz'ap" },
+      "usage_examples": ["tz'ap-aj lakam tun (stela dedication)", "erecting monument at Period Ending"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c", "tikal-stela-31"],
+      "subcategory": "construction",
+      "frequency": "high"
+    },
+    {
+      "maya": "u-ti-ya",
+      "spanish": "aconteció, sucedió",
+      "english": "it happened, it came to pass",
+      "confidence": "confirmed",
+      "etymology": "Perfective aspect of ti 'to happen, occur'; stock phrase introducing historical events in narrative texts",
+      "usage_examples": ["u-ti-ya ta k'atun (it happened at the k'atun)", "event introduction phrase"],
+      "inscriptions": ["palenque-96-glyphs", "copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "narrative",
+      "frequency": "high"
+    },
+    {
+      "maya": "yil",
+      "spanish": "él/ella vio",
+      "english": "he/she saw",
+      "confidence": "confirmed",
+      "etymology": "Ergative perfective of il 'to see'; y-il (he-saw); witnessing events is a key royal prerogative recorded in inscriptions",
+      "cognates": { "yucatec": "il", "kiche": "il" },
+      "usage_examples": ["yil-aj ajaw (the lord witnessed)", "witnessing a Period Ending ritual"],
+      "inscriptions": ["copan-stela-a", "yaxchilan-lintel-24"],
+      "subcategory": "perception",
+      "frequency": "medium"
+    },
+    {
+      "maya": "b'aj",
+      "spanish": "golpear, martillar",
+      "english": "to hammer, strike",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *b'aj 'to hit, hammer'; used in warfare and in bloodletting rites where a bone awl is used",
+      "cognates": { "yucatec": "b'aj" },
+      "usage_examples": ["b'aj-aj (hammering event)", "captive striking ritual"],
+      "inscriptions": ["bonampak-murals", "yaxchilan-lintel-24"],
+      "subcategory": "warfare",
+      "frequency": "low"
+    },
+    {
+      "maya": "wol",
+      "spanish": "reunir, agrupar",
+      "english": "to gather, assemble",
+      "confidence": "probable",
+      "etymology": "Related to wol 'round, assembled'; used for gatherings of tribute, people, or ritual participants",
+      "usage_examples": ["wol-aj (gathering event)", "tribute collection context"],
+      "subcategory": "political",
+      "frequency": "rare"
+    },
+    {
+      "maya": "joy",
+      "spanish": "rodear, circunvalar",
+      "english": "to go around, encircle",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *joy 'to encircle, go around'; used for ritual circumambulation of monuments and territories",
+      "cognates": { "yucatec": "joy" },
+      "usage_examples": ["joy-aj (encircling event)", "procession around the plaza"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "ritual",
+      "frequency": "low"
+    },
+    {
+      "maya": "em",
+      "spanish": "descender",
+      "english": "to descend",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *em 'to descend'; used for descent of rulers to the underworld, descent of celestial bodies, and political submission",
+      "cognates": { "yucatec": "em", "tzotzil": "em" },
+      "usage_examples": ["em-iiy (descended)", "descent of deity from sky"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross"],
+      "subcategory": "motion",
+      "frequency": "medium"
+    },
+    {
+      "maya": "let",
+      "spanish": "servir, asistir",
+      "english": "to serve, attend",
+      "confidence": "probable",
+      "etymology": "Possibly related to let 'to accompany, serve'; used for subordinate service to a lord or deity",
+      "usage_examples": ["let-aj ajaw (serving the lord)", "attendance at court ritual"],
+      "subcategory": "political",
+      "frequency": "rare"
+    },
+    {
+      "maya": "pik",
+      "spanish": "contar (8,000)",
+      "english": "to count; 8,000",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *pik 'eight thousand'; the vigesimal unit of 8,000; used in counting tribute and large quantities",
+      "cognates": { "yucatec": "pik", "kiche": "piq" },
+      "usage_examples": ["pik (8,000 units)", "counting tribute in large quantities"],
+      "inscriptions": ["quirigua-stela-c", "copan-stela-a"],
+      "subcategory": "counting",
+      "frequency": "medium"
+    },
+    {
+      "maya": "k'al-tuun",
+      "spanish": "atar la piedra (fin de período)",
+      "english": "stone-binding (Period Ending verb phrase)",
+      "confidence": "confirmed",
+      "etymology": "Verb phrase: k'al (to bind) + tuun (stone); the ritual act of binding/completing a stone at Period Ending ceremonies",
+      "usage_examples": ["k'al-tuun ceremony", "Period Ending binding rite"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c", "palenque-96-glyphs"],
+      "subcategory": "ritual",
+      "frequency": "high"
+    },
+    {
+      "maya": "nah",
+      "spanish": "adornar, soñar",
+      "english": "to adorn, to dream",
+      "confidence": "probable",
+      "etymology": "Possibly homophonous with nah 'house'; verbal form meaning 'to adorn/anoint' or 'to dream/envision', used in auto-sacrifice contexts",
+      "usage_examples": ["nah-aj (adorning ritual)", "visionary dream rite"],
+      "inscriptions": ["yaxchilan-lintel-24", "yaxchilan-lintel-25"],
+      "subcategory": "ritual",
+      "frequency": "rare"
     }
   ],
 
@@ -782,6 +1000,231 @@
       "inscriptions": ["palenque-sarcophagus", "san-bartolo-murals"],
       "subcategory": "fauna",
       "frequency": "low"
+    },
+    {
+      "maya": "sak huun",
+      "spanish": "banda blanca de la cabeza",
+      "english": "white headband (royal insignia)",
+      "confidence": "confirmed",
+      "etymology": "Compound: sak (white) + huun (paper/headband); the white paper headband is the primary marker of royal heirs and rulers",
+      "cognates": { "yucatec": "sak hun" },
+      "usage_examples": ["ti' sak huun (bearer of the white headband)", "heir apparent designation"],
+      "inscriptions": ["palenque-tablet-cross", "palenque-sarcophagus", "yaxchilan-lintel-24"],
+      "subcategory": "regalia",
+      "frequency": "medium"
+    },
+    {
+      "maya": "k'awiil",
+      "spanish": "dios del rayo y la abundancia",
+      "english": "lightning deity, manikin scepter",
+      "confidence": "confirmed",
+      "thompson": ["T1030"],
+      "etymology": "Proto-Ch'olano *k'awiil 'lightning deity'; God K in the Schellhas classification; the manikin scepter wielded by rulers",
+      "cognates": { "yucatec": "k'awil" },
+      "usage_examples": ["ch'am k'awiil (receive the scepter)", "k'awiil ajaw", "lightning deity iconography"],
+      "inscriptions": ["palenque-tablet-cross", "copan-stela-a", "yaxchilan-lintel-25"],
+      "subcategory": "deity",
+      "frequency": "high"
+    },
+    {
+      "maya": "naah",
+      "spanish": "primero, principal",
+      "english": "first, foremost",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *naah 'first, primary'; used as an ordinal prefix and in compound titles; distinct from nah 'house' in some analyses",
+      "usage_examples": ["naah ajaw (first/primary lord)", "naah chan (first sky)"],
+      "inscriptions": ["palenque-tablet-cross", "copan-altar-q"],
+      "subcategory": "rank",
+      "frequency": "medium"
+    },
+    {
+      "maya": "sib'ik",
+      "spanish": "hollín, humo",
+      "english": "soot, smoke",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *sib'ik 'soot, black smoke'; copal incense smoke is the breath of the gods; soot marks ritual fire events",
+      "cognates": { "yucatec": "sib'ik", "tzotzil": "sib'" },
+      "usage_examples": ["sib'ik as incense offering marker", "ritual fire smoke"],
+      "inscriptions": ["palenque-tablet-cross", "yaxchilan-lintel-24"],
+      "subcategory": "ritual_material",
+      "frequency": "low"
+    },
+    {
+      "maya": "b'uj",
+      "spanish": "vasija, recipiente",
+      "english": "vessel, jar",
+      "confidence": "probable",
+      "etymology": "Possibly related to Proto-Ch'olano *b'uj 'vessel'; used for ritual drinking and cacao containers",
+      "usage_examples": ["u b'uj kakaw (his cacao vessel)", "vessel dedication texts"],
+      "inscriptions": ["vase-seven-gods"],
+      "subcategory": "material_culture",
+      "frequency": "rare"
+    },
+    {
+      "maya": "tz'ib'",
+      "spanish": "escritura, glifo",
+      "english": "writing, glyph",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *tz'ib' 'writing, painting'; the noun form of tz'ihb'; the script itself and individual glyphs",
+      "cognates": { "yucatec": "tz'iib'", "kiche": "tz'ib'" },
+      "usage_examples": ["u tz'ib' ajaw (the lord's writing)", "hieroglyphic inscription designation"],
+      "inscriptions": ["copan-hieroglyphic-stairway", "palenque-96-glyphs"],
+      "subcategory": "scribal",
+      "frequency": "medium"
+    },
+    {
+      "maya": "b'alam",
+      "spanish": "jaguar",
+      "english": "jaguar",
+      "confidence": "confirmed",
+      "thompson": ["T751"],
+      "etymology": "Variant of b'ahlam; Proto-Ch'olano *b'alam 'jaguar'; used in Yucatecan and some Ch'olan texts",
+      "cognates": { "yucatec": "b'alam", "kiche": "b'alam" },
+      "usage_examples": ["Yax B'alam (Yaxchilan ruler)", "b'alam pelt as royal insignia"],
+      "inscriptions": ["yaxchilan-lintel-24", "yaxchilan-lintel-25"],
+      "subcategory": "fauna",
+      "frequency": "high"
+    },
+    {
+      "maya": "kooj",
+      "spanish": "máscara",
+      "english": "mask",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *kooj 'mask'; ritual masks are used in deity impersonation ceremonies; the mask transforms the wearer into a divine being",
+      "cognates": { "yucatec": "ko'oh" },
+      "usage_examples": ["kooj deity impersonation", "ritual mask in accession ceremony"],
+      "inscriptions": ["palenque-tablet-cross", "bonampak-murals", "yaxchilan-lintel-25"],
+      "subcategory": "ritual_object",
+      "frequency": "medium"
+    },
+    {
+      "maya": "lakam tun",
+      "spanish": "estela, piedra grande",
+      "english": "stela, large stone",
+      "confidence": "confirmed",
+      "etymology": "Compound: lakam (large, banner) + tun (stone); the standard term for a carved stone monument (stela)",
+      "usage_examples": ["hub'uy u lakam tun (the stela was toppled)", "tz'ap lakam tun (stela erection)"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c", "tikal-stela-31"],
+      "subcategory": "monument",
+      "frequency": "high"
+    },
+    {
+      "maya": "huun",
+      "spanish": "papel, libro, banda de cabeza",
+      "english": "paper, book, headband",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *hun 'paper, one'; paper is sacred — made from fig bark and used for codices and royal headbands",
+      "cognates": { "yucatec": "hun", "kiche": "jun" },
+      "usage_examples": ["sak huun (white headband)", "k'al huun (binding the headband)", "codex paper"],
+      "inscriptions": ["palenque-tablet-cross", "yaxchilan-lintel-24"],
+      "subcategory": "material_culture",
+      "frequency": "high"
+    },
+    {
+      "maya": "k'an tok",
+      "spanish": "pedernal precioso",
+      "english": "precious flint",
+      "confidence": "probable",
+      "etymology": "Compound: k'an (yellow/precious) + tok (flint/obsidian); precious stone blades used in bloodletting and sacrifice",
+      "usage_examples": ["k'an tok bloodletting instrument", "ritual flint offering"],
+      "inscriptions": ["yaxchilan-lintel-24"],
+      "subcategory": "ritual_object",
+      "frequency": "rare"
+    },
+    {
+      "maya": "ak'ab'",
+      "spanish": "oscuridad, noche",
+      "english": "darkness, night",
+      "confidence": "confirmed",
+      "thompson": ["T504"],
+      "etymology": "Proto-Ch'olano *ak'b'al 'night, darkness'; used in creation phrases (ch'ab' ak'ab') and underworld contexts",
+      "cognates": { "yucatec": "ak'ab'", "kiche": "aq'ab'" },
+      "usage_examples": ["ch'ab' ak'ab' (creation and darkness)", "ak'ab' tun (night stone)"],
+      "inscriptions": ["palenque-tablet-cross", "vase-seven-gods"],
+      "subcategory": "cosmology",
+      "frequency": "medium"
+    },
+    {
+      "maya": "wayob'",
+      "spanish": "espíritus animales (plural)",
+      "english": "spirit animals (plural)",
+      "confidence": "confirmed",
+      "etymology": "Plural of way 'spirit companion'; wayob' are the collective supernatural familiars of the ruling class depicted on way ceramics",
+      "usage_examples": ["wayob' on polychrome ceramics", "plural spirit companion assemblage"],
+      "inscriptions": ["vase-seven-gods"],
+      "subcategory": "supernatural",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ixiim",
+      "spanish": "maíz, grano de maíz",
+      "english": "maize grain, corn",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *ixiim 'maize grain'; Juun Ixiim (One Maize) is the name of the Maize God in some texts",
+      "cognates": { "yucatec": "ixiim", "kiche": "ixim" },
+      "usage_examples": ["Juun Ixiim (Maize God name)", "ixiim grain in offering context"],
+      "inscriptions": ["palenque-sarcophagus", "san-bartolo-murals"],
+      "subcategory": "agriculture",
+      "frequency": "medium"
+    },
+    {
+      "maya": "chak chuen",
+      "spanish": "artesano rojo, mono artista",
+      "english": "red artisan, monkey scribe",
+      "confidence": "probable",
+      "etymology": "Compound: chak (red/great) + chuen (monkey artisan, day sign); patron deity of scribes and craftsmen",
+      "usage_examples": ["chak chuen patron of scribes", "monkey artisan deity"],
+      "inscriptions": ["copan-hieroglyphic-stairway"],
+      "subcategory": "deity",
+      "frequency": "low"
+    },
+    {
+      "maya": "eb'",
+      "spanish": "escalera, paso",
+      "english": "stair, step",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *eb' 'stair, step'; pyramid stairs are the axis mundi; also a day name in the Tzolk'in calendar",
+      "cognates": { "yucatec": "eb'", "kiche": "e'" },
+      "usage_examples": ["eb' day sign (twelfth in Tzolk'in)", "pyramid stairway dedication"],
+      "inscriptions": ["copan-hieroglyphic-stairway", "palenque-sarcophagus"],
+      "subcategory": "architecture",
+      "frequency": "medium"
+    },
+    {
+      "maya": "patan",
+      "spanish": "tributo, servicio",
+      "english": "tribute, service",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *patan 'tribute, service rendered to a lord'; records of tribute payment appear in subordinate polity texts",
+      "cognates": { "yucatec": "patan" },
+      "usage_examples": ["patan tribute delivery", "patan service obligation to Calakmul"],
+      "inscriptions": ["calakmul-stela-51", "cancuen-panel-3", "dos-pilas-stela-16"],
+      "subcategory": "political_economy",
+      "frequency": "medium"
+    },
+    {
+      "maya": "nik",
+      "spanish": "flor",
+      "english": "flower",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *nik 'flower'; flowers are offerings to deities and symbols of beauty, blood, and the sun",
+      "cognates": { "yucatec": "nik", "kiche": "nich", "tzotzil": "nichim" },
+      "usage_examples": ["sak nik (white flower)", "flower offerings at altars"],
+      "inscriptions": ["palenque-sarcophagus", "san-bartolo-murals"],
+      "subcategory": "flora",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ajawlel",
+      "spanish": "señorío, reinado",
+      "english": "lordship, rulership",
+      "confidence": "confirmed",
+      "etymology": "Derived from ajaw (lord) + -lel abstract suffix; 'the condition of being lord'; the abstract concept of royal authority",
+      "cognates": { "yucatec": "ajawlel" },
+      "usage_examples": ["chum ta ajawlel (seated in lordship)", "k'am ajawlel (received lordship)", "ajawlel duration statements"],
+      "inscriptions": ["copan-stela-a", "tikal-stela-31", "palenque-sarcophagus"],
+      "subcategory": "political",
+      "frequency": "high"
     }
   ],
 
@@ -859,6 +1302,66 @@
       "usage_examples": ["nuk ajaw"],
       "subcategory": "size",
       "frequency": "low"
+    },
+    {
+      "maya": "wak",
+      "spanish": "seis, erguido",
+      "english": "six, upright",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *waq 'six'; also means 'upright, erected' in compound words; Wakah Chan = erected sky (World Tree)",
+      "cognates": { "yucatec": "wak", "kiche": "waqib'" },
+      "usage_examples": ["Wakah Chan Te' (World Tree — erected sky tree)", "wak tun (six-stone period)"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross"],
+      "subcategory": "numeral_adjective",
+      "frequency": "high"
+    },
+    {
+      "maya": "k'uhul",
+      "spanish": "divino, sagrado",
+      "english": "divine, holy",
+      "confidence": "confirmed",
+      "thompson": ["T216"],
+      "etymology": "Derived from k'uh (god) + -ul adjectival suffix; 'of divine essence'; the most important royal epithet",
+      "cognates": { "yucatec": "k'uhul", "tzotzil": "k'ul" },
+      "usage_examples": ["k'uhul ajaw (holy lord)", "k'uhul b'aakal (holy Palenque)"],
+      "inscriptions": ["palenque-sarcophagus", "copan-stela-a", "calakmul-stela-51"],
+      "subcategory": "sacred_quality",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "lakam",
+      "spanish": "grande, principal",
+      "english": "large, principal",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *lakam 'large, banner'; quality adjective for large size or importance; also 'banner/standard'",
+      "cognates": { "yucatec": "lakam" },
+      "usage_examples": ["lakam tun (large stone = stela)", "lakamha' (large water = Palenque)"],
+      "inscriptions": ["palenque-sarcophagus", "copan-stela-a"],
+      "subcategory": "size",
+      "frequency": "medium"
+    },
+    {
+      "maya": "noh",
+      "spanish": "grande, principal (yucateco)",
+      "english": "great, large",
+      "confidence": "confirmed",
+      "etymology": "Yucatec Mayan *noh 'large, great, important'; used in Yucatecan and some lowland contexts as size/importance marker",
+      "cognates": { "yucatec": "noh", "kiche": "nim" },
+      "usage_examples": ["noh ajaw (great lord)", "Noh Mul (great mound, Belizean site name)"],
+      "subcategory": "size",
+      "frequency": "medium"
+    },
+    {
+      "maya": "tz'ak",
+      "spanish": "en orden, sucesión",
+      "english": "in succession, in order",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *tz'ak 'in order, succession'; used in dynastic succession statements and ordered sequences",
+      "cognates": { "yucatec": "tz'ak" },
+      "usage_examples": ["tz'akb'u ajaw (succession lord)", "in the succession of lords"],
+      "inscriptions": ["copan-altar-q", "palenque-96-glyphs"],
+      "subcategory": "ordinal",
+      "frequency": "medium"
     }
   ],
 
@@ -912,6 +1415,41 @@
       "inscriptions": ["palenque-tablet-cross"],
       "subcategory": "cardinal_direction",
       "frequency": "medium"
+    },
+    {
+      "maya": "yok",
+      "spanish": "encima de, sobre",
+      "english": "above, on top of",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *yok 'above, on top'; the vertical axis; used in cosmological texts for celestial positions",
+      "cognates": { "yucatec": "yok", "kiche": "uwi'" },
+      "usage_examples": ["yok chan (above the sky)", "yok witz (above the mountain)"],
+      "inscriptions": ["palenque-tablet-cross", "vase-seven-gods"],
+      "subcategory": "vertical_direction",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ti'",
+      "spanish": "en, hacia, a (preposición)",
+      "english": "at, into, toward (preposition)",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *ti' 'at, toward, mouth'; the primary locative/directional preposition in Classic Maya",
+      "cognates": { "yucatec": "ti'", "kiche": "chi'" },
+      "usage_examples": ["och ti' ajawlel (entered into lordship)", "ti' lak'in (at the east)"],
+      "inscriptions": ["palenque-sarcophagus", "copan-stela-a", "tikal-stela-31"],
+      "subcategory": "locative",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "naah",
+      "spanish": "abajo, profundo",
+      "english": "down, deep (directional)",
+      "confidence": "probable",
+      "etymology": "Possibly related to naah 'first/house'; in some contexts used directionally for 'deep within' or 'below'",
+      "usage_examples": ["naah ch'en (deep cave)", "directional use in cosmological contexts"],
+      "inscriptions": ["palenque-tablet-cross"],
+      "subcategory": "vertical_direction",
+      "frequency": "low"
     }
   ],
 
@@ -971,6 +1509,53 @@
       "inscriptions": ["palenque-sarcophagus"],
       "subcategory": "death_euphemism",
       "frequency": "rare"
+    },
+    {
+      "maya": "cham",
+      "spanish": "muerte",
+      "english": "death (noun)",
+      "confidence": "confirmed",
+      "thompson": ["T765"],
+      "etymology": "Proto-Ch'olano *cham 'to die'; as a noun 'the death'; appears in mortuary contexts and Death God names",
+      "cognates": { "yucatec": "kimi", "tzotzil": "cham" },
+      "usage_examples": ["u cham ajaw (the lord's death)", "Cham death god epithet"],
+      "inscriptions": ["palenque-sarcophagus", "copan-stela-a", "tikal-stela-31"],
+      "subcategory": "death_concept",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "och ta b'ih",
+      "spanish": "entró en el camino (murió)",
+      "english": "entered upon the road (died)",
+      "confidence": "confirmed",
+      "etymology": "Verb phrase: och (enter) + ta (at/into) + b'ih (road); the road of death; a more elaborate form of och b'ih",
+      "usage_examples": ["och ta b'ih-iiy (he entered the road)", "extended death road phrase"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "death_euphemism",
+      "frequency": "medium"
+    },
+    {
+      "maya": "sak b'aak naah",
+      "spanish": "casa de los huesos blancos (tumba)",
+      "english": "white bone house (tomb)",
+      "confidence": "probable",
+      "etymology": "Compound: sak (white) + b'aak (bone) + naah (house); a euphemism for the tomb or funerary chamber in some texts",
+      "usage_examples": ["funerary chamber designation", "white bone house tomb reference"],
+      "inscriptions": ["palenque-sarcophagus"],
+      "subcategory": "funerary",
+      "frequency": "rare"
+    },
+    {
+      "maya": "k'a'ay",
+      "spanish": "se perdió, se extinguió",
+      "english": "was lost, extinguished",
+      "confidence": "confirmed",
+      "etymology": "Intransitive verb from k'ay 'to be lost, extinguished'; used specifically in death contexts for the extinguishing of the breath-soul",
+      "cognates": { "yucatec": "k'a'ay" },
+      "usage_examples": ["k'a'ay u sak ik'il (white breath was extinguished)", "death breath-loss phrase"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-96-glyphs"],
+      "subcategory": "death_euphemism",
+      "frequency": "low"
     }
   ],
 
@@ -1020,6 +1605,64 @@
       "inscriptions": ["dos-pilas-stela-16", "quirigua-stela-c"],
       "subcategory": "warfare_result",
       "frequency": "medium"
+    },
+    {
+      "maya": "b'ak",
+      "spanish": "cautivo",
+      "english": "captive",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *b'aak 'bone, captive'; captives are named with b'ak prefix in captive-taking texts",
+      "cognates": { "yucatec": "b'aak", "kiche": "b'aq" },
+      "usage_examples": ["b'ak designation for war prisoners", "captive-taking trophy texts"],
+      "inscriptions": ["yaxchilan-lintel-26", "bonampak-murals", "dos-pilas-stela-16"],
+      "subcategory": "warfare_result",
+      "frequency": "high"
+    },
+    {
+      "maya": "chak chij",
+      "spanish": "venado rojo (sacrificio de guerra)",
+      "english": "red deer (war sacrifice metaphor)",
+      "confidence": "probable",
+      "etymology": "Compound: chak (red/great) + chij (deer); metaphor for a sacrificed captive as a hunted deer; the ruler as hunter",
+      "usage_examples": ["chak chij as captive-sacrifice metaphor", "hunt=war imagery"],
+      "inscriptions": ["bonampak-murals", "yaxchilan-lintel-26"],
+      "subcategory": "warfare_metaphor",
+      "frequency": "rare"
+    },
+    {
+      "maya": "ochk'in kaloomte'",
+      "spanish": "kaloomte' del oeste (título militar)",
+      "english": "western kaloomte' (military title)",
+      "confidence": "confirmed",
+      "etymology": "Compound: och k'in (west = sunset direction) + kaloomte' (supreme lord); directional military title claimed by powerful rulers",
+      "usage_examples": ["ochk'in kaloomte' at Tikal", "western supreme lord designation"],
+      "inscriptions": ["tikal-stela-31", "copan-altar-q"],
+      "subcategory": "military_title",
+      "frequency": "low"
+    },
+    {
+      "maya": "tok'",
+      "spanish": "pedernal, navaja de obsidiana",
+      "english": "flint, obsidian blade",
+      "confidence": "confirmed",
+      "thompson": ["T625"],
+      "etymology": "Proto-Ch'olano *tok' 'flint blade'; bloodletting and sacrificial instrument; paired with pakal (shield) as war symbol",
+      "cognates": { "yucatec": "took'", "kiche": "toq'" },
+      "usage_examples": ["tok' pakal (flint and shield = warfare)", "bloodletting with flint"],
+      "inscriptions": ["yaxchilan-lintel-24", "dos-pilas-stela-16"],
+      "subcategory": "weapon",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ek' ch'ak",
+      "spanish": "hacha negra (evento de guerra nocturna)",
+      "english": "black axe event (night warfare)",
+      "confidence": "tentative",
+      "etymology": "Compound: ek' (black/night) + ch'ak (axe event); proposed compound for nocturnal surprise attacks",
+      "usage_examples": ["possible night raid context at Naranjo"],
+      "inscriptions": ["naranjo-stela-24"],
+      "subcategory": "warfare_type",
+      "frequency": "rare"
     }
   ],
 
@@ -1168,6 +1811,88 @@
       "inscriptions": ["palenque-tablet-cross", "copan-hieroglyphic-stairway"],
       "subcategory": "age_grade",
       "frequency": "high"
+    },
+    {
+      "maya": "yatan",
+      "spanish": "su esposa (forma poseída)",
+      "english": "his wife (possessed form)",
+      "confidence": "confirmed",
+      "etymology": "Possessed form: y- (his) + atan (wife); used in dynastic marriage alliance texts and genealogical statements",
+      "cognates": { "yucatec": "yatan" },
+      "usage_examples": ["yatan ajaw (wife of the lord)", "marriage alliance inscription"],
+      "inscriptions": ["yaxchilan-lintel-24", "palenque-sarcophagus", "copan-altar-q"],
+      "subcategory": "conjugal_kin",
+      "frequency": "medium"
+    },
+    {
+      "maya": "yalaw",
+      "spanish": "su nieto/a",
+      "english": "his/her grandchild",
+      "confidence": "confirmed",
+      "etymology": "Possessed form: y- (his/her) + alaw (grandchild); grandchildren are named in dynastic legitimization texts",
+      "cognates": { "yucatec": "yalan" },
+      "usage_examples": ["yalaw ajaw (grandchild of the lord)", "multigenerational genealogy"],
+      "inscriptions": ["copan-stela-a", "palenque-96-glyphs"],
+      "subcategory": "descending_kin",
+      "frequency": "low"
+    },
+    {
+      "maya": "ajaw na'",
+      "spanish": "reina madre",
+      "english": "queen mother",
+      "confidence": "confirmed",
+      "etymology": "Compound: ajaw (lord) + na' (mother); the queen mother title for a woman who is mother of the reigning lord",
+      "usage_examples": ["ajaw na' title at Palenque", "queen mother legitimation"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross"],
+      "subcategory": "ascending_kin",
+      "frequency": "low"
+    },
+    {
+      "maya": "suku'un",
+      "spanish": "hermano mayor (variante)",
+      "english": "elder brother (variant)",
+      "confidence": "confirmed",
+      "etymology": "Variant of sakuun; Proto-Ch'olano *sukuun 'elder brother'; used in succession and co-rulership texts",
+      "cognates": { "yucatec": "sukuun", "tzotzil": "bank'ilal" },
+      "usage_examples": ["u suku'un (his elder brother)", "elder brother succession claim"],
+      "inscriptions": ["palenque-tablet-palace", "copan-stela-a"],
+      "subcategory": "collateral_kin",
+      "frequency": "low"
+    },
+    {
+      "maya": "ch'ab'",
+      "spanish": "linaje, penitencia",
+      "english": "lineage, penance",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *ch'ab' 'creation, penance, bloodline'; the lineage created through bloodletting penance",
+      "cognates": { "yucatec": "ch'ab'" },
+      "usage_examples": ["ch'ab' ak'ab' (creation and darkness phrase)", "lineage penance rite"],
+      "inscriptions": ["palenque-tablet-cross", "yaxchilan-lintel-24", "vase-seven-gods"],
+      "subcategory": "lineage",
+      "frequency": "medium"
+    },
+    {
+      "maya": "b'aahil",
+      "spanish": "imagen, el primero",
+      "english": "image, the first one",
+      "confidence": "confirmed",
+      "etymology": "Derived from b'aah (head/first/image) + -il nominal suffix; the image or portrait of a ruler, also 'the foremost person'",
+      "usage_examples": ["u b'aahil ajaw (his image)", "b'aahil as portrait designation"],
+      "inscriptions": ["palenque-sarcophagus", "yaxchilan-lintel-25"],
+      "subcategory": "identity",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ixtab",
+      "spanish": "diosa del lazo (deidad)",
+      "english": "rope goddess (deity)",
+      "confidence": "confirmed",
+      "etymology": "Compound: ix (female) + tab (rope, cord); the goddess associated with the noose and suicide by hanging; a merciful death deity",
+      "cognates": { "yucatec": "ixtab" },
+      "usage_examples": ["Ixtab as death deity", "hanging goddess iconography"],
+      "inscriptions": ["palenque-sarcophagus"],
+      "subcategory": "deity",
+      "frequency": "rare"
     }
   ],
 
@@ -1349,6 +2074,51 @@
       "inscriptions": ["tikal-stela-31"],
       "subcategory": "military_structure",
       "frequency": "rare"
+    },
+    {
+      "maya": "ak'ab' nah",
+      "spanish": "casa de la noche",
+      "english": "night house",
+      "confidence": "confirmed",
+      "etymology": "Compound: ak'ab' (night/darkness) + nah (house); the night house is the western celestial house of the Sun God's nightly passage",
+      "usage_examples": ["ak'ab' nah in cosmological house texts", "night house at Palenque cross group"],
+      "inscriptions": ["palenque-tablet-cross", "palenque-tablet-palace"],
+      "subcategory": "cosmological_structure",
+      "frequency": "low"
+    },
+    {
+      "maya": "chan nah",
+      "spanish": "casa del cielo",
+      "english": "sky house",
+      "confidence": "confirmed",
+      "etymology": "Compound: chan (sky) + nah (house); the celestial house at the apex of the cosmic mountain; one of the four cosmological houses",
+      "usage_examples": ["chan nah in Palenque tablet cosmology", "sky house cosmic structure"],
+      "inscriptions": ["palenque-tablet-cross"],
+      "subcategory": "cosmological_structure",
+      "frequency": "low"
+    },
+    {
+      "maya": "k'in nah",
+      "spanish": "casa del sol",
+      "english": "sun house",
+      "confidence": "confirmed",
+      "etymology": "Compound: k'in (sun) + nah (house); the eastern solar house; the Temple of the Sun at Palenque is the k'in nah",
+      "usage_examples": ["k'in nah = Temple of the Sun at Palenque", "solar house dedication"],
+      "inscriptions": ["palenque-tablet-cross"],
+      "subcategory": "religious_structure",
+      "frequency": "low"
+    },
+    {
+      "maya": "lakam",
+      "spanish": "estandarte, gran bandera",
+      "english": "banner, large standard",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *lakam 'large, banner'; used in lakamha' (Palenque) and lakam tun (stela); banners mark royal and ritual spaces",
+      "cognates": { "yucatec": "lakam" },
+      "usage_examples": ["lakam tun (large stone = stela)", "lakamha' (Palenque name)", "banner pole at plaza"],
+      "inscriptions": ["palenque-sarcophagus", "copan-stela-a", "tikal-stela-31"],
+      "subcategory": "architectural_element",
+      "frequency": "medium"
     }
   ],
 
@@ -1535,6 +2305,90 @@
       "inscriptions": ["san-bartolo-murals"],
       "subcategory": "amphibian",
       "frequency": "rare"
+    },
+    {
+      "maya": "b'atz'",
+      "spanish": "mono aullador",
+      "english": "howler monkey",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *b'atz' 'howler monkey'; the monkey scribes (Hun B'atz' and Hun Chowen) are patron deities of scribes and artists",
+      "cognates": { "yucatec": "b'atz'", "kiche": "b'atz'" },
+      "usage_examples": ["Hun B'atz' (monkey scribe god)", "b'atz' day sign in Tzolk'in calendar"],
+      "inscriptions": ["copan-hieroglyphic-stairway", "vase-seven-gods", "san-bartolo-murals"],
+      "subcategory": "primate",
+      "frequency": "medium"
+    },
+    {
+      "maya": "koj",
+      "spanish": "puma, jaguar",
+      "english": "puma",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *koj 'puma, lion'; the puma is a secondary feline power symbol used in warrior titles",
+      "cognates": { "yucatec": "koj" },
+      "usage_examples": ["koj warrior title", "puma pelt as elite insignia"],
+      "inscriptions": ["bonampak-murals", "yaxchilan-lintel-26"],
+      "subcategory": "feline",
+      "frequency": "low"
+    },
+    {
+      "maya": "tz'unuum",
+      "spanish": "colibrí",
+      "english": "hummingbird",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *tz'unuum 'hummingbird'; the hummingbird is a royal and solar bird, associated with flower rituals",
+      "cognates": { "yucatec": "tz'unun", "tzotzil": "tz'unun" },
+      "usage_examples": ["hummingbird in royal headdress iconography", "flower ritual context"],
+      "inscriptions": ["bonampak-murals"],
+      "subcategory": "avian",
+      "frequency": "low"
+    },
+    {
+      "maya": "ch'o",
+      "spanish": "ratón, rata",
+      "english": "mouse, rat",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *ch'o' 'mouse, rat'; rodents appear in underworld contexts and as way spirit companions",
+      "cognates": { "yucatec": "ch'o'", "kiche": "ch'o'" },
+      "usage_examples": ["ch'o way spirit companion", "rodent underworld context"],
+      "inscriptions": ["vase-seven-gods"],
+      "subcategory": "rodent",
+      "frequency": "rare"
+    },
+    {
+      "maya": "pek'",
+      "spanish": "perro",
+      "english": "dog",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *pek' 'dog'; dogs guide the dead through the underworld and appear in funerary contexts",
+      "cognates": { "yucatec": "pek'", "kiche": "tz'i'", "tzotzil": "chij" },
+      "usage_examples": ["pek' as underworld guide", "dog sacrifice in funerary ritual"],
+      "inscriptions": ["palenque-sarcophagus", "vase-seven-gods"],
+      "subcategory": "canine",
+      "frequency": "medium"
+    },
+    {
+      "maya": "yax te'",
+      "spanish": "ceiba, árbol primero",
+      "english": "ceiba, first/green tree",
+      "confidence": "confirmed",
+      "etymology": "Compound: yax (first/green) + te' (tree); the ceiba (Ceiba pentandra) is the World Tree (axis mundi) in Maya cosmology",
+      "cognates": { "yucatec": "yax che'" },
+      "usage_examples": ["yax te' as World Tree", "Wakah Chan Yax Te' (World Tree name)", "ceiba at site centers"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross", "san-bartolo-murals"],
+      "subcategory": "flora",
+      "frequency": "high"
+    },
+    {
+      "maya": "kab'",
+      "spanish": "abeja, miel",
+      "english": "bee, honey",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *kab' 'bee, honey, earth'; honey is a sacred offering; the same root gives 'earth' in many Mayan languages",
+      "cognates": { "yucatec": "kab'", "kiche": "kab'" },
+      "usage_examples": ["kab' bee god (God of Beekeeping)", "honey as ritual offering"],
+      "inscriptions": ["copan-stela-a"],
+      "subcategory": "insect",
+      "frequency": "low"
     }
   ],
 
@@ -1685,6 +2539,87 @@
       "usage_examples": ["Xibalba lords in Popol Vuh context", "underworld journey of Maize God"],
       "inscriptions": ["palenque-sarcophagus", "vase-seven-gods", "san-bartolo-murals"],
       "subcategory": "cosmological_place",
+      "frequency": "high"
+    },
+    {
+      "maya": "sak ik'",
+      "spanish": "viento blanco, aliento sagrado",
+      "english": "white wind, sacred breath",
+      "confidence": "confirmed",
+      "etymology": "Compound: sak (white) + ik' (wind/breath); the life-force wind associated with the north direction and dawn",
+      "usage_examples": ["sak ik'il (white breath expression)", "k'a'ay u sak ik'il (white breath expired = death)"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-cross"],
+      "subcategory": "elemental",
+      "frequency": "medium"
+    },
+    {
+      "maya": "b'olon tz'akab'",
+      "spanish": "nueve generaciones",
+      "english": "nine generations, nine-times repeated",
+      "confidence": "confirmed",
+      "etymology": "Compound: b'olon (nine) + tz'akab' (generation/succession); epithet meaning 'of nine generations' applied to deities and nobles",
+      "usage_examples": ["b'olon tz'akab' as K'awiil epithet", "nine-generation lineage claim"],
+      "inscriptions": ["palenque-tablet-cross", "copan-stela-a"],
+      "subcategory": "deity",
+      "frequency": "medium"
+    },
+    {
+      "maya": "lahun chan",
+      "spanish": "diez cielos",
+      "english": "ten sky (celestial level)",
+      "confidence": "confirmed",
+      "etymology": "Compound: lahun (ten) + chan (sky); the tenth celestial level in Maya layered cosmos; appears in astronomical and supernatural contexts",
+      "usage_examples": ["lahun chan in thirteen-sky cosmological scheme"],
+      "inscriptions": ["palenque-tablet-cross", "vase-seven-gods"],
+      "subcategory": "cosmological_place",
+      "frequency": "low"
+    },
+    {
+      "maya": "waxak",
+      "spanish": "ocho",
+      "english": "eight",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *waxaq 'eight'; used in calendar dates and the name Waxaklajun Ub'aah Kaan (Snake kingdom ruler)",
+      "cognates": { "yucatec": "waxak", "kiche": "wajxaqib'" },
+      "usage_examples": ["waxak (eight)", "Waxaklajun Ub'aah Kaan", "eight-sky levels"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "numeral_astronomical",
+      "frequency": "high"
+    },
+    {
+      "maya": "chahk",
+      "spanish": "dios de la lluvia (variante ortográfica)",
+      "english": "rain god (orthographic variant)",
+      "confidence": "confirmed",
+      "etymology": "Orthographic variant of chaahk; Proto-Ch'olano *chaahk 'rain deity'; the storm god who sends lightning and controls rain",
+      "cognates": { "yucatec": "chak", "kiche": "juraqan" },
+      "usage_examples": ["Chahk in rain ritual contexts", "four-directional Chahk assembly"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c", "palenque-tablet-cross"],
+      "subcategory": "deity",
+      "frequency": "high"
+    },
+    {
+      "maya": "itzamnaaj",
+      "spanish": "Dios Itzamna, creador supremo",
+      "english": "Itzamna, supreme creator god",
+      "confidence": "confirmed",
+      "etymology": "Possibly from itz' (resin/precious) + am (spider) + naaj (great); the supreme deity and lord of the heavens",
+      "cognates": { "yucatec": "Itzamna" },
+      "usage_examples": ["Itzamnaaj B'ahlam (Yaxchilan ruler name)", "Itzamnaaj as creator deity"],
+      "inscriptions": ["yaxchilan-lintel-24", "yaxchilan-lintel-25", "san-bartolo-murals"],
+      "subcategory": "deity",
+      "frequency": "medium"
+    },
+    {
+      "maya": "ox lahun",
+      "spanish": "trece (número sagrado del cielo)",
+      "english": "thirteen (sacred sky number)",
+      "confidence": "confirmed",
+      "etymology": "Compound: ox (three) + lahun (ten) = thirteen; 13 is the number of upper sky levels in Maya cosmology",
+      "cognates": { "yucatec": "oxlahun" },
+      "usage_examples": ["thirteen sky layers", "thirteen-day Tzolk'in week", "13.0.0.0.0 Creation date"],
+      "inscriptions": ["palenque-96-glyphs", "palenque-tablet-cross"],
+      "subcategory": "cosmological_number",
       "frequency": "high"
     }
   ],
@@ -1875,6 +2810,102 @@
       "inscriptions": ["yaxchilan-lintel-25", "palenque-sarcophagus"],
       "subcategory": "ceremonial_motion",
       "frequency": "medium"
+    },
+    {
+      "maya": "jatz'",
+      "spanish": "golpear, sacrificar",
+      "english": "to strike, sacrifice",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *jatz' 'to beat, hit'; ritual striking of captives and ball-game sacrifice",
+      "cognates": { "yucatec": "hatz'", "tzotzil": "hatz'" },
+      "usage_examples": ["jatz'-aj (striking event)", "captive sacrifice ritual at Bonampak"],
+      "inscriptions": ["bonampak-murals", "yaxchilan-lintel-26"],
+      "subcategory": "sacrifice",
+      "frequency": "medium"
+    },
+    {
+      "maya": "wak'",
+      "spanish": "levantar, alzar",
+      "english": "to raise, lift up",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *wak' 'to rise, raise'; used for raising standards, stelae, and the erection of ritual objects",
+      "cognates": { "yucatec": "wak'" },
+      "usage_examples": ["wak'-aj (raising event)", "lifting of the World Tree ritual"],
+      "inscriptions": ["palenque-tablet-cross", "copan-stela-a"],
+      "subcategory": "construction_ritual",
+      "frequency": "low"
+    },
+    {
+      "maya": "k'as",
+      "spanish": "atar, ligar",
+      "english": "to tie, bind",
+      "confidence": "probable",
+      "etymology": "Related to k'as 'knot, bind'; binding rites including captive binding and ritual cord-tying at Period Endings",
+      "cognates": { "yucatec": "k'as" },
+      "usage_examples": ["k'as-aj (binding event)", "captive binding ritual"],
+      "inscriptions": ["yaxchilan-lintel-26", "bonampak-murals"],
+      "subcategory": "sacrifice",
+      "frequency": "low"
+    },
+    {
+      "maya": "b'olay",
+      "spanish": "bestia depredadora, animal de guerra",
+      "english": "predator beast, war animal",
+      "confidence": "confirmed",
+      "etymology": "Related to b'ol 'predator, to prey upon'; a powerful beast associated with elite warriors and military raids",
+      "usage_examples": ["b'olay warrior title", "predatory war beast iconography"],
+      "inscriptions": ["bonampak-murals", "dos-pilas-stela-16"],
+      "subcategory": "warfare_metaphor",
+      "frequency": "rare"
+    },
+    {
+      "maya": "kokan",
+      "spanish": "ofrecer, presentar",
+      "english": "to offer, present",
+      "confidence": "probable",
+      "etymology": "Possibly related to ko- verbal prefix + kan 'offer'; presentation of tribute, gifts, or sacrificial offerings to a superior",
+      "usage_examples": ["kokan tribute presentation", "offering ritual to a lord"],
+      "inscriptions": ["copan-altar-q", "cancuen-panel-3"],
+      "subcategory": "offering",
+      "frequency": "rare"
+    },
+    {
+      "maya": "mak",
+      "spanish": "cerrar, cubrir",
+      "english": "to cover, close",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *mak 'to cover, seal'; used for sealing tombs, closing ritual spaces, and covering monuments",
+      "cognates": { "yucatec": "mak", "tzotzil": "mak" },
+      "usage_examples": ["mak-aj (covering event)", "sealing of the tomb ritual"],
+      "inscriptions": ["palenque-sarcophagus", "palenque-tablet-palace"],
+      "subcategory": "funerary",
+      "frequency": "low"
+    },
+    {
+      "maya": "yax",
+      "spanish": "primero, nuevo, verde",
+      "english": "first, new, green (ritual aspect)",
+      "confidence": "confirmed",
+      "thompson": ["T16"],
+      "etymology": "Proto-Mayan *yax 'green/blue, first, new'; when used in ritual contexts it marks inaugurals and new beginnings",
+      "cognates": { "yucatec": "yax", "kiche": "yax", "tzotzil": "yax" },
+      "usage_examples": ["yax ch'am ajawlel (first reception of lordship)", "inaugural ritual event"],
+      "inscriptions": ["palenque-tablet-cross", "copan-altar-q"],
+      "subcategory": "inaugural_ritual",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "pul",
+      "spanish": "quemar ofrenda",
+      "english": "to burn offering",
+      "confidence": "confirmed",
+      "thompson": ["T582"],
+      "etymology": "Proto-Ch'olano *pul 'to burn'; incense burning is the standard offering to supernatural beings",
+      "cognates": { "yucatec": "pul", "tzotzil": "puj" },
+      "usage_examples": ["pul-aj (burning offering)", "copal incense burning rite"],
+      "inscriptions": ["yaxchilan-lintel-24", "palenque-96-glyphs"],
+      "subcategory": "offering",
+      "frequency": "medium"
     }
   ],
 
@@ -1988,6 +3019,50 @@
       "usage_examples": ["K'uhul Yokib' Ajaw", "Piedras Negras panel texts"],
       "inscriptions": ["piedras-negras-stela-3"],
       "subcategory": "site_name",
+      "frequency": "medium"
+    },
+    {
+      "maya": "kan witznal",
+      "spanish": "Quiriguá (nombre antiguo)",
+      "english": "Quiriguá (ancient site name)",
+      "confidence": "confirmed",
+      "etymology": "Compound: kan (four/serpent) + witz (mountain) + nal (place of); 'place of the four-snake mountain'; the dynastic name of Quiriguá",
+      "usage_examples": ["K'uhul Kan Witznal Ajaw", "Quiriguá dynastic emblem"],
+      "inscriptions": ["quirigua-stela-c"],
+      "subcategory": "site_name",
+      "frequency": "medium"
+    },
+    {
+      "maya": "k'an witz",
+      "spanish": "montaña amarilla (nombre de sitio)",
+      "english": "yellow mountain (site name element)",
+      "confidence": "probable",
+      "etymology": "Compound: k'an (yellow/precious) + witz (mountain); topographic site name element used in several polity names",
+      "usage_examples": ["k'an witz in site emblem glyphs", "yellow mountain polity"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "toponym_element",
+      "frequency": "low"
+    },
+    {
+      "maya": "sak nikte'",
+      "spanish": "flor blanca (nombre de sitio)",
+      "english": "white flower (site/place name)",
+      "confidence": "confirmed",
+      "etymology": "Compound: sak (white) + nikte' (plumeria flower); white plumeria appears in site names and as a feminine beauty epithet",
+      "usage_examples": ["Sak Nikte' as female name", "plumeria flower site designation"],
+      "inscriptions": ["palenque-tablet-cross", "san-bartolo-murals"],
+      "subcategory": "toponym_element",
+      "frequency": "low"
+    },
+    {
+      "maya": "ox te' tuun",
+      "spanish": "Tres Piedras (nombre topográfico)",
+      "english": "Three Stones Place (cosmological)",
+      "confidence": "confirmed",
+      "etymology": "Compound: ox (three) + te' (tree/word) + tuun (stone); the three hearthstones of creation set at the beginning of the current era",
+      "usage_examples": ["three hearthstone creation event", "ox te' tuun in creation narrative"],
+      "inscriptions": ["palenque-tablet-cross", "quirigua-stela-c"],
+      "subcategory": "cosmological_place",
       "frequency": "medium"
     }
   ],
@@ -2113,6 +3188,53 @@
       "inscriptions": ["palenque-sarcophagus", "copan-stela-a"],
       "subcategory": "skeletal",
       "frequency": "medium"
+    },
+    {
+      "maya": "tzutz",
+      "spanish": "cabello, pelo",
+      "english": "hair",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *tzutz 'hair'; royal hair is shorn at captive-taking and sacrificed; hair offerings appear in ritual texts",
+      "cognates": { "yucatec": "tzutz", "tzotzil": "tzots" },
+      "usage_examples": ["tzutz hair sacrifice", "tzutz hummingbird (homophony)", "hair offerings"],
+      "inscriptions": ["yaxchilan-lintel-24"],
+      "subcategory": "hair",
+      "frequency": "low"
+    },
+    {
+      "maya": "ni'",
+      "spanish": "nariz, punta",
+      "english": "nose, tip",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *ni' 'nose, tip, point'; the nose is a site for bloodletting by perforation in auto-sacrifice rituals",
+      "cognates": { "yucatec": "ni'", "kiche": "ni'", "tzotzil": "ni'" },
+      "usage_examples": ["ni' bloodletting nose piercing", "ni' as directional tip"],
+      "inscriptions": ["yaxchilan-lintel-24", "palenque-sarcophagus"],
+      "subcategory": "facial",
+      "frequency": "low"
+    },
+    {
+      "maya": "lem",
+      "spanish": "espejo, brillo",
+      "english": "mirror, shine",
+      "confidence": "confirmed",
+      "etymology": "Proto-Ch'olano *lem 'mirror, shine'; pyrite and obsidian mirrors are portals to the supernatural and markers of divinity",
+      "cognates": { "yucatec": "lem" },
+      "usage_examples": ["lem mirror on K'awiil's forehead", "pyrite mirror as divine attribute"],
+      "inscriptions": ["palenque-tablet-cross", "yaxchilan-lintel-25"],
+      "subcategory": "divine_attribute",
+      "frequency": "low"
+    },
+    {
+      "maya": "u b'aah",
+      "spanish": "su imagen, él mismo",
+      "english": "his/her image, himself/herself",
+      "confidence": "confirmed",
+      "etymology": "Possessed form: u (his/her) + b'aah (head/self/image); 'his/her image' — the standard way to say 'himself' or a portrait in Classic Maya",
+      "usage_examples": ["u b'aah ajaw (himself, the lord)", "u b'aah k'awiil (the image of K'awiil)", "portrait dedication"],
+      "inscriptions": ["palenque-sarcophagus", "yaxchilan-lintel-24", "copan-stela-a"],
+      "subcategory": "identity",
+      "frequency": "very_high"
     }
   ],
 
@@ -2237,6 +3359,77 @@
       "inscriptions": ["copan-stela-a", "palenque-96-glyphs"],
       "subcategory": "period_ending_ritual",
       "frequency": "medium"
+    },
+    {
+      "maya": "ho'tuun",
+      "spanish": "cuarto de k'atun (5 tunes = 1,800 días)",
+      "english": "quarter-k'atun (5 tuns)",
+      "confidence": "confirmed",
+      "etymology": "Compound: ho' (five) + tuun (360-day period); 1,800-day quarter of the k'atun; marks intermediate Period Ending ceremonies",
+      "usage_examples": ["ho'tuun quarter-k'atun stone dedication", "5-tun Period Ending ceremony"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "period_ending_ritual",
+      "frequency": "medium"
+    },
+    {
+      "maya": "oxlajun",
+      "spanish": "trece",
+      "english": "thirteen",
+      "confidence": "confirmed",
+      "etymology": "Compound: ox (three) + lajun (ten) = thirteen; the sacred number of heavenly levels; 13 day-names cycle in the Tzolk'in",
+      "cognates": { "yucatec": "oxlahun", "kiche": "oxlajuj" },
+      "usage_examples": ["oxlajun (13 sky levels)", "13.0.0.0.0 Creation date completion", "thirteen Oxlahun Ti' K'uh deities"],
+      "inscriptions": ["palenque-96-glyphs", "palenque-tablet-cross", "quirigua-stela-c"],
+      "subcategory": "sacred_number",
+      "frequency": "high"
+    },
+    {
+      "maya": "b'olon",
+      "spanish": "nueve (número sagrado)",
+      "english": "nine (sacred number)",
+      "confidence": "confirmed",
+      "etymology": "Proto-Mayan *b'olon 'nine'; the number of underworld levels and the Bolon Ti' K'uh (nine deities); a sacred count",
+      "cognates": { "yucatec": "b'olon", "kiche": "b'elejeb'" },
+      "usage_examples": ["b'olon ti' k'uh (nine deities)", "nine underworld levels", "b'olon ok te' (nine steps)"],
+      "inscriptions": ["palenque-tablet-cross", "vase-seven-gods"],
+      "subcategory": "sacred_number",
+      "frequency": "high"
+    },
+    {
+      "maya": "lajchan",
+      "spanish": "doce",
+      "english": "twelve",
+      "confidence": "confirmed",
+      "etymology": "Compound: laj (ten) + cha' (two) = twelve; used in Long Count dates and in the names of twelve-night ritual cycles",
+      "cognates": { "yucatec": "lajcha'", "kiche": "kab'lajuj" },
+      "usage_examples": ["lajchan in Long Count date contexts", "twelve-day ritual period"],
+      "inscriptions": ["copan-stela-a", "palenque-96-glyphs"],
+      "subcategory": "long_count_unit",
+      "frequency": "medium"
+    },
+    {
+      "maya": "tzolk'in",
+      "spanish": "calendario de 260 días",
+      "english": "260-day ritual calendar",
+      "confidence": "confirmed",
+      "etymology": "Modern K'iche' scholarly term; Classic Maya called it simply the 'count of days'; 13 numbers × 20 day names = 260 days",
+      "cognates": { "yucatec": "Tzolk'in", "kiche": "Chol Q'ij" },
+      "usage_examples": ["Calendar Round = Tzolk'in + Haab'", "ritual calendar divination"],
+      "inscriptions": ["copan-stela-a", "quirigua-stela-c", "palenque-96-glyphs"],
+      "subcategory": "ritual_calendar",
+      "frequency": "very_high"
+    },
+    {
+      "maya": "ajaw k'in",
+      "spanish": "señor del sol, fecha de fin de período",
+      "english": "lord of the sun, Period Ending date",
+      "confidence": "confirmed",
+      "etymology": "Compound: ajaw (lord) + k'in (sun/day); the 'lord sun' day name that falls at Period Endings in the Calendar Round",
+      "cognates": { "yucatec": "ajaw k'in" },
+      "usage_examples": ["4 Ajaw 8 Kumk'u (Creation date)", "Period Ending on Ajaw day"],
+      "inscriptions": ["palenque-96-glyphs", "copan-stela-a", "quirigua-stela-c"],
+      "subcategory": "calendar_date",
+      "frequency": "very_high"
     }
   ]
 }
