@@ -32,16 +32,34 @@ export default function DictionaryPage() {
     { key: 'time_periods', label: t.timePeriods },
   ]
 
-  const entries = useMemo(() => {
-    const items = dict[tab] || []
-    if (!search.trim()) return items
-    const q = search.toLowerCase()
-    return items.filter(e =>
-      e.maya?.toLowerCase().includes(q) ||
-      e.spanish?.toLowerCase().includes(q) ||
-      e.english?.toLowerCase().includes(q)
-    )
+  // When searching, search ALL categories and auto-switch to the one with results
+  const { entries, matchedTab } = useMemo(() => {
+    const q = search.trim().toLowerCase()
+    if (!q) {
+      return { entries: dict[tab] || [], matchedTab: null }
+    }
+
+    // Search across all categories
+    const allResults = []
+    let firstMatchTab = null
+    for (const { key } of TABS) {
+      const items = dict[key] || []
+      const matches = items.filter(e =>
+        e.maya?.toLowerCase().includes(q) ||
+        e.spanish?.toLowerCase().includes(q) ||
+        e.english?.toLowerCase().includes(q) ||
+        (e.value !== undefined && String(e.value).includes(q))
+      )
+      if (matches.length > 0) {
+        if (!firstMatchTab) firstMatchTab = key
+        allResults.push(...matches.map(e => ({ ...e, _category: key })))
+      }
+    }
+
+    return { entries: allResults, matchedTab: firstMatchTab }
   }, [tab, search])
+
+  const isSearching = search.trim().length > 0
 
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto">
@@ -60,7 +78,7 @@ export default function DictionaryPage() {
         {TABS.map(({ key, label }) => (
           <button
             key={key}
-            onClick={() => { setTab(key); setSearch('') }}
+            onClick={() => { setTab(key); if (search) setSearch('') }}
             className={`px-3 py-1.5 rounded-lg text-xs whitespace-nowrap transition-colors ${
               tab === key ? 'bg-maya-gold text-maya-bg font-bold' : 'bg-maya-surface text-maya-muted hover:bg-maya-border'
             }`}
@@ -70,7 +88,13 @@ export default function DictionaryPage() {
         ))}
       </div>
 
-      {tab === 'numerals' ? (
+      {isSearching && (
+        <div className="text-xs text-maya-muted mb-3">
+          {entries.length} {entries.length === 1 ? 'resultado' : 'resultados'}
+        </div>
+      )}
+
+      {!isSearching && tab === 'numerals' ? (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {entries.map(n => (
             <div key={n.value} className="bg-maya-surface rounded-lg p-3 border border-maya-border text-center">
