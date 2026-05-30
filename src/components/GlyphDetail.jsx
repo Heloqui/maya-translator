@@ -1,5 +1,5 @@
 'use client'
-import { useMode } from '@/lib/modes'
+import { useState } from 'react'
 import { useLang } from '@/lib/lang'
 import ConfidenceBadge from './ConfidenceBadge'
 import MayaGlyph from './MayaGlyph'
@@ -7,7 +7,7 @@ import SpeakButton from './SpeakButton'
 import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function GlyphDetail({ glyph, logograms }) {
-  const { mode } = useMode()
+  const [showTechnical, setShowTechnical] = useState(false)
   const { t } = useLang()
 
   if (!glyph) {
@@ -63,32 +63,27 @@ export default function GlyphDetail({ glyph, logograms }) {
           <ConfidenceBadge level={glyph.confidence} />
         </div>
 
-        {/* Estudiante + Investigador */}
-        {mode !== 'explorador' && (
-          <>
-            {glyph.frequency && (
-              <div>
-                <span className="text-maya-muted">{t.frequency}: </span>
-                <span>{glyph.frequency === 'very_high' ? t.veryHigh : glyph.frequency === 'high' ? t.high : glyph.frequency === 'medium' ? t.medium : t.low}</span>
-              </div>
-            )}
-            {glyph.variants && (
-              <div>
-                <span className="text-maya-muted">{t.variants}: </span>
-                <span>{glyph.variants}</span>
-              </div>
-            )}
-            {glyph.notes && (
-              <div>
-                <span className="text-maya-muted">{t.notes}: </span>
-                <span className="text-xs">{glyph.notes}</span>
-              </div>
-            )}
-          </>
+        {glyph.frequency && (
+          <div>
+            <span className="text-maya-muted">{t.frequency}: </span>
+            <span>{glyph.frequency === 'very_high' ? t.veryHigh : glyph.frequency === 'high' ? t.high : glyph.frequency === 'medium' ? t.medium : t.low}</span>
+          </div>
+        )}
+        {glyph.variants && (
+          <div>
+            <span className="text-maya-muted">{t.variants}: </span>
+            <span>{glyph.variants}</span>
+          </div>
+        )}
+        {glyph.notes && (
+          <div>
+            <span className="text-maya-muted">{t.notes}: </span>
+            <span className="text-xs">{glyph.notes}</span>
+          </div>
         )}
 
-        {/* Investigador only */}
-        {mode === 'investigador' && glyph.thompson?.length > 0 && (
+        {/* Thompson numbers — toggleable */}
+        {showTechnical && glyph.thompson?.length > 0 && (
           <div>
             <span className="text-maya-muted">Thompson: </span>
             <span className="text-blue-400">{glyph.thompson.join(', ')}</span>
@@ -104,13 +99,22 @@ export default function GlyphDetail({ glyph, logograms }) {
           </div>
         )}
 
-        {/* Sources — Investigador only */}
-        {mode === 'investigador' && (
+        {/* Sources — toggleable */}
+        {showTechnical && (
           <div className="border-t border-maya-border pt-3 mt-3">
             <div className="text-xs text-maya-muted mb-1">{t.sources}:</div>
             <div className="text-xs text-blue-400">Stuart 2013</div>
             <div className="text-xs text-blue-400">Thompson 1962</div>
           </div>
+        )}
+
+        {(glyph.thompson?.length > 0) && (
+          <button
+            onClick={() => setShowTechnical(!showTechnical)}
+            className="text-[10px] text-blue-400 hover:text-blue-300 mt-2"
+          >
+            {showTechnical ? '▼ Thompson' : '▶ Thompson'}
+          </button>
         )}
       </div>
     </div>

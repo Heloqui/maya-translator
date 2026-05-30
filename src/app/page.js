@@ -1,24 +1,33 @@
 'use client'
 import Link from 'next/link'
-import ModeSelector from '@/components/ModeSelector'
-import MayaGlyph from '@/components/MayaGlyph'
 import { getStats } from '@/lib/data'
 import { useLang } from '@/lib/lang'
 
 export default function Home() {
   const stats = getStats()
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   const CARDS = [
     { href: '/syllabary', icon: '𐊀', title: t.syllabary, desc: t.syllabaryDesc },
     { href: '/dictionary', icon: '📖', title: t.dictionary, desc: t.dictionaryDesc },
     { href: '/transliterator', icon: '✏️', title: t.transliterator, desc: t.transliteratorDesc },
     { href: '/calendar', icon: '📅', title: t.calendar, desc: t.calendarDesc },
+    { href: '/math', icon: '🔢', title: t.math, desc: t.mathDesc },
+    { href: '/name', icon: '✍️', title: t.yourName, desc: lang === 'es' ? 'Escribe tu nombre en glifos' : 'Write your name in glyphs' },
   ]
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12">
-      <MayaGlyph tNumber="T533" size="text-6xl" className="text-maya-gold mb-2" />
+      {/* Header with MA-YA in hieroglyphs */}
+      <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="w-24 h-24 bg-white rounded-2xl flex items-center justify-center p-3 shadow-lg shadow-maya-gold/10">
+          <img src="/glyphs/084_ma.png" alt="ma" className="max-w-full max-h-full object-contain" />
+        </div>
+        <div className="w-24 h-24 bg-white rounded-2xl flex items-center justify-center p-3 shadow-lg shadow-maya-gold/10">
+          <img src="/glyphs/047_ya.png" alt="ya" className="max-w-full max-h-full object-contain" />
+        </div>
+      </div>
+      <div className="text-xs text-maya-muted mb-2 tracking-widest">ma — ya</div>
       <h1 className="text-3xl md:text-4xl font-bold text-maya-gold tracking-[0.2em] mb-2">
         {t.siteTitle}
       </h1>
@@ -26,9 +35,7 @@ export default function Home() {
         {t.siteSubtitle}
       </p>
 
-      <ModeSelector />
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10 max-w-lg w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 max-w-2xl w-full">
         {CARDS.map(({ href, icon, title, desc }) => (
           <Link
             key={href}

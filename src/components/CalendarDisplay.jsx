@@ -1,5 +1,4 @@
 'use client'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import DotBarNumeral from './DotBarNumeral'
 import { thompsonToChar } from '@/lib/glyphs'
@@ -34,7 +33,6 @@ function CalendarGlyph({ name, thompson }) {
 }
 
 export default function CalendarDisplay({ result }) {
-  const { mode } = useMode()
   const { t } = useLang()
 
   if (!result) return null
@@ -47,23 +45,21 @@ export default function CalendarDisplay({ result }) {
       <div className="bg-maya-surface rounded-xl p-4 border border-maya-border">
         <div className="text-xs text-maya-muted mb-2">{t.longCount}</div>
         <div className="text-2xl font-bold text-maya-gold tracking-wider">{longCountStr}</div>
-        {mode !== 'explorador' && (
-          <div className="flex gap-3 mt-3">
-            {[
-              { label: "B'ak'tun", val: longCount.baktun },
-              { label: "K'atun", val: longCount.katun },
-              { label: 'Tun', val: longCount.tun },
-              { label: 'Winal', val: longCount.winal },
-              { label: "K'in", val: longCount.kin },
-            ].map(({ label, val }) => (
-              <div key={label} className="text-center">
-                <DotBarNumeral value={val} />
-                <div className="text-[10px] text-maya-muted mt-1">{label}</div>
-                <div className="text-xs font-bold">{val}</div>
-              </div>
-            ))}
-          </div>
-        )}
+        <div className="flex gap-3 mt-3">
+          {[
+            { label: "B'ak'tun", val: longCount.baktun },
+            { label: "K'atun", val: longCount.katun },
+            { label: 'Tun', val: longCount.tun },
+            { label: 'Winal', val: longCount.winal },
+            { label: "K'in", val: longCount.kin },
+          ].map(({ label, val }) => (
+            <div key={label} className="text-center">
+              <DotBarNumeral value={val} />
+              <div className="text-[10px] text-maya-muted mt-1">{label}</div>
+              <div className="text-xs font-bold">{val}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Tzolk'in */}
@@ -81,9 +77,7 @@ export default function CalendarDisplay({ result }) {
               <span className="text-sm text-maya-muted">({tzolkin.sign.yucatec})</span>
             </div>
             <div className="text-sm text-maya-muted mt-1">{tzolkin.sign.meaning}</div>
-            {mode === 'investigador' && (
-              <div className="text-xs text-blue-400 mt-1">Thompson: {tzolkin.sign.thompson}</div>
-            )}
+            <div className="text-xs text-blue-400 mt-1">Thompson: {tzolkin.sign.thompson}</div>
           </div>
         </div>
       </div>
@@ -102,9 +96,7 @@ export default function CalendarDisplay({ result }) {
               <span className="mx-2">{haab.month.name}</span>
             </div>
             <div className="text-sm text-maya-muted mt-1">{haab.month.meaning}</div>
-            {mode === 'investigador' && (
-              <div className="text-xs text-blue-400 mt-1">Thompson: {haab.month.thompson}</div>
-            )}
+            <div className="text-xs text-blue-400 mt-1">Thompson: {haab.month.thompson}</div>
           </div>
         </div>
       </div>
@@ -138,11 +130,9 @@ export default function CalendarDisplay({ result }) {
         </div>
       </div>
 
-      {mode === 'investigador' && (
-        <div className="text-xs text-maya-muted bg-maya-deep rounded-lg p-3">
-          Constante de correlaci&oacute;n GMT: 584283 (Goodman-Mart&iacute;nez-Thompson)
-        </div>
-      )}
+      <div className="text-xs text-maya-muted bg-maya-deep rounded-lg p-3">
+        Constante de correlaci&oacute;n GMT: 584283 (Goodman-Mart&iacute;nez-Thompson)
+      </div>
     </div>
   )
 }

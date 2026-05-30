@@ -1,13 +1,11 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import LangToggle from './LangToggle'
 
 export default function Sidebar() {
   const pathname = usePathname()
-  const { mode, modes } = useMode()
   const { t } = useLang()
 
   const navItems = [
@@ -41,9 +39,6 @@ export default function Sidebar() {
         })}
         <div className="flex-1" />
         <LangToggle />
-        <div className="text-[10px] text-maya-muted text-center leading-tight mt-2">
-          {modes[mode]?.icon}<br />{modes[mode]?.label.slice(0, 3).toUpperCase()}
-        </div>
       </nav>
 
       {/* Mobile bottom tab bar */}

@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import { getSyllabaryGrid } from '@/lib/data'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import SyllabaryGrid from '@/components/SyllabaryGrid'
 import GlyphDetail from '@/components/GlyphDetail'
@@ -10,7 +9,6 @@ const syllabaryData = getSyllabaryGrid()
 
 export default function SyllabaryPage() {
   const [selected, setSelected] = useState(null)
-  const { mode } = useMode()
   const { t } = useLang()
 
   return (
@@ -21,8 +19,7 @@ export default function SyllabaryPage() {
           <div>
             <h1 className="text-xl font-bold text-maya-gold">{t.syllabaryTitle}</h1>
             <p className="text-xs text-maya-muted">
-              {t.mode} {t[mode]}
-              {' · '}{t.selectGlyph}
+              {t.selectGlyph}
             </p>
           </div>
         </div>

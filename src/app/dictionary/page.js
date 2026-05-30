@@ -1,7 +1,6 @@
 'use client'
 import { useState, useMemo } from 'react'
 import { getDictionary } from '@/lib/data'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import DictionaryEntry from '@/components/DictionaryEntry'
 import DotBarNumeral from '@/components/DotBarNumeral'
@@ -11,7 +10,6 @@ const dict = getDictionary()
 export default function DictionaryPage() {
   const [tab, setTab] = useState('titles_and_ranks')
   const [search, setSearch] = useState('')
-  const { mode } = useMode()
   const { t } = useLang()
 
   const TABS = [
@@ -70,9 +68,7 @@ export default function DictionaryPage() {
               <DotBarNumeral value={n.value} />
               <div className="font-bold text-maya-gold mt-2">{n.value}</div>
               <div className="text-sm">{n.maya}</div>
-              {mode !== 'explorador' && (
-                <div className="text-xs text-maya-muted mt-1">{n.glyph_system}</div>
-              )}
+              <div className="text-xs text-maya-muted mt-1">{n.glyph_system}</div>
             </div>
           ))}
         </div>
@@ -82,7 +78,7 @@ export default function DictionaryPage() {
             <p className="text-maya-muted text-sm text-center py-8">{t.noResults}</p>
           )}
           {entries.map((entry, i) => (
-            <DictionaryEntry key={i} entry={entry} mode={mode} />
+            <DictionaryEntry key={i} entry={entry} />
           ))}
         </div>
       )}

@@ -1,6 +1,5 @@
 'use client'
 import { useState, useMemo } from 'react'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import DotBarNumeral from '@/components/DotBarNumeral'
 import { getDictionary } from '@/lib/data'
@@ -292,7 +291,6 @@ export default function MathPage() {
   const [numB, setNumB] = useState('125')
   const [operator, setOperator] = useState('+')
   const [showGuide, setShowGuide] = useState(false)
-  const { mode } = useMode()
   const { lang, t } = useLang()
 
   // Section A: Converter
@@ -347,11 +345,9 @@ export default function MathPage() {
               placeholder="Escribe un número..."
               className="w-full bg-maya-deep border border-maya-border rounded-lg px-4 py-3 text-2xl text-maya-gold font-bold focus:outline-none focus:border-maya-gold"
             />
-            {mode !== 'explorador' && (
-              <div className="text-xs text-maya-muted mt-1">
-                Vigesimal: <span className="text-maya-gold font-mono">{vigesimalStr}</span>
-              </div>
-            )}
+            <div className="text-xs text-maya-muted mt-1">
+              Vigesimal: <span className="text-maya-gold font-mono">{vigesimalStr}</span>
+            </div>
           </div>
         </div>
 
@@ -375,15 +371,13 @@ export default function MathPage() {
           </div>
         </div>
 
-        {mode !== 'explorador' && (
-          <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3 text-center">
-            {vigesimalDigits && vigesimalDigits.map((d, i) => {
-              const power = vigesimalDigits.length - 1 - i
-              const multiplier = Math.pow(20, power)
-              return `${d}×${multiplier.toLocaleString()}`
-            }).join(' + ')} = {decNum.toLocaleString()}
-          </div>
-        )}
+        <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3 text-center">
+          {vigesimalDigits && vigesimalDigits.map((d, i) => {
+            const power = vigesimalDigits.length - 1 - i
+            const multiplier = Math.pow(20, power)
+            return `${d}×${multiplier.toLocaleString()}`
+          }).join(' + ')} = {decNum.toLocaleString()}
+        </div>
       </div>
 
       {/* Section B: Calculator */}
@@ -462,11 +456,9 @@ export default function MathPage() {
           </div>
         </div>
 
-        {mode !== 'explorador' && (
-          <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3">
-            <span className="text-maya-gold">{lang === 'es' ? 'Sistema vigesimal:' : 'Vigesimal system:'}</span> {lang === 'es' ? 'Cada posición vale 20 veces más que la anterior. Cuando un dígito supera 19, se "acarrea" 1 a la posición superior (como pasar de 9 a 10 en decimal, pero aquí de 19 a 1.0 en vigesimal).' : 'Each position is worth 20 times more than the previous one. When a digit exceeds 19, carry 1 to the upper position (like going from 9 to 10 in decimal, but here from 19 to 1.0 in vigesimal).'}
-          </div>
-        )}
+        <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3">
+          <span className="text-maya-gold">{lang === 'es' ? 'Sistema vigesimal:' : 'Vigesimal system:'}</span> {lang === 'es' ? 'Cada posición vale 20 veces más que la anterior. Cuando un dígito supera 19, se "acarrea" 1 a la posición superior (como pasar de 9 a 10 en decimal, pero aquí de 19 a 1.0 en vigesimal).' : 'Each position is worth 20 times more than the previous one. When a digit exceeds 19, carry 1 to the upper position (like going from 9 to 10 in decimal, but here from 19 to 1.0 in vigesimal).'}
+        </div>
       </div>
 
       {/* Section C: Reference Grid */}
@@ -474,9 +466,7 @@ export default function MathPage() {
         <h2 className="text-lg font-bold text-maya-gold mb-3">{t.numeralReference}</h2>
         <p className="text-xs text-maya-muted mb-4">
           ● = 1 &nbsp;&nbsp; ▬ = 5 &nbsp;&nbsp;
-          {mode !== 'explorador' && (
-            <span>{lang === 'es' ? 'El cero maya (concha) fue inventado siglos antes que en Europa y Asia' : 'Maya zero (shell) was invented centuries before Europe and Asia'}</span>
-          )}
+          <span>{lang === 'es' ? 'El cero maya (concha) fue inventado siglos antes que en Europa y Asia' : 'Maya zero (shell) was invented centuries before Europe and Asia'}</span>
         </p>
         <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-10 gap-2">
           {dict.numerals.map(n => (
@@ -490,13 +480,11 @@ export default function MathPage() {
           ))}
         </div>
 
-        {mode === 'investigador' && (
-          <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3">
-            {lang === 'es'
-              ? 'Los mayas usaban un sistema posicional vigesimal (base 20) con un verdadero concepto de cero. Para el calendario, la tercera posición (Tun) solo llega a 17 (18×20=360 ≈ 1 año solar). En matemáticas puras, todas las posiciones van de 0 a 19.'
-              : 'The Maya used a positional vigesimal (base 20) system with a true concept of zero. For the calendar, the third position (Tun) only goes up to 17 (18×20=360 ≈ 1 solar year). In pure mathematics, all positions range from 0 to 19.'}
-          </div>
-        )}
+        <div className="text-xs text-maya-muted mt-4 bg-maya-deep rounded-lg p-3">
+          {lang === 'es'
+            ? 'Los mayas usaban un sistema posicional vigesimal (base 20) con un verdadero concepto de cero. Para el calendario, la tercera posición (Tun) solo llega a 17 (18×20=360 ≈ 1 año solar). En matemáticas puras, todas las posiciones van de 0 a 19.'
+            : 'The Maya used a positional vigesimal (base 20) system with a true concept of zero. For the calendar, the third position (Tun) only goes up to 17 (18×20=360 ≈ 1 solar year). In pure mathematics, all positions range from 0 to 19.'}
+        </div>
       </div>
     </div>
   )

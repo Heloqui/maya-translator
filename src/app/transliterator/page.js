@@ -1,6 +1,5 @@
 'use client'
 import { useState, useMemo } from 'react'
-import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import { transliterate, reverseLookup } from '@/lib/transliterate'
 import ConfidenceBadge from '@/components/ConfidenceBadge'
@@ -12,7 +11,6 @@ export default function TransliteratorPage() {
   const [input, setInput] = useState('')
   const [reverse, setReverse] = useState(false)
   const [reverseQuery, setReverseQuery] = useState('')
-  const { mode } = useMode()
   const { t } = useLang()
 
   const result = useMemo(() => transliterate(input), [input])
@@ -99,7 +97,7 @@ export default function TransliteratorPage() {
                     <div key={i} className={`bg-maya-deep rounded-lg px-3 py-2 text-center ${!s.found ? 'border border-red-500/50' : ''}`}>
                       <div className="font-bold">{s.value}</div>
                       <ConfidenceBadge level={s.confidence} showLabel={false} />
-                      {mode === 'investigador' && s.thompson.length > 0 && (
+                      {s.thompson.length > 0 && (
                         <div className="text-[10px] text-blue-400 mt-1">{s.thompson.join(', ')}</div>
                       )}
                     </div>
@@ -107,7 +105,7 @@ export default function TransliteratorPage() {
                 </div>
               </div>
 
-              {mode !== 'explorador' && result.synharmony && (
+              {result.synharmony && (
                 <div className="text-xs text-maya-muted bg-maya-deep rounded-lg p-3">
                   <span className="text-maya-gold">{t.cvcRule}</span> {t.cvcExplain}
                 </div>
@@ -120,7 +118,7 @@ export default function TransliteratorPage() {
                     <span className="font-bold text-maya-gold">{result.dictMatch.maya}</span>
                     <span className="text-maya-muted mx-2">→</span>
                     <span>{result.dictMatch.spanish}</span>
-                    {mode !== 'explorador' && result.dictMatch.english && (
+                    {result.dictMatch.english && (
                       <span className="text-maya-muted text-sm ml-2">({result.dictMatch.english})</span>
                     )}
                   </div>

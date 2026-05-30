@@ -1,5 +1,4 @@
 import './globals.css'
-import { ModeProvider } from '@/lib/modes'
 import { LangProvider } from '@/lib/lang'
 import Sidebar from '@/components/Sidebar'
 
@@ -25,14 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="min-h-screen bg-maya-bg text-maya-text antialiased">
-        <ModeProvider>
-          <LangProvider>
-            <Sidebar />
-            <main className="md:ml-14 pb-16 md:pb-0">
-              {children}
-            </main>
-          </LangProvider>
-        </ModeProvider>
+        <LangProvider>
+          <Sidebar />
+          <main className="md:ml-14 pb-16 md:pb-0">
+            {children}
+          </main>
+        </LangProvider>
       </body>
     </html>
   )

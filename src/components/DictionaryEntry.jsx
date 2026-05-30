@@ -3,7 +3,7 @@ import ConfidenceBadge from './ConfidenceBadge'
 import SpeakButton from './SpeakButton'
 import { getGlyphImage } from '@/lib/glyph-images'
 
-export default function DictionaryEntry({ entry, mode }) {
+export default function DictionaryEntry({ entry }) {
   const imgPath = getGlyphImage(entry.maya)
 
   return (
@@ -24,16 +24,14 @@ export default function DictionaryEntry({ entry, mode }) {
               <span className="font-bold text-maya-gold">{entry.maya}</span>
               <span className="text-maya-muted mx-2">→</span>
               <span>{entry.spanish}</span>
-              {mode !== 'explorador' && entry.english && (
+              {entry.english && (
                 <span className="text-maya-muted text-sm ml-2">({entry.english})</span>
               )}
             </div>
             <SpeakButton text={entry.maya} mode="word" size="small" />
-            {mode !== 'explorador' && (
-              <ConfidenceBadge level={entry.confidence} showLabel={false} />
-            )}
+            <ConfidenceBadge level={entry.confidence} showLabel={false} />
           </div>
-          {mode === 'investigador' && entry.notes && (
+          {entry.notes && (
             <p className="text-xs text-maya-muted mt-1">{entry.notes}</p>
           )}
         </div>
