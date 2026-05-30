@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { href: '/dictionary', icon: '📖', label: 'Diccionario' },
   { href: '/transliterator', icon: '✏️', label: 'Transliterador' },
   { href: '/calendar', icon: '📅', label: 'Calendario' },
+  { href: '/math', icon: '🔢', label: 'Matemáticas' },
 ]
 
 export default function Sidebar() {
