@@ -17,6 +17,7 @@ export default function Home() {
     { href: '/inscriptions', icon: '🏛️', title: t.inscriptions, desc: t.inscriptionsDesc },
     { href: '/sites', icon: '🗺️', title: t.sites, desc: t.sitesDesc },
     { href: '/quiz', icon: '❓', title: t.quiz, desc: t.quizDesc },
+    { href: '/birthday', icon: '🎂', title: t.birthday, desc: t.birthdayDesc },
   ]
 
   return (

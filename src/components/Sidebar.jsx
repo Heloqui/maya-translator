@@ -19,6 +19,7 @@ export default function Sidebar() {
     { href: '/inscriptions', icon: '🏛️', label: t.inscriptions },
     { href: '/sites', icon: '🗺️', label: t.sites },
     { href: '/quiz', icon: '❓', label: t.quiz },
+    { href: '/birthday', icon: '🎂', label: t.birthday },
   ]
 
   return (

@@ -164,6 +164,20 @@ const STRINGS = {
     toponyms: 'Topónimos',
     bodyParts: 'Cuerpo',
     timePeriods: 'Tiempo',
+    // Birthday
+    birthday: 'Tu Día Maya',
+    birthdayDesc: 'Descubre tu fecha de nacimiento maya',
+    birthdayTitle: '¿Qué día naciste en el calendario Maya?',
+    birthdaySubtitle: 'Descubre el significado de tu día de nacimiento en el calendario sagrado',
+    selectBirthdate: 'Selecciona tu fecha de nacimiento',
+    yourMayaBirthday: 'Tu cumpleaños maya',
+    yourDaySign: 'Tu signo del día',
+    meaning: 'Significado',
+    shareResult: 'Compartir',
+    copiedToClipboard: '¡Copiado!',
+    bornOn: 'Nací el',
+    discoverYours: 'Descubre tu día maya',
+    seeFullCalendar: 'Ver calendario completo',
   },
   en: {
     siteTitle: 'MAYA GLYPHS',
@@ -316,6 +330,20 @@ const STRINGS = {
     toponyms: 'Toponyms',
     bodyParts: 'Body',
     timePeriods: 'Time',
+    // Birthday
+    birthday: 'Your Maya Day',
+    birthdayDesc: 'Discover your Maya birth date',
+    birthdayTitle: 'What day were you born in the Maya calendar?',
+    birthdaySubtitle: 'Discover the meaning of your birthday in the sacred calendar',
+    selectBirthdate: 'Select your birth date',
+    yourMayaBirthday: 'Your Maya birthday',
+    yourDaySign: 'Your day sign',
+    meaning: 'Meaning',
+    shareResult: 'Share',
+    copiedToClipboard: 'Copied!',
+    bornOn: 'I was born on',
+    discoverYours: 'Discover your Maya day',
+    seeFullCalendar: 'See full calendar',
   }
 }
 
