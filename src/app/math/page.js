@@ -354,7 +354,7 @@ export default function MathPage() {
 
         {/* Vertical Maya numeral display (bottom = ones, top = highest) */}
         <div className="flex justify-center">
-          <div className="flex flex-col-reverse items-center gap-2">
+          <div className="flex flex-col items-center gap-2">
             {vigesimalDigits && vigesimalDigits.map((digit, i) => {
               const posIdx = vigesimalDigits.length - 1 - i
               return (
@@ -385,13 +385,13 @@ export default function MathPage() {
       <div className="bg-maya-surface rounded-xl p-5 border border-maya-border mb-6">
         <h2 className="text-lg font-bold text-maya-gold mb-3">{t.calculator}</h2>
 
-        <div className="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 items-start mb-4">
+        <div className="flex flex-wrap items-center gap-2 mb-4">
           <input
             type="number"
             value={numA}
             onChange={e => setNumA(e.target.value)}
             min="0"
-            className="bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
+            className="flex-1 min-w-[80px] bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
           />
           <select
             value={operator}
@@ -406,20 +406,20 @@ export default function MathPage() {
             value={numB}
             onChange={e => setNumB(e.target.value)}
             min="0"
-            className="bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
+            className="flex-1 min-w-[80px] bg-maya-deep border border-maya-border rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center focus:outline-none focus:border-maya-gold"
           />
-          <div className="text-xl text-maya-gold font-bold py-2">=</div>
-          <div className="bg-maya-deep border border-maya-gold rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center">
+          <div className="text-xl text-maya-gold font-bold">=</div>
+          <div className="flex-1 min-w-[80px] bg-maya-deep border border-maya-gold rounded-lg px-3 py-2 text-lg text-maya-gold font-bold text-center">
             {calcResult.toLocaleString()}
           </div>
         </div>
 
         {/* Visual calculation with dot-bar numerals */}
-        <div className="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-3 items-start">
+        <div className="flex items-start justify-center gap-2 sm:gap-4 overflow-x-auto">
           {/* Number A */}
-          <div className="flex flex-col-reverse items-center gap-1">
-            {padded(digitsA).slice().reverse().map((d, i) => (
-              <div key={i} className="w-12 h-12 bg-white rounded flex items-center justify-center">
+          <div className="flex flex-col items-center gap-1 flex-shrink-0">
+            {padded(digitsA).map((d, i) => (
+              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded flex items-center justify-center">
                 <DotBarNumeral value={d} />
               </div>
             ))}
@@ -427,14 +427,14 @@ export default function MathPage() {
           </div>
 
           {/* Operator */}
-          <div className="flex items-center justify-center pt-4">
-            <span className="text-2xl text-maya-gold font-bold">{operator === '+' ? '+' : '−'}</span>
+          <div className="flex items-center justify-center pt-4 flex-shrink-0">
+            <span className="text-xl sm:text-2xl text-maya-gold font-bold">{operator === '+' ? '+' : '−'}</span>
           </div>
 
           {/* Number B */}
-          <div className="flex flex-col-reverse items-center gap-1">
-            {padded(digitsB).slice().reverse().map((d, i) => (
-              <div key={i} className="w-12 h-12 bg-white rounded flex items-center justify-center">
+          <div className="flex flex-col items-center gap-1 flex-shrink-0">
+            {padded(digitsB).map((d, i) => (
+              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded flex items-center justify-center">
                 <DotBarNumeral value={d} />
               </div>
             ))}
@@ -442,14 +442,14 @@ export default function MathPage() {
           </div>
 
           {/* Equals */}
-          <div className="flex items-center justify-center pt-4">
-            <span className="text-2xl text-maya-gold font-bold">=</span>
+          <div className="flex items-center justify-center pt-4 flex-shrink-0">
+            <span className="text-xl sm:text-2xl text-maya-gold font-bold">=</span>
           </div>
 
           {/* Result */}
-          <div className="flex flex-col-reverse items-center gap-1">
-            {padded(digitsResult).slice().reverse().map((d, i) => (
-              <div key={i} className="w-12 h-12 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
+          <div className="flex flex-col items-center gap-1 flex-shrink-0">
+            {padded(digitsResult).map((d, i) => (
+              <div key={i} className="w-11 h-11 sm:w-12 sm:h-12 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
                 <DotBarNumeral value={d} />
               </div>
             ))}
