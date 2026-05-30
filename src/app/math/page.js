@@ -51,11 +51,233 @@ function fromPureVigesimal(digits) {
   return result
 }
 
+function GuideSection() {
+  return (
+    <div className="bg-maya-surface rounded-xl p-5 border border-maya-border mb-6">
+      <h2 className="text-lg font-bold text-maya-gold mb-4">Cómo leer los números mayas</h2>
+
+      {/* Step 1: The three symbols */}
+      <div className="mb-6">
+        <h3 className="text-sm font-bold text-maya-text mb-3">1. Solo tres símbolos</h3>
+        <p className="text-sm text-maya-muted mb-3">
+          A diferencia de nuestro sistema que usa 10 dígitos (0-9), los mayas solo necesitaban tres símbolos para representar cualquier número:
+        </p>
+        <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="bg-white rounded-lg p-3 mb-2 flex justify-center">
+              <DotBarNumeral value={0} />
+            </div>
+            <div className="text-maya-gold font-bold">Concha</div>
+            <div className="text-xs text-maya-muted">= 0 (cero)</div>
+          </div>
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="bg-white rounded-lg p-3 mb-2 flex justify-center">
+              <DotBarNumeral value={1} />
+            </div>
+            <div className="text-maya-gold font-bold">Punto</div>
+            <div className="text-xs text-maya-muted">= 1 (uno)</div>
+          </div>
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="bg-white rounded-lg p-3 mb-2 flex justify-center">
+              <DotBarNumeral value={5} />
+            </div>
+            <div className="text-maya-gold font-bold">Barra</div>
+            <div className="text-xs text-maya-muted">= 5 (cinco)</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 2: Combining 0-19 */}
+      <div className="mb-6">
+        <h3 className="text-sm font-bold text-maya-text mb-3">2. Combinando puntos y barras (0 a 19)</h3>
+        <p className="text-sm text-maya-muted mb-3">
+          Combinando puntos (encima) y barras (debajo) se forman los números del 0 al 19. Los puntos van arriba, las barras abajo. Máximo 4 puntos y 3 barras.
+        </p>
+        <div className="grid grid-cols-5 sm:grid-cols-10 gap-2 max-w-2xl mx-auto">
+          {[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].map(n => (
+            <div key={n} className="bg-maya-deep rounded p-1.5 text-center">
+              <div className="bg-white rounded p-1 mb-1 flex justify-center min-h-[32px] items-center">
+                <DotBarNumeral value={n} />
+              </div>
+              <div className="text-xs text-maya-gold font-bold">{n}</div>
+            </div>
+          ))}
+        </div>
+        <div className="text-xs text-maya-muted mt-3 bg-maya-deep rounded-lg p-3">
+          <span className="text-maya-gold">Ejemplo:</span> El número 13 = 2 barras (5+5=10) + 3 puntos (1+1+1=3) = 13
+        </div>
+      </div>
+
+      {/* Step 3: Vertical positions */}
+      <div className="mb-6">
+        <h3 className="text-sm font-bold text-maya-text mb-3">3. Se leen de abajo hacia arriba</h3>
+        <p className="text-sm text-maya-muted mb-3">
+          Para números mayores a 19, los mayas apilaban los símbolos en columnas verticales. Cada nivel vale 20 veces más que el anterior (como nosotros multiplicamos por 10 en cada posición decimal).
+        </p>
+        <div className="flex justify-center">
+          <div className="bg-maya-deep rounded-xl p-4 border border-maya-border">
+            <div className="flex items-start gap-6">
+              {/* Our system */}
+              <div className="text-center">
+                <div className="text-xs text-maya-muted mb-2">Nuestro sistema (base 10)</div>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">centenas</span>
+                    <span className="w-10 h-10 bg-maya-surface rounded flex items-center justify-center text-lg font-bold text-maya-text">3</span>
+                    <span className="text-xs text-maya-muted">×100</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">decenas</span>
+                    <span className="w-10 h-10 bg-maya-surface rounded flex items-center justify-center text-lg font-bold text-maya-text">6</span>
+                    <span className="text-xs text-maya-muted">×10</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">unidades</span>
+                    <span className="w-10 h-10 bg-maya-surface rounded flex items-center justify-center text-lg font-bold text-maya-text">5</span>
+                    <span className="text-xs text-maya-muted">×1</span>
+                  </div>
+                </div>
+                <div className="text-sm font-bold text-maya-text mt-2">= 365</div>
+              </div>
+
+              <div className="flex items-center pt-8">
+                <span className="text-2xl text-maya-gold">→</span>
+              </div>
+
+              {/* Maya system */}
+              <div className="text-center">
+                <div className="text-xs text-maya-muted mb-2">Sistema maya (base 20)</div>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">×400</span>
+                    <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                      <DotBarNumeral value={0} />
+                    </div>
+                    <span className="text-xs text-maya-muted">= 0</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">×20</span>
+                    <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                      <DotBarNumeral value={18} />
+                    </div>
+                    <span className="text-xs text-maya-muted">= 360</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-maya-muted w-16 text-right">×1</span>
+                    <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                      <DotBarNumeral value={5} />
+                    </div>
+                    <span className="text-xs text-maya-muted">= 5</span>
+                  </div>
+                </div>
+                <div className="text-sm font-bold text-maya-gold mt-2">= 365</div>
+              </div>
+            </div>
+            <div className="text-xs text-maya-muted mt-3 text-center">
+              365 = (0 × 400) + (18 × 20) + (5 × 1)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 4: The zero */}
+      <div className="mb-6">
+        <h3 className="text-sm font-bold text-maya-text mb-3">4. El cero maya: un invento revolucionario</h3>
+        <p className="text-sm text-maya-muted mb-3">
+          Los mayas inventaron el concepto del cero de forma independiente, siglos antes de que llegara a Europa desde la India. Lo representaban como una concha (o flor). Sin el cero, no podrían distinguir entre 1 (un punto), 20 (un punto con concha debajo) y 400 (un punto con dos conchas debajo).
+        </p>
+        <div className="flex justify-center gap-6">
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="space-y-1 flex flex-col items-center">
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={1} />
+              </div>
+            </div>
+            <div className="text-maya-gold font-bold mt-2">1</div>
+            <div className="text-[10px] text-maya-muted">jun</div>
+          </div>
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="space-y-1 flex flex-col items-center">
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={1} />
+              </div>
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={0} />
+              </div>
+            </div>
+            <div className="text-maya-gold font-bold mt-2">20</div>
+            <div className="text-[10px] text-maya-muted">jun k&apos;al</div>
+          </div>
+          <div className="bg-maya-deep rounded-lg p-3 text-center border border-maya-border">
+            <div className="space-y-1 flex flex-col items-center">
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={1} />
+              </div>
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={0} />
+              </div>
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={0} />
+              </div>
+            </div>
+            <div className="text-maya-gold font-bold mt-2">400</div>
+            <div className="text-[10px] text-maya-muted">jun b&apos;ak&apos;</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 5: How to add */}
+      <div>
+        <h3 className="text-sm font-bold text-maya-text mb-3">5. Cómo sumar en maya</h3>
+        <p className="text-sm text-maya-muted mb-3">
+          Se suma posición por posición, de abajo hacia arriba. Si el resultado en una posición supera 19, se resta 20 y se &quot;acarrea&quot; 1 a la posición de arriba (igual que al sumar 7+5=12 en decimal: escribes 2 y llevas 1).
+        </p>
+        <div className="bg-maya-deep rounded-lg p-4 border border-maya-border">
+          <div className="flex items-center justify-center gap-4">
+            {/* 7 */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={7} />
+              </div>
+              <div className="text-xs text-maya-muted mt-1">7</div>
+            </div>
+            <span className="text-xl text-maya-gold font-bold">+</span>
+            {/* 15 */}
+            <div className="text-center">
+              <div className="w-12 h-12 bg-white rounded flex items-center justify-center">
+                <DotBarNumeral value={15} />
+              </div>
+              <div className="text-xs text-maya-muted mt-1">15</div>
+            </div>
+            <span className="text-xl text-maya-gold font-bold">=</span>
+            {/* Result: 22 = 1.2 in vigesimal */}
+            <div className="text-center">
+              <div className="space-y-1 flex flex-col items-center">
+                <div className="w-12 h-12 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
+                  <DotBarNumeral value={1} />
+                </div>
+                <div className="w-12 h-12 bg-maya-gold/20 border border-maya-gold rounded flex items-center justify-center">
+                  <DotBarNumeral value={2} />
+                </div>
+              </div>
+              <div className="text-xs text-maya-gold font-bold mt-1">22</div>
+            </div>
+          </div>
+          <div className="text-xs text-maya-muted mt-3 text-center">
+            7 + 15 = 22 → en vigesimal: 1 veintena + 2 unidades → se escribe con un punto arriba (×20) y dos puntos abajo (×1)
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function MathPage() {
   const [decimal, setDecimal] = useState('365')
   const [numA, setNumA] = useState('400')
   const [numB, setNumB] = useState('125')
   const [operator, setOperator] = useState('+')
+  const [showGuide, setShowGuide] = useState(false)
   const { mode } = useMode()
 
   // Section A: Converter
@@ -84,7 +306,17 @@ export default function MathPage() {
   return (
     <div className="p-4 md:p-6 max-w-4xl mx-auto">
       <h1 className="text-xl font-bold text-maya-gold mb-1">Matemáticas Mayas</h1>
-      <p className="text-xs text-maya-muted mb-6">Sistema vigesimal (base 20) con el cero</p>
+      <p className="text-xs text-maya-muted mb-4">Sistema vigesimal (base 20) con el cero</p>
+
+      {/* Guide toggle */}
+      <button
+        onClick={() => setShowGuide(!showGuide)}
+        className="mb-6 px-4 py-2 bg-maya-gold text-maya-bg rounded-lg text-sm font-bold hover:bg-maya-gold-dim transition-colors"
+      >
+        {showGuide ? 'Ocultar guía' : '📖 Cómo leer los números mayas'}
+      </button>
+
+      {showGuide && <GuideSection />}
 
       {/* Section A: Converter */}
       <div className="bg-maya-surface rounded-xl p-5 border border-maya-border mb-6">
