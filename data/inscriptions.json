@@ -263,6 +263,17 @@
             "es": "Fecha del ritual de sangría registrada en el dintel",
             "en": "Date of the bloodletting ritual recorded on the lintel"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T533", "T740", "T116"],
+          "transliteration": "K'UHUL-PA'-CHAN-AJAW",
+          "transcription": "k'uhul pa' chan ajaw",
+          "translation": { "es": "señor sagrado de Yaxchilán", "en": "holy lord of Yaxchilán" },
+          "notes": {
+            "es": "Pa' Chan es el glifo emblema de Yaxchilán ('hendidura del cielo'); título completo del gobernante en el contexto ritual del dintel",
+            "en": "Pa' Chan is Yaxchilán's emblem glyph ('split sky'); full royal title of the ruler in the lintel's ritual context"
+          }
         }
       ],
       "source": "Schele & Freidel, 1990; Tate, C. 1992",
@@ -340,6 +351,17 @@
           "notes": {
             "es": "Verbo dinástico que establece la sucesión legítima en la línea real",
             "en": "Dynastic verb establishing legitimate succession in the royal line"
+          }
+        },
+        {
+          "position": "A4",
+          "glyphs": ["T528", "T178", "T74"],
+          "transliteration": "BOLON-K'ATUN-AJAW",
+          "transcription": "bolon k'atun ajaw",
+          "translation": { "es": "señor de nueve k'atunes", "en": "lord of nine k'atuns" },
+          "notes": {
+            "es": "Título que denota longevidad de gobierno; Copán celebraba a gobernantes que completaban múltiples períodos de 20 años",
+            "en": "Title denoting length of rule; Copán celebrated rulers who completed multiple 20-year periods"
           }
         }
       ],
@@ -508,6 +530,17 @@
             "es": "Título que K'ahk' Tiliw asumió después de ejecutar al rey de Copán",
             "en": "Title K'ahk' Tiliw assumed after executing the king of Copán"
           }
+        },
+        {
+          "position": "A4",
+          "glyphs": ["T506", "T181", "T116"],
+          "transliteration": "BOLON-OK-TE'",
+          "transcription": "bolon ok te'",
+          "translation": { "es": "Nueve Pasos del Árbol (deidad de la guerra)", "en": "Nine Steps of the Tree (war deity)" },
+          "notes": {
+            "es": "Deidad asociada con la guerra y el cambio de era invocada en el contexto de la victoria de Quiriguá sobre Copán",
+            "en": "Deity associated with war and era change, invoked in the context of Quiriguá's victory over Copán"
+          }
         }
       ],
       "source": "Martin & Grube, 2000; Looper, M. 2003",
@@ -585,6 +618,17 @@
           "notes": {
             "es": "Posición ordinal que establece a Yax Pasaj como el decimosexto de la línea dinástica",
             "en": "Ordinal position establishing Yax Pasaj as the sixteenth in the dynastic line"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T764", "T116", "T130"],
+          "transliteration": "u-K'AB-ji-ya",
+          "transcription": "u k'abjiiy",
+          "translation": { "es": "fue su ofrenda / lo dedicó", "en": "it was his dedication / he dedicated it" },
+          "notes": {
+            "es": "Fórmula dedicatoria estándar del Altar Q que vincula el monument con el acto ritual de su consagración",
+            "en": "Standard dedicatory formula of Altar Q linking the monument to the ritual act of its consecration"
           }
         }
       ],
@@ -664,6 +708,17 @@
             "es": "Verbo que marca la llegada al poder o la manifestación de un gobernante",
             "en": "Verb marking the coming to power or manifestation of a ruler"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T533", "T168", "T116"],
+          "transliteration": "BAAKAL-K'UHUL-AJAW",
+          "transcription": "baakal k'uhul ajaw",
+          "translation": { "es": "señor sagrado de Palenque (linaje)", "en": "holy lord of Palenque (lineage)" },
+          "notes": {
+            "es": "El Tablero de los 96 Glifos refuerza la continuidad dinástica mencionando el glifo emblema de Baakal en referencia a los antepasados reales",
+            "en": "The 96-Glyphs Panel reinforces dynastic continuity by citing the Baakal emblem glyph in reference to royal ancestors"
+          }
         }
       ],
       "source": "Stuart, D. & Houston, S. 1994; Bernal Romero, G. 2011",
@@ -741,6 +796,17 @@
           "notes": {
             "es": "El ser sobrenatural que emerge de la serpiente de visión como resultado del ritual",
             "en": "The supernatural being who emerges from the vision serpent as a result of the ritual"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T504", "T130", "T60"],
+          "transliteration": "EK'-CHUAH-WAY",
+          "transcription": "ek' chuah way",
+          "translation": { "es": "co-esencia del dios negro del mercader", "en": "co-essence of the black merchant god" },
+          "notes": {
+            "es": "La serpiente de visión del Dintel 25 está decorada con motivos de Ek' Chuah, deidad del comercio y los viajeros, relacionada con el poder de K'abal Xook",
+            "en": "The vision serpent on Lintel 25 is decorated with Ek' Chuah motifs, deity of commerce and travelers, linked to K'abal Xook's power"
           }
         }
       ],
@@ -820,6 +886,17 @@
             "es": "Referencia a la sala principal del Edificio 1 donde se encuentran los murales",
             "en": "Reference to the main hall of Structure 1 where the murals are located"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T528", "T181", "T116"],
+          "transliteration": "U-BAH-AJAW-CHAN-MUWAAN",
+          "transcription": "u bah ajaw chan muwaan",
+          "translation": { "es": "la imagen del señor Chan Muwaan (el heredero)", "en": "the image of lord Chan Muwaan (the heir)" },
+          "notes": {
+            "es": "Los murales tienen como propósito principal la presentación del joven príncipe Chan Muwaan como heredero legítimo ante la nobleza y las deidades",
+            "en": "The murals' primary purpose is the presentation of young Prince Chan Muwaan as legitimate heir before the nobility and deities"
+          }
         }
       ],
       "source": "Martin & Grube, 2000; Miller, M. & Brittenham, C. 2013",
@@ -886,6 +963,28 @@
           "notes": {
             "es": "El escalón superior cierra la narración dinástica con la fórmula de sucesión completa",
             "en": "The top step closes the dynastic narrative with the complete succession formula"
+          }
+        },
+        {
+          "position": "Step 32",
+          "glyphs": ["T504", "T116", "T181"],
+          "transliteration": "K'AHK'-U-TI'-WAY-KAN",
+          "transcription": "k'ahk' u ti' way kan",
+          "translation": { "es": "Fuego es la boca de la serpiente mágica (Humo Imix)", "en": "Fire is the Mouth of the Serpent Spirit (Smoke Imix)" },
+          "notes": {
+            "es": "Nombre del duodécimo gobernante de Copán, uno de los más largamente reinantes; su escalón cubre el período intermedio de la narrativa dinástica",
+            "en": "Name of the twelfth ruler of Copán, one of the longest-reigning; his step covers the intermediate period of the dynastic narrative"
+          }
+        },
+        {
+          "position": "Step 52",
+          "glyphs": ["T533", "T168", "T60"],
+          "transliteration": "K'UHUL-XUKPI-AJAW",
+          "transcription": "k'uhul xukpi ajaw",
+          "translation": { "es": "señor sagrado de Copán (fórmula recurrente)", "en": "holy lord of Copán (recurring formula)" },
+          "notes": {
+            "es": "Cada gobernante en la escalinata recibe el título completo de señor sagrado de Copán; este bloque aparece en los escalones superiores que documentan el reinado del decimocuarto y decimoquinto gobernante",
+            "en": "Each ruler on the stairway receives the full title of holy lord of Copán; this block appears on upper steps documenting the fourteenth and fifteenth rulers' reigns"
           }
         }
       ],
@@ -965,6 +1064,17 @@
             "es": "Verbo estándar de entronización en el mundo maya: el acto de 'sentarse' sobre la estera real",
             "en": "Standard enthronement verb in the Maya world: the act of 'sitting' upon the royal mat"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T528", "T60", "T116"],
+          "transliteration": "SAK-HUN-AJAW",
+          "transcription": "sak hun ajaw",
+          "translation": { "es": "señor de la diadema blanca", "en": "lord of the white diadem" },
+          "notes": {
+            "es": "La diadema blanca (sak hun) era la insignia real recibida en la entronización; el tablero del palacio muestra precisamente este traspaso de símbolos de poder",
+            "en": "The white diadem (sak hun) was the royal insignia received at enthronement; the palace tablet depicts precisely this transfer of power symbols"
+          }
         }
       ],
       "source": "Stuart, D. & Houston, S. 1994; Bernal Romero, G. 2011",
@@ -1042,6 +1152,17 @@
           "notes": {
             "es": "Parte de la fórmula de dedicación estándar (PSS) que describe el contenido de la vasija",
             "en": "Part of the standard dedication formula (PSS) describing the vessel's contents"
+          }
+        },
+        {
+          "position": "Banda superior F",
+          "glyphs": ["T1016", "T116", "T504"],
+          "transliteration": "IXIM-AJ-DIOS-N",
+          "transcription": "ixim ajaw",
+          "translation": { "es": "señor del maíz / dios del maíz", "en": "maize lord / maize god" },
+          "notes": {
+            "es": "Referencia al dios del maíz (Hun Hunahpu), cuya resurrección del inframundo es el tema central de esta vasija; la escena de los siete dioses precede el momento de su renacimiento",
+            "en": "Reference to the maize god (Hun Hunahpu), whose resurrection from the underworld is the central theme of this vase; the scene of the seven gods precedes the moment of his rebirth"
           }
         }
       ],
@@ -1121,6 +1242,17 @@
             "es": "La reina equipa al rey con armamento ritual; su nombre aparece vinculado al acto marcial",
             "en": "The queen equips the king with ritual armament; her name appears linked to the martial act"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T504", "T116", "T130"],
+          "transliteration": "U-BAAK-il",
+          "transcription": "u baakil",
+          "translation": { "es": "su cautivo / su prisionero", "en": "his captive / his prisoner" },
+          "notes": {
+            "es": "Frase que introduce al prisionero capturado en la campaña narrada en el Dintel 26; la captura de nobles rivales era el objetivo principal de la guerra maya",
+            "en": "Phrase introducing the prisoner captured in the campaign narrated on Lintel 26; the capture of rival nobles was the primary goal of Maya warfare"
+          }
         }
       ],
       "source": "Schele & Freidel, 1990; Tate, C. 1992",
@@ -1198,6 +1330,17 @@
           "notes": {
             "es": "Referencia al edificio o recinto donde se erigió la estela en el palacio real",
             "en": "Reference to the building or precinct where the stela was erected in the royal palace"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T528", "T178", "T116"],
+          "transliteration": "U-K'AL-TUUN",
+          "transcription": "u k'altuun",
+          "translation": { "es": "su piedra atada / su estela dedicada", "en": "his bound stone / his dedicated stela" },
+          "notes": {
+            "es": "Fórmula epigráfica k'altuun que describe el acto de 'atar' o dedicar la estela de piedra; clave en el análisis de Proskouriakoff para identificar eventos históricos",
+            "en": "Epigraphic formula k'altuun describing the act of 'binding' or dedicating the stone stela; key in Proskouriakoff's analysis identifying historical events"
           }
         }
       ],
@@ -1277,6 +1420,17 @@
             "es": "Fórmula dedicatoria que acompaña la erección de un monumento ritual",
             "en": "Dedicatory formula accompanying the erection of a ritual monument"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T533", "T130", "T504"],
+          "transliteration": "KAAN-TE'-NAAH",
+          "transcription": "kaan te' naah",
+          "translation": { "es": "casa del árbol-serpiente / palacio real de Cancuén", "en": "snake-tree house / Cancuén royal palace" },
+          "notes": {
+            "es": "Referencia al palacio trilobulado de Cancuén, una de las estructuras palacianas más grandes del mundo maya; Cancuén no tenía pirámides pero sí un extenso complejo palacial",
+            "en": "Reference to Cancuén's trilobate palace, one of the largest palace structures in the Maya world; Cancuén had no pyramids but an extensive palace complex"
+          }
         }
       ],
       "source": "Demarest, A. et al. 2003; Martin & Grube, 2000",
@@ -1354,6 +1508,17 @@
           "notes": {
             "es": "Nombre del gobernante de Seibal capturado por Dos Pilas; la Estela 16 lo muestra bajo los pies del rey vencedor",
             "en": "Name of the ruler of Seibal captured by Dos Pilas; Stela 16 shows him under the feet of the victorious king"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T504", "T181", "T130"],
+          "transliteration": "PETEXBATUN-AJAW",
+          "transcription": "petexbatun ajaw",
+          "translation": { "es": "señor del Petexbatún", "en": "lord of the Petexbatún" },
+          "notes": {
+            "es": "El Petexbatún es la región lacustre del sur del Petén donde Dos Pilas construyó su hegemonía; la estela subraya el dominio del rey sobre la región tras la derrota de Seibal",
+            "en": "The Petexbatún is the lake region of southern Petén where Dos Pilas built its hegemony; the stela underscores the king's dominance over the region after Seibal's defeat"
           }
         }
       ],
@@ -1433,6 +1598,17 @@
             "es": "Frase que indica su rol como representante del poder real mientras su hijo era menor de edad",
             "en": "Phrase indicating her role as representative of royal power while her son was a minor"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T533", "T116", "T178"],
+          "transliteration": "K'INICH-TOOK'-CHAAK",
+          "transcription": "k'inich took' chaak",
+          "translation": { "es": "K'inich Took' Chaak (el hijo heredero)", "en": "K'inich Took' Chaak (the heir son)" },
+          "notes": {
+            "es": "Nombre del hijo de Ix Wak Chan Ahk, para quien ella gobernó como regente; su entronización en 693 d.C. fue el objetivo de la misión de su madre en Naranjo",
+            "en": "Name of Ix Wak Chan Ahk's son, for whom she ruled as regent; his enthronement in 693 CE was the goal of his mother's mission at Naranjo"
+          }
         }
       ],
       "source": "Martin & Grube, 2000; Schele & Freidel, 1990",
@@ -1511,6 +1687,17 @@
             "es": "Fórmula que marca la finalización de un período de gobierno y su registro monumental",
             "en": "Formula marking the completion of a period of rule and its monumental record"
           }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T504", "T116", "T181"],
+          "transliteration": "YUKNOOM-CH'EEN",
+          "transcription": "yuknoom ch'een",
+          "translation": { "es": "Yuknoom el Grande (predecesor)", "en": "Yuknoom the Great (predecessor)" },
+          "notes": {
+            "es": "La Estela 51 de Calakmul hace referencia al gran predecesor Yuknoom Ch'een II (el Grande), cuyo reinado (636–686 d.C.) estableció la hegemonía kaan sobre docenas de reinos mayas",
+            "en": "Calakmul Stela 51 references the great predecessor Yuknoom Ch'een II (the Great), whose reign (636–686 CE) established kaan hegemony over dozens of Maya kingdoms"
+          }
         }
       ],
       "source": "Martin & Grube, 2000; Martin, S. 2020",
@@ -1588,6 +1775,17 @@
           "notes": {
             "es": "El glifo de la diadema real blanca que representa la autoridad del dios del maíz como gobernante",
             "en": "The glyph of the white royal diadem representing the authority of the maize god as ruler"
+          }
+        },
+        {
+          "position": "Texto 6",
+          "glyphs": ["T528", "T181", "T116"],
+          "transliteration": "CHAN-NAL",
+          "transcription": "chan nal",
+          "translation": { "es": "lugar del cielo / campo del cielo", "en": "sky place / sky field" },
+          "notes": {
+            "es": "Término que en los murales de San Bartolo describe el escenario celeste de la coronación del dios del maíz; chan nal también puede referirse al campo de maíz primordial en el cielo",
+            "en": "Term used in the San Bartolo murals to describe the celestial setting of the maize god's coronation; chan nal can also refer to the primordial maize field in the sky"
           }
         }
       ],
