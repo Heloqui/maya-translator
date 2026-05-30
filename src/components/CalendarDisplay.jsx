@@ -11,7 +11,7 @@ function CalendarGlyph({ name, thompson }) {
   if (!imgPath && !fontChar) return null
 
   return (
-    <div className="flex-shrink-0 w-16 h-16 bg-white rounded-lg flex items-center justify-center p-1.5">
+    <div className="flex-shrink-0 w-20 h-20 bg-white rounded-xl flex items-center justify-center p-2">
       {imgPath ? (
         <img
           src={imgPath}
@@ -20,8 +20,8 @@ function CalendarGlyph({ name, thompson }) {
         />
       ) : (
         <span
-          style={{ fontFamily: 'MayaGlyphs, serif' }}
-          className="text-4xl text-gray-800"
+          style={{ fontFamily: 'MayaGlyphs, serif', fontSize: '3.5rem', lineHeight: 1 }}
+          className="text-gray-800"
         >
           {fontChar}
         </span>
