@@ -2,6 +2,7 @@ import './globals.css'
 import { LangProvider } from '@/lib/lang'
 import Sidebar from '@/components/Sidebar'
 import ServiceWorker from '@/components/ServiceWorker'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata = {
   title: {
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="min-h-screen bg-maya-bg text-maya-text antialiased">
+        <GoogleAnalytics />
         <LangProvider>
           <ServiceWorker />
           <Sidebar />
