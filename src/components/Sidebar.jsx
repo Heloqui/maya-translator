@@ -17,6 +17,7 @@ export default function Sidebar() {
     { href: '/transliterator', icon: '✏️', label: t.transliterator },
     { href: '/calendar', icon: '📅', label: t.calendar },
     { href: '/math', icon: '🔢', label: t.math },
+    { href: '/name', icon: '✍️', label: t.yourName },
   ]
 
   return (

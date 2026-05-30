@@ -97,6 +97,7 @@ const STRINGS = {
     investigador: 'Investigador',
     // Stats
     fullVigesimal: 'Sistema vigesimal completo',
+    yourName: 'Tu Nombre',
   },
   en: {
     siteTitle: 'MAYA GLYPHS',
@@ -182,6 +183,7 @@ const STRINGS = {
     estudiante: 'Student',
     investigador: 'Researcher',
     fullVigesimal: 'Full vigesimal system',
+    yourName: 'Your Name',
   }
 }
 
