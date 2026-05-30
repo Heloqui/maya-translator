@@ -1,5 +1,6 @@
 'use client'
 import { getGlyphChar } from '@/lib/glyphs'
+import { getGlyphImage } from '@/lib/glyph-images'
 
 const CONFIDENCE_BG = {
   confirmed: 'bg-green-900/40 hover:bg-green-900/60',
@@ -10,13 +11,41 @@ const CONFIDENCE_BG = {
 
 const VOWELS = ['a', 'e', 'i', 'o', 'u']
 
+function GlyphCell({ value, thompson, confidence, isSelected, onClick }) {
+  const imgPath = getGlyphImage(value)
+  const fontChar = thompson?.length > 0 ? getGlyphChar(thompson) : null
+  const isUnknown = confidence === 'unknown'
+
+  return (
+    <button
+      onClick={isUnknown ? null : onClick}
+      className={`p-1 rounded text-center transition-colors flex flex-col items-center justify-center min-h-[52px] ${
+        isUnknown ? 'cursor-default opacity-40' : 'cursor-pointer'
+      } ${CONFIDENCE_BG[confidence]} ${
+        isSelected ? 'ring-2 ring-maya-gold' : ''
+      }`}
+    >
+      {imgPath ? (
+        <img
+          src={imgPath}
+          alt={value}
+          className="w-9 h-9 object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
+        />
+      ) : fontChar ? (
+        <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-xl leading-none text-maya-gold">{fontChar}</span>
+      ) : null}
+      <span className="text-[10px] text-maya-muted leading-tight mt-0.5">{value}</span>
+    </button>
+  )
+}
+
 export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
   const { vowels, syllabograms } = syllabaryData
 
   return (
     <div className="overflow-x-auto">
       {/* Column headers */}
-      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[340px]">
+      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
         <div />
         {VOWELS.map(v => (
           <div key={v} className="text-center text-sm font-bold text-maya-gold">{v}</div>
@@ -24,49 +53,39 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
       </div>
 
       {/* Pure vowels row */}
-      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[340px]">
+      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
         <div className="flex items-center text-xs font-bold text-maya-gold">V</div>
         {vowels.map(v => (
-          <button
+          <GlyphCell
             key={v.value}
+            value={v.value}
+            thompson={v.thompson}
+            confidence={v.confidence}
+            isSelected={selected?.value === v.value}
             onClick={() => onSelect(v)}
-            className={`p-1 py-2 rounded text-center text-sm transition-colors cursor-pointer flex flex-col items-center ${CONFIDENCE_BG[v.confidence]} ${
-              selected?.value === v.value ? 'ring-2 ring-maya-gold' : ''
-            }`}
-          >
-            {v.thompson?.length > 0 && (
-              <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-lg leading-none">{getGlyphChar(v.thompson)}</span>
-            )}
-            <span className="text-[10px]">{v.value}</span>
-          </button>
+          />
         ))}
       </div>
 
       {/* Consonant rows */}
       {syllabograms.map(group => (
-        <div key={group.onset} className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[340px]">
+        <div key={group.onset} className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
           <div className="flex items-center text-xs font-bold text-maya-gold">{group.onset}</div>
           {group.syllables.map(s => (
-            <button
+            <GlyphCell
               key={s.value}
-              onClick={() => s.confidence !== 'unknown' ? onSelect(s) : null}
-              className={`p-1 py-2 rounded text-center text-sm transition-colors flex flex-col items-center ${
-                s.confidence === 'unknown' ? 'cursor-default opacity-40' : 'cursor-pointer'
-              } ${CONFIDENCE_BG[s.confidence]} ${
-                selected?.value === s.value ? 'ring-2 ring-maya-gold' : ''
-              }`}
-            >
-              {s.thompson?.length > 0 && (
-                <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-lg leading-none">{getGlyphChar(s.thompson)}</span>
-              )}
-              <span className="text-[10px]">{s.value}</span>
-            </button>
+              value={s.value}
+              thompson={s.thompson}
+              confidence={s.confidence}
+              isSelected={selected?.value === s.value}
+              onClick={() => onSelect(s)}
+            />
           ))}
         </div>
       ))}
 
       {/* Legend */}
-      <div className="flex gap-4 text-xs mt-4 p-2 bg-maya-surface rounded-lg min-w-[340px]">
+      <div className="flex gap-4 text-xs mt-4 p-2 bg-maya-surface rounded-lg min-w-[380px]">
         <span><span className="text-confidence-confirmed">■</span> confirmado</span>
         <span><span className="text-confidence-probable">■</span> probable</span>
         <span><span className="text-confidence-tentative">■</span> tentativo</span>
