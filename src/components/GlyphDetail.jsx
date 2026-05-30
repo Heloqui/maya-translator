@@ -25,11 +25,11 @@ export default function GlyphDetail({ glyph, logograms }) {
       <div className="flex justify-center mb-4">
         {getGlyphImage(glyph.value) ? (
           <div className="text-center">
-            <div className="w-28 h-28 bg-maya-surface rounded-xl flex items-center justify-center ring-2 ring-maya-gold p-2">
+            <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center ring-2 ring-maya-gold p-3">
               <img
                 src={getGlyphImage(glyph.value)}
                 alt={`Glifo maya: ${glyph.value}`}
-                className="max-w-full max-h-full object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
+                className="max-w-full max-h-full object-contain"
               />
             </div>
             <span className="text-sm font-bold text-maya-gold mt-1 block">{glyph.value}</span>

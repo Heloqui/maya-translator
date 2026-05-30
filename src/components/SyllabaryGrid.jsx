@@ -3,10 +3,10 @@ import { getGlyphChar } from '@/lib/glyphs'
 import { getGlyphImage } from '@/lib/glyph-images'
 
 const CONFIDENCE_BG = {
-  confirmed: 'bg-green-900/40 hover:bg-green-900/60',
-  probable: 'bg-yellow-900/40 hover:bg-yellow-900/60',
-  tentative: 'bg-red-900/40 hover:bg-red-900/60',
-  unknown: 'bg-gray-800/40',
+  confirmed: 'bg-green-900/50 hover:bg-green-900/70',
+  probable: 'bg-yellow-900/50 hover:bg-yellow-900/70',
+  tentative: 'bg-red-900/50 hover:bg-red-900/70',
+  unknown: 'bg-gray-800/50',
 }
 
 const VOWELS = ['a', 'e', 'i', 'o', 'u']
@@ -19,22 +19,24 @@ function GlyphCell({ value, thompson, confidence, isSelected, onClick }) {
   return (
     <button
       onClick={isUnknown ? null : onClick}
-      className={`p-1 rounded text-center transition-colors flex flex-col items-center justify-center min-h-[52px] ${
-        isUnknown ? 'cursor-default opacity-40' : 'cursor-pointer'
+      className={`p-1.5 rounded-lg text-center transition-colors flex flex-col items-center justify-center min-h-[90px] ${
+        isUnknown ? 'cursor-default opacity-30' : 'cursor-pointer'
       } ${CONFIDENCE_BG[confidence]} ${
-        isSelected ? 'ring-2 ring-maya-gold' : ''
+        isSelected ? 'ring-2 ring-maya-gold ring-offset-1 ring-offset-maya-bg' : ''
       }`}
     >
       {imgPath ? (
-        <img
-          src={imgPath}
-          alt={value}
-          className="w-9 h-9 object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
-        />
+        <div className="w-14 h-14 flex items-center justify-center bg-white/90 rounded-md p-1">
+          <img
+            src={imgPath}
+            alt={value}
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
       ) : fontChar ? (
-        <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-xl leading-none text-maya-gold">{fontChar}</span>
+        <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-3xl leading-none text-maya-gold">{fontChar}</span>
       ) : null}
-      <span className="text-[10px] text-maya-muted leading-tight mt-0.5">{value}</span>
+      <span className="text-xs text-maya-text font-medium mt-1">{value}</span>
     </button>
   )
 }
@@ -45,7 +47,7 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
   return (
     <div className="overflow-x-auto">
       {/* Column headers */}
-      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
+      <div className="grid grid-cols-[50px_repeat(5,1fr)] gap-1.5 mb-1 min-w-[520px]">
         <div />
         {VOWELS.map(v => (
           <div key={v} className="text-center text-sm font-bold text-maya-gold">{v}</div>
@@ -53,7 +55,7 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
       </div>
 
       {/* Pure vowels row */}
-      <div className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
+      <div className="grid grid-cols-[50px_repeat(5,1fr)] gap-1.5 mb-1.5 min-w-[520px]">
         <div className="flex items-center text-xs font-bold text-maya-gold">V</div>
         {vowels.map(v => (
           <GlyphCell
@@ -69,7 +71,7 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
 
       {/* Consonant rows */}
       {syllabograms.map(group => (
-        <div key={group.onset} className="grid grid-cols-[48px_repeat(5,1fr)] gap-1 mb-1 min-w-[380px]">
+        <div key={group.onset} className="grid grid-cols-[50px_repeat(5,1fr)] gap-1.5 mb-1.5 min-w-[520px]">
           <div className="flex items-center text-xs font-bold text-maya-gold">{group.onset}</div>
           {group.syllables.map(s => (
             <GlyphCell
@@ -85,7 +87,7 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
       ))}
 
       {/* Legend */}
-      <div className="flex gap-4 text-xs mt-4 p-2 bg-maya-surface rounded-lg min-w-[380px]">
+      <div className="flex gap-4 text-xs mt-4 p-2 bg-maya-surface rounded-lg min-w-[520px]">
         <span><span className="text-confidence-confirmed">■</span> confirmado</span>
         <span><span className="text-confidence-probable">■</span> probable</span>
         <span><span className="text-confidence-tentative">■</span> tentativo</span>

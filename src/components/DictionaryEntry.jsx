@@ -15,11 +15,13 @@ export default function DictionaryEntry({ entry, mode, glyphMap }) {
         {(imgPath || glyphChar) && (
           <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
             {imgPath ? (
-              <img
-                src={imgPath}
-                alt={entry.maya}
-                className="w-11 h-11 object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
-              />
+              <div className="w-11 h-11 bg-white rounded-md flex items-center justify-center p-1">
+                <img
+                  src={imgPath}
+                  alt={entry.maya}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
             ) : (
               <span
                 style={{ fontFamily: 'MayaGlyphs, serif' }}

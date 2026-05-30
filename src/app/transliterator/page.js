@@ -60,24 +60,26 @@ export default function TransliteratorPage() {
               </div>
 
               {/* Large Tokovinine glyph images */}
-              <div className="flex gap-2 flex-wrap items-end justify-center bg-maya-deep rounded-xl p-4">
+              <div className="flex gap-3 flex-wrap items-end justify-center bg-maya-deep rounded-xl p-5">
                 {result.syllables.map((s, i) => {
                   const imgPath = getGlyphImage(s.value)
                   const fontChar = getGlyphChar(s.thompson)
                   return (
                     <div key={i} className="text-center">
                       {imgPath ? (
-                        <img
-                          src={imgPath}
-                          alt={s.value}
-                          className="w-20 h-20 object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
-                        />
+                        <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center p-2">
+                          <img
+                            src={imgPath}
+                            alt={s.value}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </div>
                       ) : fontChar ? (
                         <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-5xl text-maya-gold block">{fontChar}</span>
                       ) : (
                         <span className="text-2xl text-maya-muted block">?</span>
                       )}
-                      <span className="text-[10px] text-maya-muted">{s.value}</span>
+                      <span className="text-xs text-maya-muted mt-1 block">{s.value}</span>
                     </div>
                   )
                 })}
