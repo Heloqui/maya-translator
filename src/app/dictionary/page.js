@@ -1,12 +1,12 @@
 'use client'
 import { useState, useMemo } from 'react'
-import { getDictionary, getWordGlyphMap } from '@/lib/data'
+import { getDictionary } from '@/lib/data'
 import { useMode } from '@/lib/modes'
 import DictionaryEntry from '@/components/DictionaryEntry'
 import DotBarNumeral from '@/components/DotBarNumeral'
 
 const dict = getDictionary()
-const glyphMap = getWordGlyphMap()
+
 
 const TABS = [
   { key: 'titles_and_ranks', label: 'Títulos' },
@@ -81,7 +81,7 @@ export default function DictionaryPage() {
             <p className="text-maya-muted text-sm text-center py-8">Sin resultados</p>
           )}
           {entries.map((entry, i) => (
-            <DictionaryEntry key={i} entry={entry} mode={mode} glyphMap={glyphMap} />
+            <DictionaryEntry key={i} entry={entry} mode={mode} />
           ))}
         </div>
       )}

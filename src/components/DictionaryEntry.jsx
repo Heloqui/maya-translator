@@ -1,35 +1,19 @@
 import ConfidenceBadge from './ConfidenceBadge'
-import { thompsonToChar } from '@/lib/glyphs'
 import { getGlyphImage } from '@/lib/glyph-images'
 
-export default function DictionaryEntry({ entry, mode, glyphMap }) {
-  const thompson = glyphMap?.[entry.maya?.toLowerCase()]
-  const glyphChar = thompson ? thompsonToChar(thompson) : null
-
-  // Try Tokovinine image by maya word directly
-  const imgPath = getGlyphImage(entry.maya?.toLowerCase())
+export default function DictionaryEntry({ entry, mode }) {
+  const imgPath = getGlyphImage(entry.maya)
 
   return (
     <div className="bg-maya-surface rounded-lg p-3 border border-maya-border">
       <div className="flex items-center gap-3">
-        {(imgPath || glyphChar) && (
-          <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-            {imgPath ? (
-              <div className="w-11 h-11 bg-white rounded-md flex items-center justify-center p-1">
-                <img
-                  src={imgPath}
-                  alt={entry.maya}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ) : (
-              <span
-                style={{ fontFamily: 'MayaGlyphs, serif' }}
-                className="text-3xl text-maya-gold"
-              >
-                {glyphChar}
-              </span>
-            )}
+        {imgPath && (
+          <div className="flex-shrink-0 w-14 h-14 bg-white rounded-lg flex items-center justify-center p-1.5">
+            <img
+              src={imgPath}
+              alt={entry.maya}
+              className="max-w-full max-h-full object-contain"
+            />
           </div>
         )}
         <div className="flex-1 min-w-0">
@@ -46,9 +30,6 @@ export default function DictionaryEntry({ entry, mode, glyphMap }) {
               <ConfidenceBadge level={entry.confidence} showLabel={false} />
             )}
           </div>
-          {mode === 'investigador' && thompson && (
-            <p className="text-xs text-blue-400 mt-0.5">{thompson}</p>
-          )}
           {mode === 'investigador' && entry.notes && (
             <p className="text-xs text-maya-muted mt-1">{entry.notes}</p>
           )}
