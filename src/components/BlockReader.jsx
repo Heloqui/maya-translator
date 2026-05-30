@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useLang } from '@/lib/lang'
 import MayaGlyph from './MayaGlyph'
 import { getGlyphImage } from '@/lib/glyph-images'
+import { getSyllableByThompson } from '@/lib/data'
 
 export default function BlockReader({ blocks }) {
   const { t, lang } = useLang()
@@ -41,7 +42,8 @@ export default function BlockReader({ blocks }) {
 
                 <div className="flex gap-1 flex-shrink-0">
                   {block.glyphs.map((thompson, gi) => {
-                    const imgPath = getGlyphImage(thompson)
+                    const syllable = getSyllableByThompson(thompson)
+                    const imgPath = syllable ? getGlyphImage(syllable) : null
                     return imgPath ? (
                       <div key={gi} className="w-10 h-10 bg-white rounded flex items-center justify-center p-0.5">
                         <img src={imgPath} alt={thompson} className="max-w-full max-h-full object-contain" />

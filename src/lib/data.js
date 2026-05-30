@@ -207,6 +207,31 @@ function generateInscriptionQuestions(count) {
   })
 }
 
+/**
+ * Find inscriptions that reference a given Thompson code.
+ */
+export function getInscriptionsForThompson(thompson) {
+  return inscriptionsData.inscriptions.filter(insc =>
+    insc.blocks.some(block =>
+      block.glyphs.includes(thompson)
+    )
+  )
+}
+
+/**
+ * Find a syllable value for a Thompson code.
+ */
+export function getSyllableByThompson(thompson) {
+  const all = getSyllabary()
+  for (const s of all) {
+    if (s.thompson?.includes(thompson)) return s.value
+  }
+  // Check logograms
+  const logo = syllabaryData.common_logograms.find(l => l.thompson === thompson)
+  if (logo) return logo.reading.toLowerCase()
+  return null
+}
+
 export function getStats() {
   const sylls = getSyllabary()
   const dict = getDictionary()

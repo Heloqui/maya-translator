@@ -1,14 +1,16 @@
 'use client'
 import { useState } from 'react'
+import Link from 'next/link'
 import { useLang } from '@/lib/lang'
 import ConfidenceBadge from './ConfidenceBadge'
 import MayaGlyph from './MayaGlyph'
 import SpeakButton from './SpeakButton'
 import { getGlyphImage } from '@/lib/glyph-images'
+import { getInscriptionsForThompson } from '@/lib/data'
 
 export default function GlyphDetail({ glyph, logograms }) {
   const [showTechnical, setShowTechnical] = useState(false)
-  const { t } = useLang()
+  const { t, lang } = useLang()
 
   if (!glyph) {
     return (
@@ -98,6 +100,29 @@ export default function GlyphDetail({ glyph, logograms }) {
             <div className="text-xs text-maya-muted">&ldquo;{matchingLogo.meaning}&rdquo;</div>
           </div>
         )}
+
+        {/* Inscriptions where this glyph appears */}
+        {glyph.thompson?.length > 0 && (() => {
+          const inscriptions = glyph.thompson.flatMap(t => getInscriptionsForThompson(t))
+          const unique = [...new Map(inscriptions.map(i => [i.id, i])).values()]
+          if (unique.length === 0) return null
+          return (
+            <div className="border-t border-maya-border pt-3 mt-3">
+              <div className="text-xs text-maya-muted mb-1">{t.inscriptions}:</div>
+              <div className="flex flex-wrap gap-1">
+                {unique.map(insc => (
+                  <Link
+                    key={insc.id}
+                    href={`/inscriptions/${insc.id}`}
+                    className="text-[10px] bg-maya-border px-2 py-0.5 rounded-full text-maya-gold hover:bg-maya-gold hover:text-maya-bg transition-colors"
+                  >
+                    {insc.name[lang] || insc.name.es}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )
+        })()}
 
         {/* Sources — toggleable */}
         {showTechnical && (
