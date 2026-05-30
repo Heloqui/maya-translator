@@ -1,14 +1,29 @@
 {
   "name": "Maya Glyphs — Traductor de Jeroglíficos Mayas",
   "short_name": "Maya Glyphs",
-  "description": "Interactive Maya hieroglyphic translator with syllabary, dictionary, calendar and mathematics",
+  "description": "Interactive Maya hieroglyphic translator with syllabary, dictionary, calendar, inscriptions and archaeological sites map",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f1e",
   "theme_color": "#0f0f1e",
   "orientation": "any",
+  "categories": ["education", "reference"],
+  "lang": "es",
+  "dir": "ltr",
   "icons": [
-    { "src": "/icons/icon-192.svg", "sizes": "192x192", "type": "image/svg+xml" },
-    { "src": "/icons/icon-512.svg", "sizes": "512x512", "type": "image/svg+xml" }
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-192.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Maya Glyphs"
+    }
   ]
 }
