@@ -1,0 +1,1598 @@
+{
+  "metadata": {
+    "name": "Classic Maya Inscription Corpus",
+    "version": "0.1.0",
+    "description": "Selected inscriptions from major Classic Maya sites with block-by-block transliteration",
+    "entries": 20,
+    "sources": [
+      "Schele, L. & Freidel, D. (1990). A Forest of Kings.",
+      "Martin, S. & Grube, N. (2000). Chronicle of the Maya Kings and Queens.",
+      "Stuart, D. Various publications.",
+      "Montgomery, J. (2002). Dictionary of Maya Hieroglyphs."
+    ]
+  },
+  "inscriptions": [
+    {
+      "id": "palenque-sarcophagus",
+      "name": {
+        "es": "Lápida del Sarcófago de Pakal",
+        "en": "Pakal's Sarcophagus Lid"
+      },
+      "site": "palenque",
+      "date_long_count": "9.12.11.5.18",
+      "date_gregorian": "683 d.C.",
+      "type": "funerary",
+      "description": {
+        "es": "La lápida funeraria del rey K'inich Janaab' Pakal I, encontrada en el Templo de las Inscripciones de Palenque. Representa a Pakal cayendo hacia el inframundo (Xibalbá) en el momento de la muerte, con el Árbol del Mundo emergiendo de su cuerpo.",
+        "en": "The funerary lid of King K'inich Janaab' Pakal I, found in the Temple of the Inscriptions at Palenque. It depicts Pakal falling into the underworld (Xibalba) at the moment of death, with the World Tree emerging from his body."
+      },
+      "historical_context": {
+        "es": "Pakal gobernó Palenque por 68 años (615–683 d.C.), el reinado más largo documentado en el mundo maya. Su sarcófago contiene textos que narran su genealogía y su transformación en deidad.",
+        "en": "Pakal ruled Palenque for 68 years (615–683 CE), the longest documented reign in the Maya world. His sarcophagus contains texts narrating his genealogy and transformation into a deity."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T528", "T60"],
+          "transliteration": "K'IN-ni",
+          "transcription": "k'in",
+          "translation": { "es": "sol / día", "en": "sun / day" },
+          "notes": {
+            "es": "Cabeza de K'inich Ajaw, dios solar, parte del nombre del rey",
+            "en": "Head of K'inich Ajaw, the sun god, part of the king's name"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T606", "T181"],
+          "transliteration": "JANAAB'-PAKAL",
+          "transcription": "janaab' pakal",
+          "translation": { "es": "escudo de flores", "en": "flower shield" },
+          "notes": {
+            "es": "Nombre completo del rey: K'inich Janaab' Pakal. Janaab' significa 'flor' y Pakal 'escudo'.",
+            "en": "Full name of the king: K'inich Janaab' Pakal. Janaab' means 'flower' and Pakal means 'shield'."
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T533", "T740"],
+          "transliteration": "K'UHUL-AJAW",
+          "transcription": "k'uhul ajaw",
+          "translation": { "es": "señor sagrado", "en": "holy lord" },
+          "notes": {
+            "es": "Título real estándar del Período Clásico; k'uhul indica carácter divino",
+            "en": "Standard royal title of the Classic Period; k'uhul indicates divine character"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T168", "T130"],
+          "transliteration": "BAAKAL",
+          "transcription": "baakal",
+          "translation": { "es": "Palenque (lugar de huesos)", "en": "Palenque (place of bones)" },
+          "notes": {
+            "es": "Glifo emblema de Palenque; el nombre real de la ciudad era Lakamha'",
+            "en": "Emblem glyph of Palenque; the actual city name was Lakamha'"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T714", "T116"],
+          "transliteration": "CHAM-mi",
+          "transcription": "chami",
+          "translation": { "es": "murió", "en": "he died" },
+          "notes": {
+            "es": "Verbo de muerte en inscripciones funerarias del Período Clásico",
+            "en": "Death verb in Classic Period funerary inscriptions"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T528", "T548", "T116"],
+          "transliteration": "9-AJAW-?",
+          "transcription": "bolon ajaw",
+          "translation": { "es": "9 Ajaw (fecha del Tzolk'in)", "en": "9 Ajaw (Tzolk'in date)" },
+          "notes": {
+            "es": "Fecha de la muerte de Pakal según el calendario sagrado de 260 días",
+            "en": "Date of Pakal's death according to the 260-day sacred calendar"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Ruz Lhuillier, 1952",
+      "image_credit": "Drawing by Linda Schele, FAMSI"
+    },
+    {
+      "id": "palenque-tablet-cross",
+      "name": {
+        "es": "Tablero de la Cruz",
+        "en": "Tablet of the Cross"
+      },
+      "site": "palenque",
+      "date_long_count": "9.13.0.0.0",
+      "date_gregorian": "692 d.C.",
+      "type": "mythological",
+      "description": {
+        "es": "Inscripción del Templo de la Cruz que narra la creación del mundo actual en 3114 a.C. y establece la legitimidad dinástica de K'inich Kan Bahlam II relacionando a la familia real con los dioses creadores.",
+        "en": "Inscription from the Temple of the Cross narrating the creation of the current world in 3114 BCE and establishing the dynastic legitimacy of K'inich Kan Bahlam II by relating the royal family to the creator gods."
+      },
+      "historical_context": {
+        "es": "K'inich Kan Bahlam II (635–702 d.C.) mandó construir el Grupo de la Cruz para celebrar el fin del k'atun 9.13.0.0.0 y consolidar su legitimidad después de la muerte de su padre Pakal.",
+        "en": "K'inich Kan Bahlam II (635–702 CE) commissioned the Cross Group to celebrate the end of k'atun 9.13.0.0.0 and consolidate his legitimacy after the death of his father Pakal."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T544", "T178"],
+          "transliteration": "13-AJAW",
+          "transcription": "oxlahun ajaw",
+          "translation": { "es": "13 Ajaw (inicio de la era actual)", "en": "13 Ajaw (start of current era)" },
+          "notes": {
+            "es": "Fecha de la Creación del mundo actual: 13.0.0.0.0, 4 Ajaw 8 Kumk'u (11 agosto 3114 a.C.)",
+            "en": "Creation date of the current world: 13.0.0.0.0, 4 Ajaw 8 Kumk'u (August 11, 3114 BCE)"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T1016", "T130"],
+          "transliteration": "ITZAM-NAAH",
+          "transcription": "itzamnaah",
+          "translation": { "es": "Itzamnaaj (dios creador)", "en": "Itzamnaaj (creator god)" },
+          "notes": {
+            "es": "Deidad suprema del panteón maya, asociada con la creación y la escritura",
+            "en": "Supreme deity of the Maya pantheon, associated with creation and writing"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T764", "T86", "T116"],
+          "transliteration": "HUL-li-ya",
+          "transcription": "huliy",
+          "translation": { "es": "llegó", "en": "he/she arrived" },
+          "notes": {
+            "es": "Verbo de llegada o manifestación de una deidad",
+            "en": "Verb of arrival or manifestation of a deity"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T528", "T740"],
+          "transliteration": "K'UH-AJAW",
+          "transcription": "k'uh ajaw",
+          "translation": { "es": "dios señor", "en": "god lord" },
+          "notes": {
+            "es": "Título divino que identifica a la deidad como gobernante del cosmos",
+            "en": "Divine title identifying the deity as ruler of the cosmos"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T504", "T181"],
+          "transliteration": "KAN-BAHLAM",
+          "transcription": "kan bahlam",
+          "translation": { "es": "serpiente-jaguar", "en": "snake-jaguar" },
+          "notes": {
+            "es": "Nombre del rey K'inich Kan Bahlam II que mandó erigir el tablero",
+            "en": "Name of King K'inich Kan Bahlam II who commissioned the tablet"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T644", "T130", "T116"],
+          "transliteration": "NAAH-TI-IK'",
+          "transcription": "naah tik'",
+          "translation": { "es": "casa primera oscura / oriente", "en": "first dark house / east" },
+          "notes": {
+            "es": "Referencia al lugar de origen o renacimiento en la cosmología maya",
+            "en": "Reference to the place of origin or rebirth in Maya cosmology"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Stuart, D. 2006",
+      "image_credit": "Drawing by Linda Schele, FAMSI"
+    },
+    {
+      "id": "yaxchilan-lintel-24",
+      "name": {
+        "es": "Dintel 24 de Yaxchilán",
+        "en": "Yaxchilán Lintel 24"
+      },
+      "site": "yaxchilan",
+      "date_long_count": "9.13.17.15.12",
+      "date_gregorian": "709 d.C.",
+      "type": "ritual",
+      "description": {
+        "es": "Escena de autosacrificio por sangría de la reina Ixik K'abal Xook, quien pasa una cuerda con espinas por su lengua mientras su esposo Itzamnaaj Bahlam III sostiene una antorcha. Considerado una de las obras maestras del arte maya clásico.",
+        "en": "Bloodletting ritual scene of Queen Ixik K'abal Xook, who passes a rope with thorns through her tongue while her husband Itzamnaaj Bahlam III holds a torch. Considered one of the masterpieces of Classic Maya art."
+      },
+      "historical_context": {
+        "es": "Itzamnaaj Bahlam III (681–742 d.C.) gobernó Yaxchilán en su apogeo. Los tres dinteles del Edificio 23 fueron comisionados por su esposa principal K'abal Xook para documentar rituales de validación dinástica.",
+        "en": "Itzamnaaj Bahlam III (681–742 CE) ruled Yaxchilán at its peak. The three lintels of Structure 23 were commissioned by his primary wife K'abal Xook to document dynastic validation rituals."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T510", "T130", "T116"],
+          "transliteration": "u-CH'AB-yi",
+          "transcription": "u ch'abiy",
+          "translation": { "es": "su penitencia / su acto de creación", "en": "his/her penance / act of creation" },
+          "notes": {
+            "es": "Frase estándar para introducir actos de autosacrificio ritual en el Clásico",
+            "en": "Standard phrase to introduce acts of ritual self-sacrifice in the Classic period"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T116", "T740"],
+          "transliteration": "IXIK-K'ABAL-XOOK",
+          "transcription": "ixik k'abal xook",
+          "translation": { "es": "señora K'abal Xook", "en": "Lady K'abal Xook" },
+          "notes": {
+            "es": "Reina principal de Yaxchilán; xook significa 'tiburón' en ch'olano",
+            "en": "Principal queen of Yaxchilán; xook means 'shark' in Ch'olan"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T116", "T103", "T528"],
+          "transliteration": "IX-?-WINIK",
+          "transcription": "ix … winik",
+          "translation": { "es": "señora … persona", "en": "lady … person" },
+          "notes": {
+            "es": "Prefijo femenino IX más título nobiliario; winik puede referirse a un rango",
+            "en": "Feminine prefix IX plus noble title; winik may refer to a rank"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T743", "T116", "T60"],
+          "transliteration": "ITZAM-BAHLAM",
+          "transcription": "itzamnaaj bahlam",
+          "translation": { "es": "Itzamnaaj Jaguar (el rey)", "en": "Itzamnaaj Jaguar (the king)" },
+          "notes": {
+            "es": "Nombre de Itzamnaaj Bahlam III, esposo de K'abal Xook",
+            "en": "Name of Itzamnaaj Bahlam III, husband of K'abal Xook"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T74", "T178", "T116"],
+          "transliteration": "13-AJAW-8-MAC",
+          "transcription": "oxlahun ajaw waxak mak",
+          "translation": { "es": "13 Ajaw 8 Mak (fecha calendario)", "en": "13 Ajaw 8 Mak (calendar date)" },
+          "notes": {
+            "es": "Fecha del ritual de sangría registrada en el dintel",
+            "en": "Date of the bloodletting ritual recorded on the lintel"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Tate, C. 1992",
+      "image_credit": "British Museum, London; Drawing by Ian Graham, PMAE"
+    },
+    {
+      "id": "copan-stela-a",
+      "name": {
+        "es": "Estela A de Copán",
+        "en": "Copán Stela A"
+      },
+      "site": "copan",
+      "date_long_count": "9.14.19.8.0",
+      "date_gregorian": "731 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Estela monumental erigida por el rey Waxaklajuun Ubaah K'awiil (18 Conejo) en el Gran Plaza de Copán. Muestra al rey en atuendo ritual completo y lleva una de las inscripciones más largas de Copán, mencionando a los cuatro reinos más poderosos del mundo maya.",
+        "en": "Monumental stela erected by King Waxaklajuun Ubaah K'awiil (18 Rabbit) in the Great Plaza of Copán. Shows the king in full ritual attire and carries one of Copán's longest inscriptions, mentioning the four most powerful kingdoms of the Maya world."
+      },
+      "historical_context": {
+        "es": "Copán fue uno de los centros más importantes del Clásico tardío. En 738 d.C., Waxaklajuun Ubaah K'awiil fue capturado y decapitado por Quiriguá, un vasallo que se rebeló.",
+        "en": "Copán was one of the most important centers of the Late Classic. In 738 CE, Waxaklajuun Ubaah K'awiil was captured and decapitated by Quiriguá, a vassal that rebelled."
+      },
+      "blocks": [
+        {
+          "position": "A1-B1",
+          "glyphs": ["T504", "T178", "T74"],
+          "transliteration": "9-AJAW-18-KUMK'U",
+          "transcription": "bolon ajaw waxaklajuun kumk'u",
+          "translation": { "es": "9 Ajaw 18 Kumk'u (fecha de la Creación)", "en": "9 Ajaw 18 Kumk'u (Creation date)" },
+          "notes": {
+            "es": "La estela comienza con la fecha de la Creación para establecer el orden cósmico",
+            "en": "The stela begins with the Creation date to establish cosmic order"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178", "T116"],
+          "transliteration": "WAXAKLAJUUN-UBAAH-K'AWIIL",
+          "transcription": "waxaklajuun ubaah k'awiil",
+          "translation": { "es": "18 son las imágenes de K'awiil", "en": "18 are the images of K'awiil" },
+          "notes": {
+            "es": "Nombre completo del decimotercero gobernante de Copán, conocido como '18 Conejo' en la literatura popular",
+            "en": "Full name of the thirteenth ruler of Copán, popularly known as '18 Rabbit'"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T533", "T740", "T168"],
+          "transliteration": "K'UHUL-AJAW-XUKPI",
+          "transcription": "k'uhul ajaw xukpi",
+          "translation": { "es": "señor sagrado de Copán", "en": "holy lord of Copán" },
+          "notes": {
+            "es": "Xukpi es el nombre antiguo de Copán; el glifo emblema tiene forma de murciélago",
+            "en": "Xukpi is the ancient name of Copán; the emblem glyph has the form of a bat"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T1016", "T181", "T130"],
+          "transliteration": "TIKAL-PALENQUE-CALAKMUL-COPAN",
+          "transcription": "mutul … baakal … kaan … xukpi",
+          "translation": { "es": "Tikal, Palenque, Calakmul, Copán", "en": "Tikal, Palenque, Calakmul, Copán" },
+          "notes": {
+            "es": "Referencia a los cuatro grandes reinos del mundo maya clásico, estableciendo la igualdad de Copán",
+            "en": "Reference to the four great kingdoms of the Classic Maya world, establishing Copán's equality"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T644", "T116", "T504"],
+          "transliteration": "TZ'AK-bu-yi",
+          "transcription": "tz'akbuuy",
+          "translation": { "es": "es el sucesor / completa la serie", "en": "he is the successor / completes the sequence" },
+          "notes": {
+            "es": "Verbo dinástico que establece la sucesión legítima en la línea real",
+            "en": "Dynastic verb establishing legitimate succession in the royal line"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Martin & Grube, 2000",
+      "image_credit": "Drawing by Barbara Fash, Peabody Museum"
+    },
+    {
+      "id": "tikal-stela-31",
+      "name": {
+        "es": "Estela 31 de Tikal",
+        "en": "Tikal Stela 31"
+      },
+      "site": "tikal",
+      "date_long_count": "9.0.10.0.0",
+      "date_gregorian": "445 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Una de las estelas más importantes del período Clásico temprano, erigida por Siyaj Chan K'awiil II (Tormenta del Cielo). Los lados muestran a dos guerreros teotihuacanos portando el escudo de la deidad de Teotihuacán, documentando la influencia mexicana central en Tikal.",
+        "en": "One of the most important stelae of the Early Classic period, erected by Siyaj Chan K'awiil II (Stormy Sky). The sides show two Teotihuacan warriors carrying the shield of the Teotihuacan deity, documenting central Mexican influence at Tikal."
+      },
+      "historical_context": {
+        "es": "En 378 d.C., el guerrero Siyaj K'ahk' llegó a Tikal, posiblemente desde Teotihuacán, e instaló a Yax Nuun Ajiin I como rey. Su hijo Siyaj Chan K'awiil II consolidó una nueva era dinástica con influencia mexica.",
+        "en": "In 378 CE, the warrior Siyaj K'ahk' arrived at Tikal, possibly from Teotihuacan, and installed Yax Nuun Ajiin I as king. His son Siyaj Chan K'awiil II consolidated a new dynastic era with Mexican influence."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T528", "T181", "T130"],
+          "transliteration": "SIYAJ-CHAN-K'AWIIL",
+          "transcription": "siyaj chan k'awiil",
+          "translation": { "es": "Nacido del Cielo K'awiil / Tormenta del Cielo", "en": "Born of Sky K'awiil / Stormy Sky" },
+          "notes": {
+            "es": "Nombre del noveno gobernante de Tikal; siyaj significa 'nacido' o 'cayó del cielo'",
+            "en": "Name of the ninth ruler of Tikal; siyaj means 'born' or 'fell from the sky'"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740", "T544"],
+          "transliteration": "K'UHUL-MUTUL-AJAW",
+          "transcription": "k'uhul mutul ajaw",
+          "translation": { "es": "señor sagrado de Tikal", "en": "holy lord of Tikal" },
+          "notes": {
+            "es": "Mutul es el glifo emblema de Tikal, representado por un nudo de pelo atado",
+            "en": "Mutul is the emblem glyph of Tikal, represented by a tied hair knot"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T74", "T528"],
+          "transliteration": "YAX-NUUN-AJIIN",
+          "transcription": "yax nuun ajiin",
+          "translation": { "es": "Primer Cocodrilo Verde", "en": "First Green Crocodile" },
+          "notes": {
+            "es": "Nombre del padre del rey, primer gobernante de la nueva dinastía con influencia teotihuacana",
+            "en": "Name of the king's father, first ruler of the new dynasty with Teotihuacan influence"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T506", "T130", "T116"],
+          "transliteration": "SIYAJ-K'AHK'",
+          "transcription": "siyaj k'ahk'",
+          "translation": { "es": "Nacido del Fuego", "en": "Fire Is Born" },
+          "notes": {
+            "es": "El misterioso conquistador que llegó en 378 d.C. y transformó Tikal; posiblemente agente de Teotihuacán",
+            "en": "The mysterious conqueror who arrived in 378 CE and transformed Tikal; possibly an agent of Teotihuacan"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T764", "T116", "T178"],
+          "transliteration": "HUL-i",
+          "transcription": "huli",
+          "translation": { "es": "llegó", "en": "he arrived" },
+          "notes": {
+            "es": "Verbo que documenta la llegada del conquistador en la fecha 8.17.1.4.12",
+            "en": "Verb documenting the conqueror's arrival on date 8.17.1.4.12"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T504", "T181"],
+          "transliteration": "TEOTIHUACAN",
+          "transcription": "puh",
+          "translation": { "es": "Lugar de los Tules / Teotihuacán", "en": "Place of the Reeds / Teotihuacan" },
+          "notes": {
+            "es": "Puh es el nombre maya para Teotihuacán, 'Lugar de los Tules'; referencia al origen del poder extranjero",
+            "en": "Puh is the Maya name for Teotihuacan, 'Place of the Reeds'; reference to the origin of foreign power"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Fahsen, F. 2002",
+      "image_credit": "Drawing by William Coe, University of Pennsylvania Museum"
+    },
+    {
+      "id": "quirigua-stela-c",
+      "name": {
+        "es": "Estela C de Quiriguá",
+        "en": "Quiriguá Stela C"
+      },
+      "site": "quirigua",
+      "date_long_count": "9.17.0.0.0",
+      "date_gregorian": "775 d.C.",
+      "type": "mythological",
+      "description": {
+        "es": "La estela más alta del mundo maya (más de 10 metros), erigida por K'ahk' Tiliw Chan Yopaat de Quiriguá. Narra la fecha de la Creación (13.0.0.0.0) y los actos de los Dioses Paddler en el establecimiento del cosmos.",
+        "en": "The tallest stela in the Maya world (over 10 meters), erected by K'ahk' Tiliw Chan Yopaat of Quiriguá. It narrates the Creation date (13.0.0.0.0) and the acts of the Paddler Gods in establishing the cosmos."
+      },
+      "historical_context": {
+        "es": "K'ahk' Tiliw Chan Yopaat de Quiriguá capturó y decapitó al poderoso rey de Copán en 738 d.C., convirtiendo a Quiriguá en un reino independiente. Las monumentales estelas de Quiriguá celebran esa victoria.",
+        "en": "K'ahk' Tiliw Chan Yopaat of Quiriguá captured and decapitated the powerful king of Copán in 738 CE, making Quiriguá an independent kingdom. Quiriguá's monumental stelae celebrate that victory."
+      },
+      "blocks": [
+        {
+          "position": "A1-B1",
+          "glyphs": ["T528", "T178", "T116"],
+          "transliteration": "13-0-0-0-0",
+          "transcription": "oxlahun pik",
+          "translation": { "es": "13 b'ak'tuun (fecha de la Creación)", "en": "13 b'ak'tun (Creation date)" },
+          "notes": {
+            "es": "La Cuenta Larga de la fecha de la Creación: 13 b'ak'tuunes, equivalente a 0 en el ciclo actual",
+            "en": "The Long Count of the Creation date: 13 b'ak'tuns, equivalent to 0 in the current cycle"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T504", "T60", "T116"],
+          "transliteration": "4-AJAW-8-KUMK'U",
+          "transcription": "chan ajaw waxak kumk'u",
+          "translation": { "es": "4 Ajaw 8 Kumk'u", "en": "4 Ajaw 8 Kumk'u" },
+          "notes": {
+            "es": "La fecha del Calendario Redondo de la Creación; el equivalente gregoriano es 11 de agosto de 3114 a.C.",
+            "en": "The Round Calendar date of Creation; the Gregorian equivalent is August 11, 3114 BCE"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T1016", "T740"],
+          "transliteration": "ISIM-KAAN",
+          "transcription": "isim kaan",
+          "translation": { "es": "barbas del cielo / Vía Láctea", "en": "beard of the sky / Milky Way" },
+          "notes": {
+            "es": "Referencia astronómica a la Vía Láctea como eje cósmico en el momento de la Creación",
+            "en": "Astronomical reference to the Milky Way as cosmic axis at the moment of Creation"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T764", "T116", "T181"],
+          "transliteration": "K'AHK'-TILIW-CHAN-YOPAAT",
+          "transcription": "k'ahk' tiliw chan yopaat",
+          "translation": { "es": "Fuego que quema el Cielo (dios de la lluvia)", "en": "Fire that Burns Sky (rain god)" },
+          "notes": {
+            "es": "Nombre del rey de Quiriguá que mandó erigir la estela; Yopaat es el dios Ch'orti' de la lluvia y el trueno",
+            "en": "Name of the king of Quiriguá who commissioned the stela; Yopaat is the Ch'orti' rain and thunder god"
+          }
+        },
+        {
+          "position": "B3",
+          "glyphs": ["T168", "T130"],
+          "transliteration": "K'UHUL-AJAW-QUIRIGUA",
+          "transcription": "k'uhul ajaw",
+          "translation": { "es": "señor sagrado de Quiriguá", "en": "holy lord of Quiriguá" },
+          "notes": {
+            "es": "Título que K'ahk' Tiliw asumió después de ejecutar al rey de Copán",
+            "en": "Title K'ahk' Tiliw assumed after executing the king of Copán"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Looper, M. 2003",
+      "image_credit": "Drawing by Matthew Looper, FAMSI"
+    },
+    {
+      "id": "copan-altar-q",
+      "name": {
+        "es": "Altar Q de Copán",
+        "en": "Copán Altar Q"
+      },
+      "site": "copan",
+      "date_long_count": "9.17.5.0.0",
+      "date_gregorian": "776 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "El Altar Q muestra a los 16 gobernantes de Copán sentados alrededor de los cuatro lados, pasándose el bastón de mando dinástico. La inscripción narra la sucesión desde el fundador K'inich Yax K'uk' Mo' hasta Yax Pasaj Chan Yopaat.",
+        "en": "Altar Q shows the 16 rulers of Copán seated around the four sides, passing the dynastic staff. The inscription narrates the succession from founder K'inich Yax K'uk' Mo' to Yax Pasaj Chan Yopaat."
+      },
+      "historical_context": {
+        "es": "Yax Pasaj Chan Yopaat, el decimosexto y penúltimo gobernante de Copán, mandó crear el Altar Q para legitimar su reinado conectándolo con el fundador dinástico del siglo V.",
+        "en": "Yax Pasaj Chan Yopaat, the sixteenth and penultimate ruler of Copán, commissioned Altar Q to legitimize his reign by connecting it to the fifth-century dynastic founder."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T74", "T504", "T116"],
+          "transliteration": "YAX-K'UK'-MO'",
+          "transcription": "yax k'uk' mo'",
+          "translation": { "es": "Quetzal-Guacamaya Verde Primero", "en": "First Green Quetzal-Macaw" },
+          "notes": {
+            "es": "Nombre del fundador dinástico de Copán, que llegó hacia 426 d.C.; el Altar Q lo muestra entregando el cetro real",
+            "en": "Name of Copán's dynastic founder, who arrived around 426 CE; Altar Q shows him handing over the royal scepter"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T528", "T740", "T168"],
+          "transliteration": "K'UHUL-AJAW-XUKPI",
+          "transcription": "k'uhul ajaw xukpi",
+          "translation": { "es": "señor sagrado de Copán", "en": "holy lord of Copán" },
+          "notes": {
+            "es": "Título dinástico completo de los gobernantes de Copán",
+            "en": "Full dynastic title of Copán's rulers"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T533", "T116", "T181"],
+          "transliteration": "YAX-PASAJ-CHAN-YOPAAT",
+          "transcription": "yax pasaj chan yopaat",
+          "translation": { "es": "Primer Amanecer del Cielo Yopaat", "en": "First Dawning Sky Yopaat" },
+          "notes": {
+            "es": "Nombre del decimosexto gobernante que mandó hacer el altar; Yopaat es el dios del trueno",
+            "en": "Name of the sixteenth ruler who commissioned the altar; Yopaat is the thunder god"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T504", "T130", "T60"],
+          "transliteration": "TZ'AK-AJ",
+          "transcription": "tz'akaj",
+          "translation": { "es": "fue completada la sucesión", "en": "the succession was completed" },
+          "notes": {
+            "es": "Verbo pasivo que indica la finalización de la secuencia dinástica de 16 gobernantes",
+            "en": "Passive verb indicating the completion of the dynastic sequence of 16 rulers"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T528", "T178"],
+          "transliteration": "16-TZ'AK-AJAW",
+          "transcription": "wuklajuun tz'ak ajaw",
+          "translation": { "es": "decimosexto en la sucesión de señores", "en": "sixteenth in the succession of lords" },
+          "notes": {
+            "es": "Posición ordinal que establece a Yax Pasaj como el decimosexto de la línea dinástica",
+            "en": "Ordinal position establishing Yax Pasaj as the sixteenth in the dynastic line"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Stuart, D. 2004",
+      "image_credit": "Drawing by Barbara Fash, Peabody Museum"
+    },
+    {
+      "id": "palenque-96-glyphs",
+      "name": {
+        "es": "Tablero de los 96 Glifos de Palenque",
+        "en": "Palenque Panel of 96 Glyphs"
+      },
+      "site": "palenque",
+      "date_long_count": "9.14.10.4.2",
+      "date_gregorian": "721 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Texto jeroglífico denso de 96 bloques de glifos que narra la historia dinástica de Palenque desde la fundación mítica hasta el reinado de K'inich Ahkal Mo' Naab III. Incluye referencias a eventos supernaturales y genealogías reales.",
+        "en": "Dense hieroglyphic text of 96 glyph blocks narrating the dynastic history of Palenque from mythical founding to the reign of K'inich Ahkal Mo' Naab III. Includes references to supernatural events and royal genealogies."
+      },
+      "historical_context": {
+        "es": "K'inich Ahkal Mo' Naab III gobernó Palenque después de un período de debilidad política. Este panel consolida la legitimidad de su reinado narrando una larga historia dinástica con precedentes míticos.",
+        "en": "K'inich Ahkal Mo' Naab III ruled Palenque after a period of political weakness. This panel consolidates the legitimacy of his reign by narrating a long dynastic history with mythical precedents."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T528", "T181", "T116"],
+          "transliteration": "AHKAL-MO'-NAAB",
+          "transcription": "ahkal mo' naab",
+          "translation": { "es": "Tortuga-Guacamaya-Laguna", "en": "Turtle-Macaw-Lake" },
+          "notes": {
+            "es": "Nombre del rey que comisionó el tablero; mo' es guacamaya, naab es laguna o plano de agua",
+            "en": "Name of the king who commissioned the panel; mo' is macaw, naab is lake or water plane"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T504", "T740", "T60"],
+          "transliteration": "K'INICH-AJAW-PALENQUE",
+          "transcription": "k'inich ajaw",
+          "translation": { "es": "señor del rostro solar / rey solar", "en": "lord of the sun face / solar king" },
+          "notes": {
+            "es": "K'inich es el dios solar y también el prefijo honorífico de los reyes de Palenque",
+            "en": "K'inich is the sun god and also the honorific prefix of Palenque's kings"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T644", "T116", "T528"],
+          "transliteration": "NAAH-HO'-CHAN",
+          "transcription": "naah ho' chan",
+          "translation": { "es": "Primera Casa del Cielo", "en": "First House of the Sky" },
+          "notes": {
+            "es": "Referencia a un evento de creación primordial o el nombre de un lugar mítico sobrenatural",
+            "en": "Reference to a primordial creation event or the name of a mythical supernatural place"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T533", "T130", "T178"],
+          "transliteration": "U-TZ'AK-il",
+          "transcription": "u tz'akil",
+          "translation": { "es": "su sucesor / el que completa", "en": "his successor / the one who completes" },
+          "notes": {
+            "es": "Término que indica la relación de sucesión entre gobernantes",
+            "en": "Term indicating the succession relationship between rulers"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T764", "T116"],
+          "transliteration": "HUL-i",
+          "transcription": "huli",
+          "translation": { "es": "llegó / ascendió", "en": "arrived / ascended" },
+          "notes": {
+            "es": "Verbo que marca la llegada al poder o la manifestación de un gobernante",
+            "en": "Verb marking the coming to power or manifestation of a ruler"
+          }
+        }
+      ],
+      "source": "Stuart, D. & Houston, S. 1994; Bernal Romero, G. 2011",
+      "image_credit": "Drawing by Merle Greene Robertson, PMARI"
+    },
+    {
+      "id": "yaxchilan-lintel-25",
+      "name": {
+        "es": "Dintel 25 de Yaxchilán",
+        "en": "Yaxchilán Lintel 25"
+      },
+      "site": "yaxchilan",
+      "date_long_count": "9.13.17.15.12",
+      "date_gregorian": "709 d.C.",
+      "type": "ritual",
+      "description": {
+        "es": "El Dintel 25 muestra la visión de la reina K'abal Xook después del autosacrificio: una serpiente de visión emerge de un cuenco de sangre y de su boca surge el dios de la guerra Aj Naab' Kaan con escudo y lanza.",
+        "en": "Lintel 25 shows the vision of Queen K'abal Xook after self-sacrifice: a vision serpent emerges from a bowl of blood and from its mouth appears the war god Aj Naab' Kaan with shield and spear."
+      },
+      "historical_context": {
+        "es": "Los tres dinteles del Edificio 23 (24, 25 y 26) formaban un programa narrativo completo sobre los rituales de sangría de K'abal Xook y su rol en legitimar el reinado de Itzamnaaj Bahlam III.",
+        "en": "The three lintels of Structure 23 (24, 25, and 26) formed a complete narrative program about the bloodletting rituals of K'abal Xook and her role in legitimizing the reign of Itzamnaaj Bahlam III."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T130", "T116"],
+          "transliteration": "CHAN-NAH-KAN",
+          "transcription": "chan nah kan",
+          "translation": { "es": "serpiente de visión del cielo", "en": "sky vision serpent" },
+          "notes": {
+            "es": "La serpiente de visión es el portal entre el mundo humano y el sobrenatural que surge del autosacrificio",
+            "en": "The vision serpent is the portal between the human and supernatural world that emerges from self-sacrifice"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T116", "T181"],
+          "transliteration": "IXIK-K'ABAL-XOOK",
+          "transcription": "ixik k'abal xook",
+          "translation": { "es": "señora K'abal Xook", "en": "Lady K'abal Xook" },
+          "notes": {
+            "es": "La reina que realiza el ritual y recibe la visión sobrenatural",
+            "en": "The queen performing the ritual and receiving the supernatural vision"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178"],
+          "transliteration": "U-WAHYIS",
+          "transcription": "u wahyis",
+          "translation": { "es": "su co-esencia / animal compañero", "en": "his/her co-essence / spirit companion" },
+          "notes": {
+            "es": "Wahyis o way es el espíritu animal o co-esencia del individuo en la cosmovisión maya",
+            "en": "Wahyis or way is the spirit animal or co-essence of the individual in Maya worldview"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T764", "T60", "T116"],
+          "transliteration": "u-CH'AB-AK'AB",
+          "transcription": "u ch'ab ak'ab",
+          "translation": { "es": "su penitencia en la oscuridad", "en": "his/her penance in darkness" },
+          "notes": {
+            "es": "Frase ritual que describe el sacrificio nocturno para invocar a los antepasados o deidades",
+            "en": "Ritual phrase describing nocturnal sacrifice to invoke ancestors or deities"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T1016", "T740", "T116"],
+          "transliteration": "K'UH-BAHLAM",
+          "transcription": "k'uh bahlam",
+          "translation": { "es": "dios jaguar", "en": "jaguar god" },
+          "notes": {
+            "es": "El ser sobrenatural que emerge de la serpiente de visión como resultado del ritual",
+            "en": "The supernatural being who emerges from the vision serpent as a result of the ritual"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Tate, C. 1992",
+      "image_credit": "British Museum, London; Drawing by Ian Graham, PMAE"
+    },
+    {
+      "id": "bonampak-murals",
+      "name": {
+        "es": "Textos de los Murales de Bonampak",
+        "en": "Bonampak Murals Captions"
+      },
+      "site": "bonampak",
+      "date_long_count": "9.18.0.3.4",
+      "date_gregorian": "791 d.C.",
+      "type": "warfare",
+      "description": {
+        "es": "Los murales del Edificio 1 de Bonampak son los más completos del mundo maya. Las inscripciones acompañan escenas de batalla, captura de prisioneros, celebración y sacrificio, narrando la legitimación del joven príncipe heredero.",
+        "en": "The murals of Bonampak's Structure 1 are the most complete in the Maya world. The inscriptions accompany scenes of battle, prisoner capture, celebration, and sacrifice, narrating the legitimation of the young crown prince."
+      },
+      "historical_context": {
+        "es": "Yajaw Chan Muwaan II mandó pintar los murales para presentar a su hijo como heredero legítimo. Irónicamente, el colapso de Bonampak impidió que el niño llegara a gobernar.",
+        "en": "Yajaw Chan Muwaan II commissioned the murals to present his son as the legitimate heir. Ironically, the collapse of Bonampak prevented the child from ever ruling."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T130", "T116"],
+          "transliteration": "STAR-WAR-SIGN",
+          "transcription": "ch'ak kab'",
+          "translation": { "es": "guerra estrella / ataque axe", "en": "star war / axe attack" },
+          "notes": {
+            "es": "El glifo de 'guerra estrella' indica un ataque militar mayor asociado con Venus como estrella de la mañana",
+            "en": "The 'star war' glyph indicates a major military attack associated with Venus as the morning star"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740"],
+          "transliteration": "YAJAW-CHAN-MUWAAN",
+          "transcription": "yajaw chan muwaan",
+          "translation": { "es": "Señor del Cielo Halcón", "en": "Lord of the Sky Hawk" },
+          "notes": {
+            "es": "Nombre del rey de Bonampak que comisionó los murales; muwaan es un ave de presa",
+            "en": "Name of the king of Bonampak who commissioned the murals; muwaan is a bird of prey"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T1016", "T116", "T181"],
+          "transliteration": "BAK",
+          "transcription": "bak",
+          "translation": { "es": "cautivo / prisionero", "en": "captive / prisoner" },
+          "notes": {
+            "es": "Glifo que designa a los prisioneros capturados en batalla; puede ir acompañado del nombre del cautivo",
+            "en": "Glyph designating prisoners captured in battle; may be accompanied by the captive's name"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T528", "T178", "T60"],
+          "transliteration": "U-BAH-il",
+          "transcription": "u bahil",
+          "translation": { "es": "su imagen / su retrato", "en": "his image / his portrait" },
+          "notes": {
+            "es": "Término que introduce el retrato del gobernante en los murales; bah significa 'imagen' o 'semejanza'",
+            "en": "Term introducing the ruler's portrait in the murals; bah means 'image' or 'likeness'"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T644", "T116"],
+          "transliteration": "NAAH-HO'",
+          "transcription": "naah ho'",
+          "translation": { "es": "primer cinco / sala principal", "en": "first five / main hall" },
+          "notes": {
+            "es": "Referencia a la sala principal del Edificio 1 donde se encuentran los murales",
+            "en": "Reference to the main hall of Structure 1 where the murals are located"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Miller, M. & Brittenham, C. 2013",
+      "image_credit": "Reproduction by Heather Hurst, Yale University Art Gallery"
+    },
+    {
+      "id": "copan-hieroglyphic-stairway",
+      "name": {
+        "es": "Escalinata Jeroglífica de Copán",
+        "en": "Copán Hieroglyphic Stairway"
+      },
+      "site": "copan",
+      "date_long_count": "9.15.5.0.0",
+      "date_gregorian": "756 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "La escalinata jeroglífica más larga del mundo maya, con 2200 bloques de glifos distribuidos en 63 escalones. Narra la historia dinástica completa de Copán desde el fundador K'inich Yax K'uk' Mo' hasta K'ahk' Yipyaj Chan K'awiil (Humo Caracol).",
+        "en": "The longest hieroglyphic stairway in the Maya world, with 2200 glyph blocks distributed across 63 steps. It narrates the complete dynastic history of Copán from founder K'inich Yax K'uk' Mo' to K'ahk' Yipyaj Chan K'awiil (Smoke Shell)."
+      },
+      "historical_context": {
+        "es": "K'ahk' Yipyaj Chan K'awiil reconstruyó la escalinata alrededor de 756 d.C. para rehabilitar el prestigio de Copán después de la humillante derrota frente a Quiriguá en 738 d.C.",
+        "en": "K'ahk' Yipyaj Chan K'awiil rebuilt the stairway around 756 CE to rehabilitate Copán's prestige after the humiliating defeat against Quiriguá in 738 CE."
+      },
+      "blocks": [
+        {
+          "position": "Step 1",
+          "glyphs": ["T504", "T116", "T181"],
+          "transliteration": "YAX-K'UK'-MO'-u-TZ'AK",
+          "transcription": "yax k'uk' mo' u tz'ak",
+          "translation": { "es": "Yax K'uk' Mo', el primer sucesor", "en": "Yax K'uk' Mo', the first successor" },
+          "notes": {
+            "es": "El primer escalón establece la fundación de la dinastía; la escalinata narra en orden ascendente",
+            "en": "The first step establishes the dynasty's foundation; the stairway narrates in ascending order"
+          }
+        },
+        {
+          "position": "Step 21",
+          "glyphs": ["T528", "T178"],
+          "transliteration": "WAXAKLAJUUN-UBAAH-K'AWIIL",
+          "transcription": "waxaklajuun ubaah k'awiil",
+          "translation": { "es": "18 Conejo", "en": "18 Rabbit" },
+          "notes": {
+            "es": "El escalón dedicado al decimotercer gobernante, cuya derrota en 738 d.C. motivó la reconstrucción",
+            "en": "The step dedicated to the thirteenth ruler, whose defeat in 738 CE motivated the reconstruction"
+          }
+        },
+        {
+          "position": "Step 44",
+          "glyphs": ["T533", "T116"],
+          "transliteration": "K'AHK'-YIPYAJ-CHAN-K'AWIIL",
+          "transcription": "k'ahk' yipyaj chan k'awiil",
+          "translation": { "es": "El Fuego anima el Cielo K'awiil (Humo Caracol)", "en": "Fire Animates Sky K'awiil (Smoke Shell)" },
+          "notes": {
+            "es": "El decimoquinto gobernante que mandó reconstruir la escalinata",
+            "en": "The fifteenth ruler who commissioned the stairway's reconstruction"
+          }
+        },
+        {
+          "position": "Step 63",
+          "glyphs": ["T644", "T740", "T60"],
+          "transliteration": "TZ'AK-AJ-AJAW",
+          "transcription": "tz'akaj ajaw",
+          "translation": { "es": "fue completada la secuencia de señores", "en": "the sequence of lords was completed" },
+          "notes": {
+            "es": "El escalón superior cierra la narración dinástica con la fórmula de sucesión completa",
+            "en": "The top step closes the dynastic narrative with the complete succession formula"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Stuart, D. 2004",
+      "image_credit": "Drawing by Barbara Fash, Peabody Museum"
+    },
+    {
+      "id": "palenque-tablet-palace",
+      "name": {
+        "es": "Tablero del Palacio de Palenque",
+        "en": "Palenque Palace Tablet"
+      },
+      "site": "palenque",
+      "date_long_count": "9.14.10.4.2",
+      "date_gregorian": "721 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "El Tablero del Palacio narra la entronización de K'inich Ahkal Mo' Naab III entre sus padres. La escena central muestra al rey recibiendo la diadema real de su padre K'inich Kan Joy Chitam II y su madre.",
+        "en": "The Palace Tablet narrates the enthronement of K'inich Ahkal Mo' Naab III between his parents. The central scene shows the king receiving the royal diadem from his father K'inich Kan Joy Chitam II and his mother."
+      },
+      "historical_context": {
+        "es": "K'inich Ahkal Mo' Naab III tomó el poder después de que su padre Kan Joy Chitam II fuera capturado por Toniná en 711 d.C. El tablero establece su legitimidad pese a la derrota familiar.",
+        "en": "K'inich Ahkal Mo' Naab III took power after his father Kan Joy Chitam II was captured by Toniná in 711 CE. The tablet establishes his legitimacy despite the family defeat."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T528", "T181"],
+          "transliteration": "K'INICH-AHKAL-MO'-NAAB",
+          "transcription": "k'inich ahkal mo' naab",
+          "translation": { "es": "K'inich Ahkal Mo' Naab (rey)", "en": "K'inich Ahkal Mo' Naab (king)" },
+          "notes": {
+            "es": "Nombre del rey entronizado; ahkal puede significar 'tortuga' y naab 'laguna' en lenguas ch'olanas",
+            "en": "Name of the enthroned king; ahkal may mean 'turtle' and naab 'lake' in Ch'olan languages"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740", "T116"],
+          "transliteration": "K'UHUL-BAAKAL-AJAW",
+          "transcription": "k'uhul baakal ajaw",
+          "translation": { "es": "señor sagrado de Palenque", "en": "holy lord of Palenque" },
+          "notes": {
+            "es": "El glifo emblema de Palenque (baakal = hueso) combinado con el título de señor sagrado",
+            "en": "The emblem glyph of Palenque (baakal = bone) combined with the holy lord title"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178", "T60"],
+          "transliteration": "KAN-JOY-CHITAM",
+          "transcription": "kan joy chitam",
+          "translation": { "es": "Cuatro Pizotes Atados (el padre)", "en": "Four Bound Peccaries (the father)" },
+          "notes": {
+            "es": "Nombre del padre y predecesor, capturado por Toniná en 711 d.C.",
+            "en": "Name of the father and predecessor, captured by Toniná in 711 CE"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T644", "T130"],
+          "transliteration": "SAK-K'UK'",
+          "transcription": "sak k'uk'",
+          "translation": { "es": "Quetzal Blanco (la madre)", "en": "White Quetzal (the mother)" },
+          "notes": {
+            "es": "Nombre de la madre del rey; notable gobernante femenina de Palenque del siglo VII",
+            "en": "Name of the king's mother; notable female ruler of Palenque in the seventh century"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T764", "T116", "T504"],
+          "transliteration": "CHUM-WAN",
+          "transcription": "chumwan",
+          "translation": { "es": "fue sentado (en el trono)", "en": "was seated (on the throne)" },
+          "notes": {
+            "es": "Verbo estándar de entronización en el mundo maya: el acto de 'sentarse' sobre la estera real",
+            "en": "Standard enthronement verb in the Maya world: the act of 'sitting' upon the royal mat"
+          }
+        }
+      ],
+      "source": "Stuart, D. & Houston, S. 1994; Bernal Romero, G. 2011",
+      "image_credit": "Drawing by Merle Greene Robertson, PMARI"
+    },
+    {
+      "id": "vase-seven-gods",
+      "name": {
+        "es": "Vasija de los Siete Dioses (K2796)",
+        "en": "Vase of the Seven Gods (K2796)"
+      },
+      "site": "calakmul",
+      "date_long_count": "13.0.0.0.0",
+      "date_gregorian": "3114 a.C. (mítico)",
+      "type": "mythological",
+      "description": {
+        "es": "Esta vasija policroma del Clásico tardío representa a los siete dioses del inframundo reunidos antes de la Creación. La inscripción narra la historia de la Creación con el dios del maíz resurgiendo del inframundo.",
+        "en": "This polychrome vase of the Late Classic depicts seven underworld gods gathered before Creation. The inscription narrates the Creation story with the maize god resurging from the underworld."
+      },
+      "historical_context": {
+        "es": "Las vasijas polícromas del Clásico tardío (600–900 d.C.) frecuentemente representan la mitología de la Creación. El sistema de numeración de vasos Kerr (K) es el estándar académico para su identificación.",
+        "en": "Polychrome vases of the Late Classic (600–900 CE) frequently depict Creation mythology. The Kerr vessel numbering system (K) is the academic standard for their identification."
+      },
+      "blocks": [
+        {
+          "position": "Banda superior A",
+          "glyphs": ["T74", "T528", "T178"],
+          "transliteration": "IL-AJ-?",
+          "transcription": "il aj…",
+          "translation": { "es": "vio / fue visto", "en": "he/she saw / was seen" },
+          "notes": {
+            "es": "Fórmula de dedicación en vasos del Período Clásico; introduce la identidad del propietario",
+            "en": "Dedication formula on Classic Period vases; introduces the owner's identity"
+          }
+        },
+        {
+          "position": "Banda superior B",
+          "glyphs": ["T1016", "T116", "T181"],
+          "transliteration": "BOLON-YOKTE'",
+          "transcription": "bolon yokte'",
+          "translation": { "es": "Nueve Pies de Árbol (dios de la guerra)", "en": "Nine Tree Foot (god of war)" },
+          "notes": {
+            "es": "Deidad principal de la Creación y el colapso; preside la transición entre eras cósmicas",
+            "en": "Principal deity of Creation and collapse; presides over transitions between cosmic eras"
+          }
+        },
+        {
+          "position": "Banda superior C",
+          "glyphs": ["T504", "T130"],
+          "transliteration": "CHAN-AJAW-WAY",
+          "transcription": "chan ajaw way",
+          "translation": { "es": "señores del cielo del inframundo", "en": "lords of the underworld sky" },
+          "notes": {
+            "es": "Los siete dioses representados en el vaso son entidades del inframundo (Xibalbá)",
+            "en": "The seven gods depicted on the vase are underworld (Xibalba) entities"
+          }
+        },
+        {
+          "position": "Banda superior D",
+          "glyphs": ["T528", "T116", "T60"],
+          "transliteration": "HUN-AJAW",
+          "transcription": "hun ajaw",
+          "translation": { "es": "1 Señor / Hunahpu (héroe gemelo)", "en": "1 Lord / Hunahpu (hero twin)" },
+          "notes": {
+            "es": "Uno de los Héroes Gemelos del Popol Vuh; su historia prefigura la Creación del mundo actual",
+            "en": "One of the Hero Twins of the Popol Vuh; his story prefigures the Creation of the current world"
+          }
+        },
+        {
+          "position": "Banda superior E",
+          "glyphs": ["T764", "T178"],
+          "transliteration": "U-TI'IL",
+          "transcription": "u ti'il",
+          "translation": { "es": "su vasija de cacao / boca de la vasija", "en": "his cacao vessel / vessel mouth" },
+          "notes": {
+            "es": "Parte de la fórmula de dedicación estándar (PSS) que describe el contenido de la vasija",
+            "en": "Part of the standard dedication formula (PSS) describing the vessel's contents"
+          }
+        }
+      ],
+      "source": "Coe, M. 1973; Kerr, J. 1992 (File K2796)",
+      "image_credit": "Justin Kerr, Maya Vase Database K2796"
+    },
+    {
+      "id": "yaxchilan-lintel-26",
+      "name": {
+        "es": "Dintel 26 de Yaxchilán",
+        "en": "Yaxchilán Lintel 26"
+      },
+      "site": "yaxchilan",
+      "date_long_count": "9.13.17.9.0",
+      "date_gregorian": "726 d.C.",
+      "type": "warfare",
+      "description": {
+        "es": "El Dintel 26 del Edificio 23 muestra a K'abal Xook equipando con el casco de guerra a su esposo Itzamnaaj Bahlam III antes de una expedición militar. La inscripción registra la campaña bélica y la captura de un gobernante rival.",
+        "en": "Lintel 26 of Structure 23 shows K'abal Xook equipping her husband Itzamnaaj Bahlam III with a war helmet before a military expedition. The inscription records the military campaign and the capture of a rival ruler."
+      },
+      "historical_context": {
+        "es": "Yaxchilán mantuvo una larga rivalidad con Piedras Negras. Las campañas militares de Itzamnaaj Bahlam III están documentadas en múltiples dinteles y monumentos de Yaxchilán.",
+        "en": "Yaxchilán maintained a long rivalry with Piedras Negras. The military campaigns of Itzamnaaj Bahlam III are documented in multiple lintels and monuments at Yaxchilán."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T116"],
+          "transliteration": "CH'AK-AJ",
+          "transcription": "ch'akaj",
+          "translation": { "es": "fue decapitado / fue atacado", "en": "was beheaded / was attacked" },
+          "notes": {
+            "es": "Verbo de guerra que puede indicar decapitación literal o una batalla decisiva",
+            "en": "War verb that can indicate literal decapitation or a decisive battle"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740", "T181"],
+          "transliteration": "ITZAM-BAHLAM-AJAW",
+          "transcription": "itzamnaaj bahlam ajaw",
+          "translation": { "es": "señor Itzamnaaj Jaguar", "en": "lord Itzamnaaj Jaguar" },
+          "notes": {
+            "es": "El guerrero-rey de Yaxchilán que lidera la campaña militar descrita en el dintel",
+            "en": "The warrior-king of Yaxchilán leading the military campaign described in the lintel"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178", "T130"],
+          "transliteration": "BAK-el-AJ",
+          "transcription": "bakaj",
+          "translation": { "es": "fue capturado / tomado prisionero", "en": "was captured / taken prisoner" },
+          "notes": {
+            "es": "Verbo de captura en guerra; los prisioneros de guerra de alto rango eran sacrificados ritualmente",
+            "en": "Capture verb in war; high-ranking war prisoners were ritually sacrificed"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T764", "T60", "T116"],
+          "transliteration": "SAK-MAAS-TOOK'",
+          "transcription": "sak maas took'",
+          "translation": { "es": "Pedernal Blanco Iguana (el cautivo)", "en": "White Iguana Flint (the captive)" },
+          "notes": {
+            "es": "Nombre del noble capturado en la batalla; los cautivos de alta condición eran nombrados en los monumentos",
+            "en": "Name of the noble captured in battle; high-status captives were named on monuments"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T1016", "T116", "T504"],
+          "transliteration": "IXIK-K'ABAL-XOOK-u-PAKAL",
+          "transcription": "ixik k'abal xook u pakal",
+          "translation": { "es": "la señora K'abal Xook con su escudo", "en": "Lady K'abal Xook with her shield" },
+          "notes": {
+            "es": "La reina equipa al rey con armamento ritual; su nombre aparece vinculado al acto marcial",
+            "en": "The queen equips the king with ritual armament; her name appears linked to the martial act"
+          }
+        }
+      ],
+      "source": "Schele & Freidel, 1990; Tate, C. 1992",
+      "image_credit": "British Museum, London; Drawing by Ian Graham, PMAE"
+    },
+    {
+      "id": "piedras-negras-stela-3",
+      "name": {
+        "es": "Estela 3 de Piedras Negras",
+        "en": "Piedras Negras Stela 3"
+      },
+      "site": "piedras-negras",
+      "date_long_count": "9.12.2.0.16",
+      "date_gregorian": "687 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Estela erigida por el gobernante 2 de Piedras Negras, conocido como Itzam K'an Ahk II. La estela forma parte de una serie que documentó el descifre del calendario maya gracias al trabajo pionero de Tatiana Proskouriakoff.",
+        "en": "Stela erected by Ruler 2 of Piedras Negras, known as Itzam K'an Ahk II. The stela is part of a series that facilitated the decipherment of the Maya calendar through Tatiana Proskouriakoff's pioneering work."
+      },
+      "historical_context": {
+        "es": "En 1960, Tatiana Proskouriakoff usó las estelas de Piedras Negras para demostrar que los textos mayas registraban historia real, no solo datos calendáricos. Esto revolucionó la epigrafía maya.",
+        "en": "In 1960, Tatiana Proskouriakoff used the Piedras Negras stelae to demonstrate that Maya texts recorded actual history, not merely calendrical data. This revolutionized Maya epigraphy."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T181", "T116"],
+          "transliteration": "ITZAM-K'AN-AHK",
+          "transcription": "itzam k'an ahk",
+          "translation": { "es": "Itzamnaaj Tortuga Amarilla", "en": "Itzamnaaj Yellow Turtle" },
+          "notes": {
+            "es": "Nombre del segundo gobernante de Piedras Negras; ahk significa tortuga en ch'olano",
+            "en": "Name of the second ruler of Piedras Negras; ahk means turtle in Ch'olan"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740"],
+          "transliteration": "K'UHUL-YOKIB-AJAW",
+          "transcription": "k'uhul yokib ajaw",
+          "translation": { "es": "señor sagrado de Piedras Negras", "en": "holy lord of Piedras Negras" },
+          "notes": {
+            "es": "Yokib es el nombre antiguo de Piedras Negras; significa 'puerta' o 'entrada'",
+            "en": "Yokib is the ancient name of Piedras Negras; it means 'door' or 'entrance'"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T764", "T178", "T116"],
+          "transliteration": "CHUM-WAN-AJ",
+          "transcription": "chumwanaj",
+          "translation": { "es": "fue entronizado / se sentó en el trono", "en": "was enthroned / sat on the throne" },
+          "notes": {
+            "es": "El verbo de entronización que Proskouriakoff identificó en todas las estelas de Piedras Negras",
+            "en": "The enthronement verb that Proskouriakoff identified on all Piedras Negras stelae"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T528", "T130"],
+          "transliteration": "u-K'AB-AJ",
+          "transcription": "u k'abaj",
+          "translation": { "es": "su ofrenda / su dedicación", "en": "his offering / his dedication" },
+          "notes": {
+            "es": "Frase que introduce la ofrenda o monumento dedicado al acceso al poder del gobernante",
+            "en": "Phrase introducing the offering or monument dedicated at the ruler's accession to power"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T644", "T116", "T504"],
+          "transliteration": "YOKIB-NAH",
+          "transcription": "yokib nah",
+          "translation": { "es": "casa/palacio de la Entrada", "en": "house/palace of the Entrance" },
+          "notes": {
+            "es": "Referencia al edificio o recinto donde se erigió la estela en el palacio real",
+            "en": "Reference to the building or precinct where the stela was erected in the royal palace"
+          }
+        }
+      ],
+      "source": "Proskouriakoff, T. 1960; Martin & Grube, 2000",
+      "image_credit": "Drawing by John Montgomery, FAMSI"
+    },
+    {
+      "id": "cancuen-panel-3",
+      "name": {
+        "es": "Panel 3 de Cancuén",
+        "en": "Cancuén Panel 3"
+      },
+      "site": "cancuen",
+      "date_long_count": "9.18.0.0.0",
+      "date_gregorian": "790 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "El Panel 3 de Cancuén documenta el reinado de Taj Chan Ahk y sus alianzas con sitios del sur de las tierras bajas. Cancuén fue un importante centro comercial en la confluencia del Río de la Pasión, sin estructura piramidal conocida.",
+        "en": "Cancuén Panel 3 documents the reign of Taj Chan Ahk and his alliances with southern lowland sites. Cancuén was an important trading center at the confluence of the Río de la Pasión, with no known pyramid structure."
+      },
+      "historical_context": {
+        "es": "Cancuén prosperó como hub comercial entre las tierras altas (obsidiana, jade) y las tierras bajas (bienes manufacturados). Fue abandonado violentamente alrededor de 800 d.C., con evidencia de masacre.",
+        "en": "Cancuén flourished as a trading hub between the highlands (obsidian, jade) and lowlands (manufactured goods). It was violently abandoned around 800 CE, with evidence of massacre."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T130", "T116"],
+          "transliteration": "TAJ-CHAN-AHK",
+          "transcription": "taj chan ahk",
+          "translation": { "es": "Tortuga del Cielo Ardiente", "en": "Burning Sky Turtle" },
+          "notes": {
+            "es": "Nombre del rey que mandó hacer el panel; taj significa antorcha o algo ardiente",
+            "en": "Name of the king who commissioned the panel; taj means torch or something burning"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740", "T181"],
+          "transliteration": "K'UHUL-CANCUEN-AJAW",
+          "transcription": "k'uhul cancuén ajaw",
+          "translation": { "es": "señor sagrado de Cancuén", "en": "holy lord of Cancuén" },
+          "notes": {
+            "es": "Cancuén significa 'lugar de muchas serpientes' en maya yucateco",
+            "en": "Cancuén means 'place of many serpents' in Yucatec Maya"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178"],
+          "transliteration": "TZUTZ-yi",
+          "transcription": "tzutziy",
+          "translation": { "es": "terminó / fue completado", "en": "it ended / was completed" },
+          "notes": {
+            "es": "Verbo que marca la conclusión de un período de tiempo; introduce el número del k'atun",
+            "en": "Verb marking the completion of a time period; introduces the k'atun number"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T504", "T116", "T60"],
+          "transliteration": "18-K'ATUN",
+          "transcription": "waxaklajuun k'atun",
+          "translation": { "es": "18 k'atun (período de 360 días x 20)", "en": "18 k'atun (period of 360 days x 20)" },
+          "notes": {
+            "es": "El final del k'atun 18, equivalente al 9.18.0.0.0 de la Cuenta Larga",
+            "en": "The end of k'atun 18, equivalent to 9.18.0.0.0 of the Long Count"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T764", "T116", "T181"],
+          "transliteration": "u-CH'AB-AK'AB",
+          "transcription": "u ch'ab ak'ab",
+          "translation": { "es": "su penitencia / su creación en la oscuridad", "en": "his penance / his creation in darkness" },
+          "notes": {
+            "es": "Fórmula dedicatoria que acompaña la erección de un monumento ritual",
+            "en": "Dedicatory formula accompanying the erection of a ritual monument"
+          }
+        }
+      ],
+      "source": "Demarest, A. et al. 2003; Martin & Grube, 2000",
+      "image_credit": "Drawing by Federico Fahsen, FAMSI"
+    },
+    {
+      "id": "dos-pilas-stela-16",
+      "name": {
+        "es": "Estela 16 de Dos Pilas",
+        "en": "Dos Pilas Stela 16"
+      },
+      "site": "dos-pilas",
+      "date_long_count": "9.15.4.6.4",
+      "date_gregorian": "735 d.C.",
+      "type": "warfare",
+      "description": {
+        "es": "Estela que conmemora las victorias militares de Itzamnaaj K'awiil (B'ajlaj Chan K'awiil II), gobernante de Dos Pilas. Muestra al rey de pie sobre cautivos de guerra de sitios rivales, incluyendo Seibal y Ceibal.",
+        "en": "Stela commemorating the military victories of Itzamnaaj K'awiil (B'ajlaj Chan K'awiil II), ruler of Dos Pilas. Shows the king standing on war captives from rival sites, including Seibal and Ceibal."
+      },
+      "historical_context": {
+        "es": "Dos Pilas fue fundada como colonia de Tikal alrededor de 629 d.C., pero su gobernante Bahlaj Chan K'awiil se alió con Calakmul contra Tikal. Esta traición lo llevó al exilio y luego a la victoria.",
+        "en": "Dos Pilas was founded as a Tikal colony around 629 CE, but its ruler Bahlaj Chan K'awiil allied with Calakmul against Tikal. This betrayal led to his exile and later victory."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T116"],
+          "transliteration": "STAR-WAR-SEIBAL",
+          "transcription": "ch'ak kab' hix witz",
+          "translation": { "es": "guerra estrella contra Seibal", "en": "star war against Seibal" },
+          "notes": {
+            "es": "El glifo 'guerra estrella' marca ataques militares mayores vinculados a posiciones de Venus",
+            "en": "The 'star war' glyph marks major military attacks linked to Venus positions"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T528", "T181", "T116"],
+          "transliteration": "ITZAM-K'AWIIL",
+          "transcription": "itzamnaaj k'awiil",
+          "translation": { "es": "Itzamnaaj K'awiil (el rey)", "en": "Itzamnaaj K'awiil (the king)" },
+          "notes": {
+            "es": "Nombre del gobernante de Dos Pilas que consolidó el poder en el Petexbatún",
+            "en": "Name of the ruler of Dos Pilas who consolidated power in the Petexbatún region"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T533", "T740"],
+          "transliteration": "K'UHUL-MUT-AJAW",
+          "transcription": "k'uhul mut ajaw",
+          "translation": { "es": "señor sagrado de Tikal (título)", "en": "holy lord of Tikal (claimed title)" },
+          "notes": {
+            "es": "Los gobernantes de Dos Pilas reclamaban el glifo emblema de Tikal para legitimar su estirpe",
+            "en": "Dos Pilas rulers claimed Tikal's emblem glyph to legitimize their lineage"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T764", "T178"],
+          "transliteration": "BAK-AJ",
+          "transcription": "bakaj",
+          "translation": { "es": "fue capturado", "en": "was captured" },
+          "notes": {
+            "es": "Verbo de captura que introduce el nombre del prisionero enemigo tomado en batalla",
+            "en": "Capture verb introducing the name of the enemy prisoner taken in battle"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T644", "T116", "T504"],
+          "transliteration": "YICH'AK-BAH-CHAN",
+          "transcription": "yich'ak bah chan",
+          "translation": { "es": "Garra en el Cielo (el cautivo)", "en": "Claw in the Sky (the captive)" },
+          "notes": {
+            "es": "Nombre del gobernante de Seibal capturado por Dos Pilas; la Estela 16 lo muestra bajo los pies del rey vencedor",
+            "en": "Name of the ruler of Seibal captured by Dos Pilas; Stela 16 shows him under the feet of the victorious king"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Demarest, A. 1993",
+      "image_credit": "Drawing by Ian Graham, Corpus of Maya Hieroglyphic Inscriptions"
+    },
+    {
+      "id": "naranjo-stela-24",
+      "name": {
+        "es": "Estela 24 de Naranjo — Señora Seis Cielo",
+        "en": "Naranjo Stela 24 — Lady Six Sky"
+      },
+      "site": "naranjo",
+      "date_long_count": "9.12.0.0.0",
+      "date_gregorian": "682 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Estela que conmemora la llegada de la señora Ix Wak Chan Ahk (Seis Cielo) desde Dos Pilas para restaurar la dinastía de Naranjo. Es uno de los ejemplos más claros de una mujer ejerciendo poder político en el mundo maya clásico.",
+        "en": "Stela commemorating the arrival of Lady Ix Wak Chan Ahk (Six Sky) from Dos Pilas to restore the Naranjo dynasty. It is one of the clearest examples of a woman exercising political power in the Classic Maya world."
+      },
+      "historical_context": {
+        "es": "Naranjo fue derrotada repetidamente por Caracol y Calakmul. El rey de Dos Pilas envió a su hija Ix Wak Chan Ahk para restaurar la línea real en Naranjo. Ella gobernó como regente por su hijo menor de edad.",
+        "en": "Naranjo was repeatedly defeated by Caracol and Calakmul. The king of Dos Pilas sent his daughter Ix Wak Chan Ahk to restore the royal line at Naranjo. She ruled as regent for her minor son."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T116", "T504", "T181"],
+          "transliteration": "IX-WAK-CHAN-AHK",
+          "transcription": "ix wak chan ahk",
+          "translation": { "es": "señora Seis Cielo Tortuga", "en": "Lady Six Sky Turtle" },
+          "notes": {
+            "es": "La reina que restauró la dinastía; ix es el prefijo femenino, wak significa seis",
+            "en": "The queen who restored the dynasty; ix is the feminine prefix, wak means six"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740", "T116"],
+          "transliteration": "K'UHUL-SAK-TZ'I'-AJAW",
+          "transcription": "k'uhul sak tz'i' ajaw",
+          "translation": { "es": "señora sagrada de Naranjo", "en": "holy lady of Naranjo" },
+          "notes": {
+            "es": "El glifo emblema de Naranjo contiene sak tz'i' ('perro blanco'); la señora usó el título k'uhul ajaw",
+            "en": "Naranjo's emblem glyph contains sak tz'i' ('white dog'); the lady used the k'uhul ajaw title"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178", "T130"],
+          "transliteration": "HUL-i-ya",
+          "transcription": "huliy",
+          "translation": { "es": "llegó", "en": "she arrived" },
+          "notes": {
+            "es": "Verbo de llegada que documenta su traslado de Dos Pilas a Naranjo para restaurar la dinastía",
+            "en": "Arrival verb documenting her transfer from Dos Pilas to Naranjo to restore the dynasty"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T764", "T116"],
+          "transliteration": "DOS-PILAS-AJAW",
+          "transcription": "mutu'l ajaw",
+          "translation": { "es": "señor/a de Dos Pilas", "en": "lord/lady of Dos Pilas" },
+          "notes": {
+            "es": "Identificación de su origen en Dos Pilas y la conexión dinástica con Tikal a través del glifo emblema de Mutul",
+            "en": "Identification of her origin at Dos Pilas and the dynastic connection to Tikal through the Mutul emblem glyph"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T504", "T116", "T60"],
+          "transliteration": "U-BAH-il-AJAW",
+          "transcription": "u bahil ajaw",
+          "translation": { "es": "la imagen del señor (la regente)", "en": "the image of the lord (the regent)" },
+          "notes": {
+            "es": "Frase que indica su rol como representante del poder real mientras su hijo era menor de edad",
+            "en": "Phrase indicating her role as representative of royal power while her son was a minor"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Schele & Freidel, 1990",
+      "image_credit": "Drawing by Ian Graham, Corpus of Maya Hieroglyphic Inscriptions"
+    },
+    {
+      "id": "calakmul-stela-51",
+      "name": {
+        "es": "Estela 51 de Calakmul",
+        "en": "Calakmul Stela 51"
+      },
+      "site": "calakmul",
+      "date_long_count": "9.14.19.5.0",
+      "date_gregorian": "731 d.C.",
+      "type": "dynastic",
+      "description": {
+        "es": "Estela del 'reinado de la serpiente' (kaan) de Calakmul que documenta el reinado de Yuknoom Took' K'awiil. Calakmul fue la superpotencia maya rivalizando con Tikal durante el Clásico tardío.",
+        "en": "Stela of Calakmul's 'snake kingdom' (kaan) documenting the reign of Yuknoom Took' K'awiil. Calakmul was the Maya superpower rivaling Tikal during the Late Classic."
+      },
+      "historical_context": {
+        "es": "La dinastía kaan de Calakmul construyó una red de alianzas contra Tikal que abarcó docenas de reinos. Yuknoom Ch'een el Grande (636–686 d.C.) fue su gobernante más poderoso.",
+        "en": "Calakmul's kaan dynasty built an alliance network against Tikal spanning dozens of kingdoms. Yuknoom Ch'een the Great (636–686 CE) was its most powerful ruler."
+      },
+      "blocks": [
+        {
+          "position": "A1",
+          "glyphs": ["T504", "T181", "T116"],
+          "transliteration": "YUKNOOM-TOOK'-K'AWIIL",
+          "transcription": "yuknoom took' k'awiil",
+          "translation": { "es": "Yuknoom Pedernal K'awiil", "en": "Yuknoom Flint K'awiil" },
+          "notes": {
+            "es": "Yuknoom es un nombre propio; took' significa pedernal o sílex; K'awiil es el dios del rayo",
+            "en": "Yuknoom is a proper name; took' means flint or chert; K'awiil is the lightning deity"
+          }
+        },
+        {
+          "position": "B1",
+          "glyphs": ["T533", "T740"],
+          "transliteration": "K'UHUL-KAAN-AJAW",
+          "transcription": "k'uhul kaan ajaw",
+          "translation": { "es": "señor sagrado de la Serpiente (Calakmul)", "en": "holy lord of the Snake (Calakmul)" },
+          "notes": {
+            "es": "El glifo emblema de la dinastía kaan (serpiente); Calakmul era el centro principal de esta hegemonía",
+            "en": "The emblem glyph of the kaan (snake) dynasty; Calakmul was the main center of this hegemony"
+          }
+        },
+        {
+          "position": "A2",
+          "glyphs": ["T528", "T178"],
+          "transliteration": "CHUM-WAN",
+          "transcription": "chumwan",
+          "translation": { "es": "fue entronizado", "en": "was enthroned" },
+          "notes": {
+            "es": "El verbo de entronización usando la metáfora de 'sentarse' en el trono o estera real",
+            "en": "The enthronement verb using the metaphor of 'sitting' on the throne or royal mat"
+          }
+        },
+        {
+          "position": "B2",
+          "glyphs": ["T764", "T130", "T116"],
+          "transliteration": "U-K'AB-KAAN",
+          "transcription": "u k'ab kaan",
+          "translation": { "es": "por la mano del cielo serpiente", "en": "by the hand of the sky serpent" },
+          "notes": {
+            "es": "Frase que invoca la autoridad divina de la serpiente celestial para validar la entronización",
+            "en": "Phrase invoking the divine authority of the celestial serpent to validate the enthronement"
+          }
+        },
+        {
+          "position": "A3",
+          "glyphs": ["T644", "T504", "T116"],
+          "transliteration": "TZUTZ-u-NIH-KAL",
+          "transcription": "tzutzu nihkal",
+          "translation": { "es": "fue completado su cargo de señor", "en": "his lordship was completed" },
+          "notes": {
+            "es": "Fórmula que marca la finalización de un período de gobierno y su registro monumental",
+            "en": "Formula marking the completion of a period of rule and its monumental record"
+          }
+        }
+      ],
+      "source": "Martin & Grube, 2000; Martin, S. 2020",
+      "image_credit": "Drawing by Simon Martin, University of Pennsylvania Museum"
+    },
+    {
+      "id": "san-bartolo-murals",
+      "name": {
+        "es": "Murales de San Bartolo",
+        "en": "San Bartolo Murals"
+      },
+      "site": "san-bartolo",
+      "date_long_count": "7.14.0.0.0",
+      "date_gregorian": "100 a.C. (aprox.)",
+      "type": "mythological",
+      "description": {
+        "es": "Los murales del Preclásico tardío de San Bartolo (norte de Petén, Guatemala) son los más antiguos conocidos del mundo maya. Representan la historia de la Creación con el dios del maíz y los cuatro rincones del cosmos. Los textos jeroglíficos asociados son los más tempranos del mundo maya.",
+        "en": "The Late Preclassic murals of San Bartolo (northern Petén, Guatemala) are the oldest known in the Maya world. They depict the Creation story with the maize god and the four corners of the cosmos. The associated hieroglyphic texts are the earliest in the Maya world."
+      },
+      "historical_context": {
+        "es": "Descubiertos en 2001 por William Saturno, los murales de San Bartolo revelaron que la escritura maya y la iconografía compleja existían siglos antes de lo que se creía. La fecha aproximada es 100 a.C.–50 a.C.",
+        "en": "Discovered in 2001 by William Saturno, the San Bartolo murals revealed that Maya writing and complex iconography existed centuries earlier than previously believed. The approximate date is 100–50 BCE."
+      },
+      "blocks": [
+        {
+          "position": "Texto 1",
+          "glyphs": ["T504", "T116"],
+          "transliteration": "HUN-AJAW",
+          "transcription": "hun ajaw",
+          "translation": { "es": "1 Señor / Hunahpu (dios del maíz)", "en": "1 Lord / Hunahpu (maize god)" },
+          "notes": {
+            "es": "El texto más temprano identifica al héroe gemelo Hunahpu, equivalente preclásico del dios del maíz",
+            "en": "The earliest text identifies the hero twin Hunahpu, the Preclassic equivalent of the maize god"
+          }
+        },
+        {
+          "position": "Texto 2",
+          "glyphs": ["T528", "T181"],
+          "transliteration": "AJAW-KIIN",
+          "transcription": "ajaw kiin",
+          "translation": { "es": "señor del sol", "en": "lord of the sun" },
+          "notes": {
+            "es": "Uno de los textos más tempranos conocidos en escritura maya; la datación por radiocarbono indica ~100 a.C.",
+            "en": "One of the earliest known texts in Maya writing; radiocarbon dating indicates ~100 BCE"
+          }
+        },
+        {
+          "position": "Texto 3",
+          "glyphs": ["T644", "T130", "T116"],
+          "transliteration": "CHAN-KAN",
+          "transcription": "chan kan",
+          "translation": { "es": "cuatro cielos / cuatro serpientes", "en": "four skies / four serpents" },
+          "notes": {
+            "es": "Referencia a los cuatro rincones del cosmos, un tema central en los murales de San Bartolo",
+            "en": "Reference to the four corners of the cosmos, a central theme in the San Bartolo murals"
+          }
+        },
+        {
+          "position": "Texto 4",
+          "glyphs": ["T1016", "T740"],
+          "transliteration": "IXIM-TE'",
+          "transcription": "ixim te'",
+          "translation": { "es": "árbol de maíz / árbol del mundo", "en": "maize tree / world tree" },
+          "notes": {
+            "es": "El Árbol del Mundo (ceiba) que emerge del cuerpo del dios del maíz en el centro del cosmos",
+            "en": "The World Tree (ceiba) that emerges from the maize god's body at the center of the cosmos"
+          }
+        },
+        {
+          "position": "Texto 5",
+          "glyphs": ["T764", "T116", "T504"],
+          "transliteration": "SAK-HUN",
+          "transcription": "sak hun",
+          "translation": { "es": "diadema blanca / papel blanco", "en": "white diadem / white paper" },
+          "notes": {
+            "es": "El glifo de la diadema real blanca que representa la autoridad del dios del maíz como gobernante",
+            "en": "The glyph of the white royal diadem representing the authority of the maize god as ruler"
+          }
+        }
+      ],
+      "source": "Saturno, W. et al. 2006; Stuart, D. 2011",
+      "image_credit": "Painting by Heather Hurst; Drawing by Karl Taube, University of California Riverside"
+    }
+  ]
+}
