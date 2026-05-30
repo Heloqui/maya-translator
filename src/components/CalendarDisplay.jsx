@@ -11,19 +11,17 @@ function CalendarGlyph({ name, thompson }) {
   if (!imgPath && !fontChar) return null
 
   return (
-    <div className="flex-shrink-0">
+    <div className="flex-shrink-0 w-16 h-16 bg-white rounded-lg flex items-center justify-center p-1.5">
       {imgPath ? (
-        <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center p-1.5">
-          <img
-            src={imgPath}
-            alt={name}
-            className="max-w-full max-h-full object-contain"
-          />
-        </div>
+        <img
+          src={imgPath}
+          alt={name}
+          className="max-w-full max-h-full object-contain"
+        />
       ) : (
         <span
           style={{ fontFamily: 'MayaGlyphs, serif' }}
-          className="text-5xl text-maya-gold"
+          className="text-4xl text-gray-800"
         >
           {fontChar}
         </span>
@@ -54,7 +52,9 @@ export default function CalendarDisplay({ result }) {
             { label: "K'in", val: longCount.kin },
           ].map(({ label, val }) => (
             <div key={label} className="text-center">
-              <DotBarNumeral value={val} />
+              <div className="bg-white rounded-lg p-1 flex items-center justify-center">
+                <DotBarNumeral value={val} />
+              </div>
               <div className="text-[10px] text-maya-muted mt-1">{label}</div>
               <div className="text-xs font-bold">{val}</div>
             </div>
