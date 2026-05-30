@@ -10,22 +10,24 @@ function CalendarGlyph({ name, thompson }) {
 
   if (!imgPath && !fontChar) return null
 
-  return (
-    <div className="flex-shrink-0 w-20 h-20 bg-white rounded-xl flex items-center justify-center overflow-hidden">
-      {imgPath ? (
+  if (imgPath) {
+    return (
+      <div className="flex-shrink-0 w-20 h-20 bg-white rounded-xl flex items-center justify-center p-2">
         <img
           src={imgPath}
           alt={name}
-          className="w-full h-full object-contain p-2"
+          className="max-w-full max-h-full object-contain"
         />
-      ) : (
-        <span
-          style={{ fontFamily: 'MayaGlyphs, serif', fontSize: '5rem', lineHeight: 1 }}
-          className="text-gray-800"
-        >
-          {fontChar}
-        </span>
-      )}
+      </div>
+    )
+  }
+
+  // No Tokovinine image — show stylized name instead of tiny font glyph
+  return (
+    <div className="flex-shrink-0 w-20 h-20 bg-maya-deep rounded-xl flex items-center justify-center border-2 border-maya-gold">
+      <span className="text-lg font-bold text-maya-gold text-center leading-tight px-1">
+        {name}
+      </span>
     </div>
   )
 }
