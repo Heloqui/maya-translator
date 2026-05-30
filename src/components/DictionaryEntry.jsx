@@ -1,4 +1,6 @@
+'use client'
 import ConfidenceBadge from './ConfidenceBadge'
+import SpeakButton from './SpeakButton'
 import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function DictionaryEntry({ entry, mode }) {
@@ -17,8 +19,8 @@ export default function DictionaryEntry({ entry, mode }) {
           </div>
         )}
         <div className="flex-1 min-w-0">
-          <div className="flex items-start justify-between gap-2">
-            <div>
+          <div className="flex items-center gap-2">
+            <div className="flex-1">
               <span className="font-bold text-maya-gold">{entry.maya}</span>
               <span className="text-maya-muted mx-2">→</span>
               <span>{entry.spanish}</span>
@@ -26,6 +28,7 @@ export default function DictionaryEntry({ entry, mode }) {
                 <span className="text-maya-muted text-sm ml-2">({entry.english})</span>
               )}
             </div>
+            <SpeakButton text={entry.maya} mode="word" size="small" />
             {mode !== 'explorador' && (
               <ConfidenceBadge level={entry.confidence} showLabel={false} />
             )}

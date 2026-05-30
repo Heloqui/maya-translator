@@ -6,6 +6,7 @@ import { transliterate, reverseLookup } from '@/lib/transliterate'
 import ConfidenceBadge from '@/components/ConfidenceBadge'
 import { getGlyphChar } from '@/lib/glyphs'
 import { getGlyphImage } from '@/lib/glyph-images'
+import SpeakButton from '@/components/SpeakButton'
 
 export default function TransliteratorPage() {
   const [input, setInput] = useState('')
@@ -58,7 +59,11 @@ export default function TransliteratorPage() {
             <div className="bg-maya-surface rounded-xl p-5 border border-maya-border space-y-4">
               <div>
                 <div className="text-xs text-maya-muted mb-1">{t.phoneticReading}:</div>
-                <div className="text-2xl font-bold text-maya-gold">{result.phonetic}</div>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl font-bold text-maya-gold">{result.phonetic}</span>
+                  <SpeakButton text={result.syllables.map(s => s.value).join('')} mode="word" />
+                  <SpeakButton syllables={result.syllables.map(s => s.value)} mode="sequence" size="small" />
+                </div>
               </div>
 
               {/* Large Tokovinine glyph images */}

@@ -3,6 +3,7 @@ import { useMode } from '@/lib/modes'
 import { useLang } from '@/lib/lang'
 import ConfidenceBadge from './ConfidenceBadge'
 import MayaGlyph from './MayaGlyph'
+import SpeakButton from './SpeakButton'
 import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function GlyphDetail({ glyph, logograms }) {
@@ -52,9 +53,10 @@ export default function GlyphDetail({ glyph, logograms }) {
 
       {/* Basic info — all modes */}
       <div className="space-y-2 text-sm">
-        <div>
+        <div className="flex items-center gap-2">
           <span className="text-maya-muted">{t.value}: </span>
           <span className="font-bold">{glyph.value}</span>
+          <SpeakButton text={glyph.value} mode="syllable" size="small" />
         </div>
         <div>
           <span className="text-maya-muted">{t.confidence}: </span>

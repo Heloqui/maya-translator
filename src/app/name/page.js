@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useLang } from '@/lib/lang'
 import { nameToMaya, getExampleNames } from '@/lib/name-writer'
 import { getGlyphImage } from '@/lib/glyph-images'
+import SpeakButton from '@/components/SpeakButton'
 
 const examples = getExampleNames()
 
@@ -74,14 +75,16 @@ export default function NamePage() {
               })}
             </div>
 
-            {/* Phonetic reading */}
-            <div className="text-center mt-4 pt-3 border-t border-maya-border">
+            {/* Phonetic reading + audio */}
+            <div className="flex items-center justify-center gap-3 mt-4 pt-3 border-t border-maya-border">
               <span className="text-maya-muted text-xs">
                 {lang === 'es' ? 'Lectura: ' : 'Reading: '}
               </span>
               <span className="text-maya-gold font-bold">
                 {syllables.map(s => s.maya).join('-')}
               </span>
+              <SpeakButton text={syllables.map(s => s.maya).join('')} mode="word" />
+              <SpeakButton syllables={syllables.map(s => s.maya)} mode="sequence" size="small" />
             </div>
           </div>
 
