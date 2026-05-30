@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { getSyllabaryGrid } from '@/lib/data'
 import { useMode } from '@/lib/modes'
+import { useLang } from '@/lib/lang'
 import SyllabaryGrid from '@/components/SyllabaryGrid'
 import GlyphDetail from '@/components/GlyphDetail'
 
@@ -10,6 +11,7 @@ const syllabaryData = getSyllabaryGrid()
 export default function SyllabaryPage() {
   const [selected, setSelected] = useState(null)
   const { mode } = useMode()
+  const { t } = useLang()
 
   return (
     <div className="flex min-h-screen">
@@ -17,10 +19,10 @@ export default function SyllabaryPage() {
       <div className="flex-1 p-4 md:p-6 overflow-auto">
         <div className="flex justify-between items-center mb-4">
           <div>
-            <h1 className="text-xl font-bold text-maya-gold">Silabario Maya</h1>
+            <h1 className="text-xl font-bold text-maya-gold">{t.syllabaryTitle}</h1>
             <p className="text-xs text-maya-muted">
-              Modo {mode === 'explorador' ? 'Explorador' : mode === 'estudiante' ? 'Estudiante' : 'Investigador'}
-              {' · '}Click en un glifo para ver detalles
+              {t.mode} {t[mode]}
+              {' · '}{t.selectGlyph}
             </p>
           </div>
         </div>
@@ -34,7 +36,7 @@ export default function SyllabaryPage() {
 
       {/* Detail panel — desktop */}
       <div className="hidden lg:block w-56 bg-maya-deep border-l border-maya-surface p-4 overflow-y-auto">
-        <div className="text-sm text-maya-muted mb-3">Detalle del glifo</div>
+        <div className="text-sm text-maya-muted mb-3">{t.glyphDetail}</div>
         <GlyphDetail
           glyph={selected}
           logograms={syllabaryData.common_logograms}

@@ -1,12 +1,14 @@
 'use client'
 import { useMode } from '@/lib/modes'
+import { useLang } from '@/lib/lang'
 
 export default function ModeSelector() {
   const { mode, changeMode, modes } = useMode()
+  const { t } = useLang()
 
   return (
     <div className="flex gap-2 justify-center">
-      {Object.entries(modes).map(([key, { label, icon }]) => (
+      {Object.entries(modes).map(([key, { icon }]) => (
         <button
           key={key}
           onClick={() => changeMode(key)}
@@ -16,7 +18,7 @@ export default function ModeSelector() {
               : 'bg-maya-surface text-maya-muted border border-maya-border hover:border-maya-gold'
           }`}
         >
-          {icon} {label}
+          {icon} {t[key]}
         </button>
       ))}
     </div>

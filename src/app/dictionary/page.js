@@ -2,27 +2,28 @@
 import { useState, useMemo } from 'react'
 import { getDictionary } from '@/lib/data'
 import { useMode } from '@/lib/modes'
+import { useLang } from '@/lib/lang'
 import DictionaryEntry from '@/components/DictionaryEntry'
 import DotBarNumeral from '@/components/DotBarNumeral'
 
 const dict = getDictionary()
 
-
-const TABS = [
-  { key: 'titles_and_ranks', label: 'Títulos' },
-  { key: 'verbs', label: 'Verbos' },
-  { key: 'nouns', label: 'Sustantivos' },
-  { key: 'adjectives_and_colors', label: 'Colores' },
-  { key: 'directional_terms', label: 'Direcciones' },
-  { key: 'numerals', label: 'Numerales' },
-  { key: 'death_expressions', label: 'Muerte' },
-  { key: 'war_expressions', label: 'Guerra' },
-]
-
 export default function DictionaryPage() {
   const [tab, setTab] = useState('titles_and_ranks')
   const [search, setSearch] = useState('')
   const { mode } = useMode()
+  const { t } = useLang()
+
+  const TABS = [
+    { key: 'titles_and_ranks', label: t.titles },
+    { key: 'verbs', label: t.verbs },
+    { key: 'nouns', label: t.nouns },
+    { key: 'adjectives_and_colors', label: t.colors },
+    { key: 'directional_terms', label: t.directions },
+    { key: 'numerals', label: t.numerals },
+    { key: 'death_expressions', label: t.death },
+    { key: 'war_expressions', label: t.war },
+  ]
 
   const entries = useMemo(() => {
     const items = dict[tab] || []
@@ -37,12 +38,12 @@ export default function DictionaryPage() {
 
   return (
     <div className="p-4 md:p-6 max-w-3xl mx-auto">
-      <h1 className="text-xl font-bold text-maya-gold mb-1">Diccionario Maya</h1>
-      <p className="text-xs text-maya-muted mb-4">Vocabulario del maya clásico (Ch&apos;olti&apos;an)</p>
+      <h1 className="text-xl font-bold text-maya-gold mb-1">{t.dictionaryTitle}</h1>
+      <p className="text-xs text-maya-muted mb-4">{t.dictionarySubtitle}</p>
 
       <input
         type="text"
-        placeholder="Buscar por maya, español o inglés..."
+        placeholder={t.searchPlaceholder}
         value={search}
         onChange={e => setSearch(e.target.value)}
         className="w-full bg-maya-surface border border-maya-border rounded-lg px-3 py-2 text-sm mb-4 focus:outline-none focus:border-maya-gold"
@@ -78,7 +79,7 @@ export default function DictionaryPage() {
       ) : (
         <div className="space-y-2">
           {entries.length === 0 && (
-            <p className="text-maya-muted text-sm text-center py-8">Sin resultados</p>
+            <p className="text-maya-muted text-sm text-center py-8">{t.noResults}</p>
           )}
           {entries.map((entry, i) => (
             <DictionaryEntry key={i} entry={entry} mode={mode} />

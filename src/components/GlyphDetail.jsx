@@ -1,16 +1,18 @@
 'use client'
 import { useMode } from '@/lib/modes'
+import { useLang } from '@/lib/lang'
 import ConfidenceBadge from './ConfidenceBadge'
 import MayaGlyph from './MayaGlyph'
 import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function GlyphDetail({ glyph, logograms }) {
   const { mode } = useMode()
+  const { t } = useLang()
 
   if (!glyph) {
     return (
       <div className="text-maya-muted text-sm text-center py-12">
-        Selecciona un glifo para ver detalles
+        {t.selectToView}
       </div>
     )
   }
@@ -51,11 +53,11 @@ export default function GlyphDetail({ glyph, logograms }) {
       {/* Basic info — all modes */}
       <div className="space-y-2 text-sm">
         <div>
-          <span className="text-maya-muted">Valor: </span>
+          <span className="text-maya-muted">{t.value}: </span>
           <span className="font-bold">{glyph.value}</span>
         </div>
         <div>
-          <span className="text-maya-muted">Confianza: </span>
+          <span className="text-maya-muted">{t.confidence}: </span>
           <ConfidenceBadge level={glyph.confidence} />
         </div>
 
@@ -64,19 +66,19 @@ export default function GlyphDetail({ glyph, logograms }) {
           <>
             {glyph.frequency && (
               <div>
-                <span className="text-maya-muted">Frecuencia: </span>
-                <span>{glyph.frequency === 'very_high' ? 'muy alta' : glyph.frequency === 'high' ? 'alta' : glyph.frequency === 'medium' ? 'media' : 'baja'}</span>
+                <span className="text-maya-muted">{t.frequency}: </span>
+                <span>{glyph.frequency === 'very_high' ? t.veryHigh : glyph.frequency === 'high' ? t.high : glyph.frequency === 'medium' ? t.medium : t.low}</span>
               </div>
             )}
             {glyph.variants && (
               <div>
-                <span className="text-maya-muted">Variantes: </span>
+                <span className="text-maya-muted">{t.variants}: </span>
                 <span>{glyph.variants}</span>
               </div>
             )}
             {glyph.notes && (
               <div>
-                <span className="text-maya-muted">Notas: </span>
+                <span className="text-maya-muted">{t.notes}: </span>
                 <span className="text-xs">{glyph.notes}</span>
               </div>
             )}
@@ -94,7 +96,7 @@ export default function GlyphDetail({ glyph, logograms }) {
         {/* Logogram match */}
         {matchingLogo && (
           <div className="border-t border-maya-border pt-3 mt-3">
-            <div className="text-xs text-maya-muted mb-1">También logograma:</div>
+            <div className="text-xs text-maya-muted mb-1">{t.alsoLogogram}:</div>
             <div className="font-bold">{matchingLogo.reading}</div>
             <div className="text-xs text-maya-muted">&ldquo;{matchingLogo.meaning}&rdquo;</div>
           </div>
@@ -103,7 +105,7 @@ export default function GlyphDetail({ glyph, logograms }) {
         {/* Sources — Investigador only */}
         {mode === 'investigador' && (
           <div className="border-t border-maya-border pt-3 mt-3">
-            <div className="text-xs text-maya-muted mb-1">Fuentes:</div>
+            <div className="text-xs text-maya-muted mb-1">{t.sources}:</div>
             <div className="text-xs text-blue-400">Stuart 2013</div>
             <div className="text-xs text-blue-400">Thompson 1962</div>
           </div>
