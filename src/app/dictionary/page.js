@@ -21,6 +21,14 @@ export default function DictionaryPage() {
     { key: 'numerals', label: t.numerals },
     { key: 'death_expressions', label: t.death },
     { key: 'war_expressions', label: t.war },
+    { key: 'kinship', label: t.kinship },
+    { key: 'architecture', label: t.architecture },
+    { key: 'flora_fauna', label: t.floraFauna },
+    { key: 'astronomy', label: t.astronomy },
+    { key: 'rituals', label: t.ritualsCat },
+    { key: 'toponyms', label: t.toponyms },
+    { key: 'body_parts', label: t.bodyParts },
+    { key: 'time_periods', label: t.timePeriods },
   ]
 
   const entries = useMemo(() => {

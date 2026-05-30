@@ -14,6 +14,9 @@ export default function Home() {
     { href: '/calendar', icon: '📅', title: t.calendar, desc: t.calendarDesc },
     { href: '/math', icon: '🔢', title: t.math, desc: t.mathDesc },
     { href: '/name', icon: '✍️', title: t.yourName, desc: lang === 'es' ? 'Escribe tu nombre en glifos' : 'Write your name in glyphs' },
+    { href: '/inscriptions', icon: '🏛️', title: t.inscriptions, desc: t.inscriptionsDesc },
+    { href: '/sites', icon: '🗺️', title: t.sites, desc: t.sitesDesc },
+    { href: '/quiz', icon: '❓', title: t.quiz, desc: t.quizDesc },
   ]
 
   return (
@@ -50,7 +53,7 @@ export default function Home() {
       </div>
 
       <p className="text-maya-muted text-xs mt-8 text-center">
-        {stats.confirmed} {t.confirmedReadings} · {stats.logograms} {t.logograms} · {stats.daySigns} {t.daySigns} · {t.fullVigesimal}
+        {stats.confirmed} {t.confirmedReadings} · {stats.dictEntries} {t.dictionary.toLowerCase()} · {stats.inscriptions} {t.inscriptions.toLowerCase()} · {stats.sites} {t.sites.toLowerCase()}
       </p>
     </div>
   )
