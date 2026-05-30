@@ -2,6 +2,7 @@
 import { useState, useMemo } from 'react'
 import { useLang } from '@/lib/lang'
 import DotBarNumeral from '@/components/DotBarNumeral'
+import SpeakButton from '@/components/SpeakButton'
 import { getDictionary } from '@/lib/data'
 
 const dict = getDictionary()
@@ -475,7 +476,10 @@ export default function MathPage() {
                 <DotBarNumeral value={n.value} />
               </div>
               <div className="text-sm font-bold text-maya-gold">{n.value}</div>
-              <div className="text-[9px] text-maya-muted truncate">{n.maya}</div>
+              <div className="flex items-center justify-center gap-0.5">
+                <span className="text-[9px] text-maya-muted truncate">{n.maya}</span>
+                <SpeakButton text={n.maya} mode="word" size="small" className="!w-4 !h-4 !text-[8px]" />
+              </div>
             </div>
           ))}
         </div>

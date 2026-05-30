@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/data'
 import { useLang } from '@/lib/lang'
 import DictionaryEntry from '@/components/DictionaryEntry'
 import DotBarNumeral from '@/components/DotBarNumeral'
+import SpeakButton from '@/components/SpeakButton'
 
 const dict = getDictionary()
 
@@ -75,7 +76,10 @@ export default function DictionaryPage() {
             <div key={n.value} className="bg-maya-surface rounded-lg p-3 border border-maya-border text-center">
               <DotBarNumeral value={n.value} />
               <div className="font-bold text-maya-gold mt-2">{n.value}</div>
-              <div className="text-sm">{n.maya}</div>
+              <div className="flex items-center justify-center gap-1.5">
+                <span className="text-sm">{n.maya}</span>
+                <SpeakButton text={n.maya} mode="word" size="small" />
+              </div>
               <div className="text-xs text-maya-muted mt-1">{n.glyph_system}</div>
             </div>
           ))}
