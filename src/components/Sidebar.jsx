@@ -2,25 +2,28 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useMode } from '@/lib/modes'
-
-const NAV_ITEMS = [
-  { href: '/', icon: '🏠', label: 'Inicio' },
-  { href: '/syllabary', icon: '𐊀', label: 'Silabario' },
-  { href: '/dictionary', icon: '📖', label: 'Diccionario' },
-  { href: '/transliterator', icon: '✏️', label: 'Transliterador' },
-  { href: '/calendar', icon: '📅', label: 'Calendario' },
-  { href: '/math', icon: '🔢', label: 'Matemáticas' },
-]
+import { useLang } from '@/lib/lang'
+import LangToggle from './LangToggle'
 
 export default function Sidebar() {
   const pathname = usePathname()
   const { mode, modes } = useMode()
+  const { t } = useLang()
+
+  const navItems = [
+    { href: '/', icon: '🏠', label: t.home },
+    { href: '/syllabary', icon: '𐊀', label: t.syllabary },
+    { href: '/dictionary', icon: '📖', label: t.dictionary },
+    { href: '/transliterator', icon: '✏️', label: t.transliterator },
+    { href: '/calendar', icon: '📅', label: t.calendar },
+    { href: '/math', icon: '🔢', label: t.math },
+  ]
 
   return (
     <>
       {/* Desktop sidebar */}
       <nav className="hidden md:flex fixed left-0 top-0 bottom-0 w-14 bg-maya-darker flex-col items-center py-3 gap-2 border-r border-maya-surface z-50">
-        {NAV_ITEMS.map(({ href, icon, label }) => {
+        {navItems.map(({ href, icon, label }) => {
           const active = pathname === href
           return (
             <Link
@@ -36,14 +39,15 @@ export default function Sidebar() {
           )
         })}
         <div className="flex-1" />
-        <div className="text-[10px] text-maya-muted text-center leading-tight">
+        <LangToggle />
+        <div className="text-[10px] text-maya-muted text-center leading-tight mt-2">
           {modes[mode]?.icon}<br />{modes[mode]?.label.slice(0, 3).toUpperCase()}
         </div>
       </nav>
 
       {/* Mobile bottom tab bar */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 h-14 bg-maya-darker flex items-center justify-around border-t border-maya-surface z-50">
-        {NAV_ITEMS.map(({ href, icon, label }) => {
+        {navItems.map(({ href, icon, label }) => {
           const active = pathname === href
           return (
             <Link
