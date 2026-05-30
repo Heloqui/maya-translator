@@ -2,6 +2,7 @@
 import { useMode } from '@/lib/modes'
 import ConfidenceBadge from './ConfidenceBadge'
 import MayaGlyph from './MayaGlyph'
+import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function GlyphDetail({ glyph, logograms }) {
   const { mode } = useMode()
@@ -20,18 +21,31 @@ export default function GlyphDetail({ glyph, logograms }) {
 
   return (
     <div>
-      {/* Glyph display */}
+      {/* Glyph display — large Tokovinine image if available, font fallback */}
       <div className="flex justify-center mb-4">
-        <div className="w-20 h-20 bg-maya-surface rounded-xl flex flex-col items-center justify-center ring-2 ring-maya-gold">
-          {glyph.thompson?.length > 0 ? (
-            <>
-              <MayaGlyph thompson={glyph.thompson} size="text-4xl" className="text-maya-gold" />
-              <span className="text-xs text-maya-muted">{glyph.value}</span>
-            </>
-          ) : (
-            <span className="text-3xl font-bold text-maya-gold">{glyph.value}</span>
-          )}
-        </div>
+        {getGlyphImage(glyph.value) ? (
+          <div className="text-center">
+            <div className="w-28 h-28 bg-maya-surface rounded-xl flex items-center justify-center ring-2 ring-maya-gold p-2">
+              <img
+                src={getGlyphImage(glyph.value)}
+                alt={`Glifo maya: ${glyph.value}`}
+                className="max-w-full max-h-full object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
+              />
+            </div>
+            <span className="text-sm font-bold text-maya-gold mt-1 block">{glyph.value}</span>
+          </div>
+        ) : (
+          <div className="w-20 h-20 bg-maya-surface rounded-xl flex flex-col items-center justify-center ring-2 ring-maya-gold">
+            {glyph.thompson?.length > 0 ? (
+              <>
+                <MayaGlyph thompson={glyph.thompson} size="text-4xl" className="text-maya-gold" />
+                <span className="text-xs text-maya-muted">{glyph.value}</span>
+              </>
+            ) : (
+              <span className="text-3xl font-bold text-maya-gold">{glyph.value}</span>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Basic info — all modes */}

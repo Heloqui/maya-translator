@@ -4,6 +4,7 @@ import { useMode } from '@/lib/modes'
 import { transliterate, reverseLookup } from '@/lib/transliterate'
 import ConfidenceBadge from '@/components/ConfidenceBadge'
 import { getGlyphChar } from '@/lib/glyphs'
+import { getGlyphImage } from '@/lib/glyph-images'
 
 export default function TransliteratorPage() {
   const [input, setInput] = useState('')
@@ -58,16 +59,29 @@ export default function TransliteratorPage() {
                 <div className="text-2xl font-bold text-maya-gold">{result.phonetic}</div>
               </div>
 
-              {result.syllables.some(s => s.thompson.length > 0) && (
-                <div className="flex gap-1 flex-wrap items-center">
-                  {result.syllables.map((s, i) => {
-                    const glyph = getGlyphChar(s.thompson)
-                    return glyph ? (
-                      <span key={i} style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-5xl text-maya-gold">{glyph}</span>
-                    ) : null
-                  })}
-                </div>
-              )}
+              {/* Large Tokovinine glyph images */}
+              <div className="flex gap-2 flex-wrap items-end justify-center bg-maya-deep rounded-xl p-4">
+                {result.syllables.map((s, i) => {
+                  const imgPath = getGlyphImage(s.value)
+                  const fontChar = getGlyphChar(s.thompson)
+                  return (
+                    <div key={i} className="text-center">
+                      {imgPath ? (
+                        <img
+                          src={imgPath}
+                          alt={s.value}
+                          className="w-20 h-20 object-contain invert brightness-200 sepia saturate-[3] hue-rotate-[10deg]"
+                        />
+                      ) : fontChar ? (
+                        <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-5xl text-maya-gold block">{fontChar}</span>
+                      ) : (
+                        <span className="text-2xl text-maya-muted block">?</span>
+                      )}
+                      <span className="text-[10px] text-maya-muted">{s.value}</span>
+                    </div>
+                  )
+                })}
+              </div>
 
               <div>
                 <div className="text-xs text-maya-muted mb-2">Sílabas:</div>
