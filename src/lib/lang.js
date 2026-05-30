@@ -7,7 +7,7 @@ const STRINGS = {
   es: {
     // Dashboard
     siteTitle: 'MAYA GLYPHS',
-    siteSubtitle: 'Traductor de Jeroglíficos Mayas — Datos verificados, sin alucinaciones',
+    siteSubtitle: 'Traductor de Jeroglíficos Mayas',
     syllabary: 'Silabario',
     syllabaryDesc: '100 signos silábicos',
     dictionary: 'Diccionario',
@@ -101,7 +101,7 @@ const STRINGS = {
   },
   en: {
     siteTitle: 'MAYA GLYPHS',
-    siteSubtitle: 'Maya Hieroglyphic Translator — Verified data, no hallucinations',
+    siteSubtitle: 'Maya Hieroglyphic Translator',
     syllabary: 'Syllabary',
     syllabaryDesc: '100 syllabic signs',
     dictionary: 'Dictionary',
