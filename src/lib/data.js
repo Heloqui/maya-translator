@@ -219,7 +219,53 @@ export function getInscriptionsForThompson(thompson) {
 }
 
 /**
- * Find a syllable value for a Thompson code.
+ * Extended Thompson → image-key map for codes not in the syllabary/logogram tables.
+ * Maps Thompson codes to readings that exist in glyph-images.json.
+ */
+const EXTRA_THOMPSON_MAP = {
+  // Date/calendar signs
+  "T504": "k'an",      // K'AN yellow/ripe/precious
+  "T178": "o",         // numeral head variant (closest match)
+  "T60":  "k'in",      // K'IN sun/day variant
+  // Deity and title signs
+  "T1016": "itzam",    // ITZAM(NAAJ) deity head
+  "T743": "bahlam",    // B'AHLAM jaguar
+  "T86":  "hul",       // HUL-i arrive variant
+  // Common logographic signs with known image keys
+  "T740": "k'uhul",    // K'UHUL holy/sacred
+  "T533": "ajaw",      // AJAW lord
+  "T544": "k'in",      // K'IN sun/day
+  "T528": "k'uh",      // K'UH god
+  "T510": "cham",      // CHAM death
+  "T548": "tun",       // TUN stone/year
+  "T573": "pakal",     // PAKAL shield
+  "T563": "k'ahk'",    // K'AHK' fire
+  "T757": "witz",      // WITZ mountain
+  "T606": "nah",       // NAH house
+  "T526": "nal",       // NAL maize
+  "T553": "yax",       // YAX green/first
+  "T668": "chak",      // CHAK red/great
+  "T644": "chan",       // CHAN sky/serpent
+  "T503": "ha'",       // HA' water
+  "T109": "ik'",       // IK' wind
+  "T570": "kab'",      // KAB' earth
+  "T714": "ek'",       // EK' star/black
+  "T584": "te'",       // TE' tree/wood
+  "T535": "hix",       // HIX jaguar
+  "T168": "ajiin",     // AJIIN crocodile
+  "T181": "hul",       // HUL arrive
+  "T561": "ch'ok",     // CH'OK youth
+  "T586": "pul",       // PUL burn/incense
+  "T699": "tzak",      // TZAK conjure
+  "T713": "chum",      // CHUM seat/sit
+  "T684": "och",       // OCH enter
+  "T501": "ba",        // BA head/first (also syllabic ba)
+  "T527": "took'",     // TOOK' flint
+}
+
+/**
+ * Find a syllable/reading value for a Thompson code so we can show glyph images.
+ * Checks: syllabary → logograms → extended map.
  */
 export function getSyllableByThompson(thompson) {
   const all = getSyllabary()
@@ -229,6 +275,8 @@ export function getSyllableByThompson(thompson) {
   // Check logograms
   const logo = syllabaryData.common_logograms.find(l => l.thompson === thompson)
   if (logo) return logo.reading.toLowerCase()
+  // Check extended map
+  if (EXTRA_THOMPSON_MAP[thompson]) return EXTRA_THOMPSON_MAP[thompson]
   return null
 }
 
