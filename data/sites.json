@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "name": "Classic Maya Archaeological Sites",
+    "version": "0.1.0",
+    "description": "Major archaeological sites of the Classic Maya civilization with geographic and dynastic data",
+    "entries": 20,
+    "sources": [
+      "Martin, S. & Grube, N. (2000). Chronicle of the Maya Kings and Queens.",
+      "Sharer, R. & Traxler, L. (2006). The Ancient Maya.",
+      "Coe, M. & Houston, S. (2015). The Maya."
+    ]
+  },
+  "regions": {
+    "peten": { "es": "Petén Central", "en": "Central Petén" },
+    "usumacinta": { "es": "Cuenca del Usumacinta", "en": "Usumacinta Basin" },
+    "motagua": { "es": "Valle del Motagua", "en": "Motagua Valley" },
+    "puuc": { "es": "Región Puuc", "en": "Puuc Region" },
+    "northern_lowlands": { "es": "Tierras Bajas del Norte", "en": "Northern Lowlands" },
+    "southern_lowlands": { "es": "Tierras Bajas del Sur", "en": "Southern Lowlands" },
+    "peten_lakes": { "es": "Lagos del Petén", "en": "Petén Lakes" },
+    "rio_bec": { "es": "Río Bec", "en": "Río Bec" }
+  },
+  "sites": [
+    {
+      "id": "palenque",
+      "name": { "es": "Palenque", "en": "Palenque" },
+      "ancient_name": "Lakamha'",
+      "meaning": { "es": "Lugar de Grandes Aguas", "en": "Place of Great Waters" },
+      "coordinates": { "lat": 17.4838, "lng": -92.0461 },
+      "region": "usumacinta",
+      "country": "MX",
+      "period": { "from": "226", "to": "799", "peak": "615-683" },
+      "dynasty": "B'aakal",
+      "emblem_glyph": "B'AAKAL-AJAW",
+      "notable_rulers": [
+        { "name": "K'inich Janaab Pakal", "reign": "615-683", "aka": "Pakal el Grande" },
+        { "name": "K'inich Kan B'alam II", "reign": "684-702", "aka": "Chan Bahlum" },
+        { "name": "K'inich Ahkal Mo' Naab III", "reign": "721-736", "aka": null }
+      ],
+      "inscriptions": [
+        "palenque-sarcophagus",
+        "palenque-tablet-cross",
+        "palenque-96-glyphs",
+        "palenque-tablet-palace"
+      ],
+      "description": {
+        "es": "Palenque fue uno de los centros más importantes del período Clásico Maya, alcanzando su apogeo bajo el reinado de K'inich Janaab Pakal (615-683 d.C.). Ubicado en las estribaciones de Chiapas, es célebre por su arquitectura refinada, el Templo de las Inscripciones y el sarcófago real de Pakal, cuya tapa contiene una de las escenas epigráficas más famosas del mundo maya.",
+        "en": "Palenque was one of the most important centers of the Classic Maya period, reaching its apex under the reign of K'inich Janaab Pakal (615-683 CE). Nestled in the Chiapas foothills, it is renowned for its refined architecture, the Temple of the Inscriptions, and Pakal's royal sarcophagus lid — one of the most celebrated epigraphic scenes in the Maya world."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "tikal",
+      "name": { "es": "Tikal", "en": "Tikal" },
+      "ancient_name": "Mutal",
+      "meaning": { "es": "Lugar de las Voces", "en": "Place of the Voices" },
+      "coordinates": { "lat": 17.2220, "lng": -89.6237 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "200", "to": "900", "peak": "682-734" },
+      "dynasty": "Mutal",
+      "emblem_glyph": "MUT-AJAW",
+      "notable_rulers": [
+        { "name": "Siyaj Chan K'awil II", "reign": "411-456", "aka": "Stormy Sky" },
+        { "name": "Kaloomte' B'alam", "reign": "378-404", "aka": "Curl Snout" },
+        { "name": "Jasaw Chan K'awil I", "reign": "682-734", "aka": "Ruler A" },
+        { "name": "Yik'in Chan K'awil", "reign": "734-766", "aka": "Ruler B" }
+      ],
+      "inscriptions": [
+        "tikal-stela-31"
+      ],
+      "description": {
+        "es": "Tikal fue la mayor ciudad del período Clásico Maya, dominando el Petén guatemalteco con sus imponentes templos-pirámide. Como capital de la dinastía Mutal, mantuvo una rivalidad histórica con Calakmul (Kaan). Su período de mayor esplendor ocurrió bajo Jasaw Chan K'awil I, quien derrotó a Calakmul en 695 d.C. Los jeroglíficos de la Estela 31 documentan parte de su historia dinástica más temprana.",
+        "en": "Tikal was the largest city of the Classic Maya period, dominating the Guatemalan Petén with its towering pyramid-temples. As capital of the Mutal dynasty, it maintained a historic rivalry with Calakmul (Kaan). Its greatest era came under Jasaw Chan K'awil I, who defeated Calakmul in 695 CE. The hieroglyphs of Stela 31 document part of its earliest dynastic history."
+      },
+      "sources": ["Martin & Grube, 2000", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "copan",
+      "name": { "es": "Copán", "en": "Copán" },
+      "ancient_name": "Oxwitik",
+      "meaning": { "es": "Lugar de los Tres Atados", "en": "Place of the Three Bundles" },
+      "coordinates": { "lat": 14.8394, "lng": -89.1436 },
+      "region": "motagua",
+      "country": "HN",
+      "period": { "from": "426", "to": "820", "peak": "695-738" },
+      "dynasty": "Oxwitik",
+      "emblem_glyph": "OXWITIK-AJAW",
+      "notable_rulers": [
+        { "name": "K'inich Yax K'uk' Mo'", "reign": "426-437", "aka": "Fundador de la dinastía" },
+        { "name": "Waxaklajuun Ub'aah K'awil", "reign": "695-738", "aka": "18 Conejo" },
+        { "name": "K'ahk' Joplaj Chan K'awil", "reign": "738-749", "aka": "Humo Mono" },
+        { "name": "Yax Pasaj Chan Yopaat", "reign": "763-820", "aka": "Madrugada" }
+      ],
+      "inscriptions": [
+        "copan-stela-a",
+        "copan-altar-q",
+        "copan-hieroglyphic-stairway"
+      ],
+      "description": {
+        "es": "Copán fue conocida como la 'Atenas del Nuevo Mundo' por la excepcional calidad de su escultura y sus registros epigráficos. La Escalinata Jeroglífica es el texto jeroglífico más largo de las Américas, con 2,200 bloques de escritura. El Altar Q conmemora los 16 reyes de la dinastía fundada por K'inich Yax K'uk' Mo' en el año 426 d.C.",
+        "en": "Copán was known as the 'Athens of the New World' for the exceptional quality of its sculpture and epigraphic records. The Hieroglyphic Stairway is the longest hieroglyphic text in the Americas, with 2,200 carved blocks. Altar Q commemorates the 16 kings of the dynasty founded by K'inich Yax K'uk' Mo' in 426 CE."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "yaxchilan",
+      "name": { "es": "Yaxchilán", "en": "Yaxchilán" },
+      "ancient_name": "Pa' Chan",
+      "meaning": { "es": "Cielo Hendido", "en": "Split Sky" },
+      "coordinates": { "lat": 16.8989, "lng": -90.9657 },
+      "region": "usumacinta",
+      "country": "MX",
+      "period": { "from": "320", "to": "808", "peak": "681-742" },
+      "dynasty": "Pa' Chan",
+      "emblem_glyph": "PA'-CHAN-AJAW",
+      "notable_rulers": [
+        { "name": "Itzamnaaj B'alam II", "reign": "681-742", "aka": "Escudo Jaguar el Grande" },
+        { "name": "Yaxuun B'alam IV", "reign": "752-768", "aka": "Pájaro Jaguar IV" },
+        { "name": "Itzamnaaj B'alam III", "reign": "769-800", "aka": "Escudo Jaguar III" }
+      ],
+      "inscriptions": [
+        "yaxchilan-lintel-24",
+        "yaxchilan-lintel-25",
+        "yaxchilan-lintel-26"
+      ],
+      "description": {
+        "es": "Yaxchilán, emplazada en un meandro del río Usumacinta, destaca por sus excepcionales dinteles esculpidos que narran rituales de autosacrificio y conquista. Los dinteles 24, 25 y 26 del Edificio 23 documentan a la reina Xook en actos rituales durante el reinado de Itzamnaaj B'alam II, y se cuentan entre las obras maestras de la escultura maya.",
+        "en": "Yaxchilán, set within a meander of the Usumacinta River, is celebrated for its exceptional carved lintels depicting autosacrifice rituals and conquest. Lintels 24, 25, and 26 of Structure 23 document Queen Xook in ritual acts during the reign of Itzamnaaj B'alam II, and rank among the masterworks of Maya sculpture."
+      },
+      "sources": ["Martin & Grube, 2000", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "calakmul",
+      "name": { "es": "Calakmul", "en": "Calakmul" },
+      "ancient_name": "Kaan",
+      "meaning": { "es": "Ciudad de las Dos Pirámides", "en": "City of the Two Pyramids" },
+      "coordinates": { "lat": 18.1043, "lng": -89.8073 },
+      "region": "peten",
+      "country": "MX",
+      "period": { "from": "250", "to": "909", "peak": "561-695" },
+      "dynasty": "Kaan",
+      "emblem_glyph": "KAAN-AJAW",
+      "notable_rulers": [
+        { "name": "Sky Witness", "reign": "561-572", "aka": null },
+        { "name": "Scroll Serpent", "reign": "579-611", "aka": null },
+        { "name": "Yuknoom Ch'een II", "reign": "636-686", "aka": "Yuknoom el Grande" },
+        { "name": "Yuknoom Yich'aak K'ahk'", "reign": "686-695", "aka": "Garra de Jaguar" }
+      ],
+      "inscriptions": [
+        "calakmul-stela-51"
+      ],
+      "description": {
+        "es": "Calakmul fue la capital de la poderosa hegemonía Kaan ('Serpiente'), la principal rival de Tikal durante el período Clásico. Bajo Yuknoom Ch'een II ('Yuknoom el Grande'), la red de alianzas Kaan se extendió por gran parte de las Tierras Bajas mayas. La Estela 51 y otras estelas documentan su historia dinástica y conquistas. El sitio cuenta con más de 6,000 estructuras conocidas.",
+        "en": "Calakmul was the capital of the powerful Kaan ('Snake') hegemony, Tikal's principal rival during the Classic period. Under Yuknoom Ch'een II ('Yuknoom the Great'), the Kaan alliance network extended across much of the Maya Lowlands. Stela 51 and other stelae document its dynastic history and conquests. The site has over 6,000 known structures."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "quirigua",
+      "name": { "es": "Quiriguá", "en": "Quiriguá" },
+      "ancient_name": "Quiriguá",
+      "meaning": { "es": "desconocido", "en": "unknown" },
+      "coordinates": { "lat": 15.2686, "lng": -89.0432 },
+      "region": "motagua",
+      "country": "GT",
+      "period": { "from": "426", "to": "810", "peak": "724-785" },
+      "dynasty": "Quiriguá",
+      "emblem_glyph": "QUIRIGUA-AJAW",
+      "notable_rulers": [
+        { "name": "Tok' Casper", "reign": "426-c.455", "aka": null },
+        { "name": "K'ahk' Tiliw Chan Yopaat", "reign": "724-785", "aka": "Cauac Sky" }
+      ],
+      "inscriptions": [
+        "quirigua-stela-c"
+      ],
+      "description": {
+        "es": "Quiriguá es célebre por sus monumentales estelas, las más altas del mundo maya. La Estela E mide casi 11 metros de altura. En 738 d.C., K'ahk' Tiliw Chan Yopaat capturó y decapitó a Waxaklajuun Ub'aah K'awil de Copán, logrando la independencia de Quiriguá. La Estela C contiene una de las descripciones más completas de la fecha de creación del mundo maya (4 Ajaw 8 Kumk'u, 3114 a.C.).",
+        "en": "Quiriguá is renowned for its monumental stelae, the tallest in the Maya world. Stela E stands nearly 11 meters high. In 738 CE, K'ahk' Tiliw Chan Yopaat captured and beheaded Waxaklajuun Ub'aah K'awil of Copán, securing Quiriguá's independence. Stela C contains one of the most complete descriptions of the Maya creation date (4 Ajaw 8 Kumk'u, 3114 BCE)."
+      },
+      "sources": ["Martin & Grube, 2000", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "piedras-negras",
+      "name": { "es": "Piedras Negras", "en": "Piedras Negras" },
+      "ancient_name": "Yo'k'ib",
+      "meaning": { "es": "La Gran Entrada", "en": "The Great Entrance" },
+      "coordinates": { "lat": 17.1564, "lng": -91.2487 },
+      "region": "usumacinta",
+      "country": "GT",
+      "period": { "from": "350", "to": "820", "peak": "603-757" },
+      "dynasty": "Yo'k'ib",
+      "emblem_glyph": "YO'K'IB-AJAW",
+      "notable_rulers": [
+        { "name": "Ruler 1", "reign": "603-639", "aka": null },
+        { "name": "Ruler 3", "reign": "687-729", "aka": null },
+        { "name": "Ruler 4", "reign": "729-757", "aka": null }
+      ],
+      "inscriptions": [
+        "piedras-negras-stela-3"
+      ],
+      "description": {
+        "es": "Piedras Negras, situada en la orilla occidental del río Usumacinta, fue fundamental para el desciframiento de la escritura maya. En 1960, Tatiana Proskouriakoff demostró que los glifos de sus estelas registraban vidas de gobernantes históricos, revolucionando la epigrafía maya. Sus tronos esculpidos y paneles rituales son extraordinarios ejemplos del arte clásico.",
+        "en": "Piedras Negras, on the western bank of the Usumacinta River, was pivotal to the decipherment of Maya writing. In 1960, Tatiana Proskouriakoff demonstrated that the glyphs on its stelae recorded the lives of historical rulers, revolutionizing Maya epigraphy. Its sculpted thrones and ritual panels are extraordinary examples of Classic art."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "bonampak",
+      "name": { "es": "Bonampak", "en": "Bonampak" },
+      "ancient_name": "Ak'e",
+      "meaning": { "es": "Muros Pintados", "en": "Painted Walls" },
+      "coordinates": { "lat": 16.7031, "lng": -91.0653 },
+      "region": "usumacinta",
+      "country": "MX",
+      "period": { "from": "c.350", "to": "c.820", "peak": "776-790" },
+      "dynasty": "Ak'e",
+      "emblem_glyph": "AK'E-AJAW",
+      "notable_rulers": [
+        { "name": "Yajaw Chan Muwaan II", "reign": "776-c.800", "aka": null }
+      ],
+      "inscriptions": [
+        "bonampak-murals"
+      ],
+      "description": {
+        "es": "Bonampak es mundialmente famosa por sus murales policromos del Edificio 1, los mejor preservados del período Clásico Maya. Descubiertos en 1946, representan escenas de guerra, captura de prisioneros, rituales de corte y celebraciones. Los murales, pintados bajo Yajaw Chan Muwaan II hacia 790 d.C., revelan la complejidad social y ritual de la sociedad maya clásica.",
+        "en": "Bonampak is world-famous for the polychrome murals of Structure 1, the best-preserved of the Classic Maya period. Discovered in 1946, they depict warfare, prisoner capture, court rituals, and celebrations. The murals, painted under Yajaw Chan Muwaan II around 790 CE, reveal the social and ritual complexity of Classic Maya society."
+      },
+      "sources": ["Martin & Grube, 2000", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "tonina",
+      "name": { "es": "Toniná", "en": "Toniná" },
+      "ancient_name": "Po'",
+      "meaning": { "es": "Casa de Piedra", "en": "House of Stone" },
+      "coordinates": { "lat": 16.9003, "lng": -92.0133 },
+      "region": "usumacinta",
+      "country": "MX",
+      "period": { "from": "c.350", "to": "909", "peak": "688-840" },
+      "dynasty": "Po'",
+      "emblem_glyph": "PO'-AJAW",
+      "notable_rulers": [
+        { "name": "K'inich B'aaknal Chaak", "reign": "688-715", "aka": null },
+        { "name": "Ruler 8", "reign": "c.835-c.909", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Toniná se distingue por su enorme acrópolis artificial de siete terrazas que domina el valle de Ocosingo en Chiapas. Fue un estado guerrero que capturó a numerosos gobernantes vecinos, incluyendo a K'an Joy Chitam II de Palenque en 711 d.C. La fecha más tardía conocida de la escritura maya clásica (909 d.C.) proviene de Toniná, marcando el fin del período Clásico Terminal.",
+        "en": "Toniná is distinguished by its massive seven-terraced artificial acropolis dominating the Ocosingo valley in Chiapas. It was a war-like state that captured numerous neighboring rulers, including K'an Joy Chitam II of Palenque in 711 CE. The latest known date from Classic Maya writing (909 CE) comes from Toniná, marking the end of the Terminal Classic period."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "dos-pilas",
+      "name": { "es": "Dos Pilas", "en": "Dos Pilas" },
+      "ancient_name": "Mutal",
+      "meaning": { "es": "Dos Pilas (nombre moderno)", "en": "Two Cisterns (modern name)" },
+      "coordinates": { "lat": 16.3926, "lng": -90.0998 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "629", "to": "761", "peak": "648-726" },
+      "dynasty": "Mutal (rama suroccidental)",
+      "emblem_glyph": "MUT-AJAW",
+      "notable_rulers": [
+        { "name": "B'alaj Chan K'awil", "reign": "648-692", "aka": null },
+        { "name": "Itzamnaaj K'awil", "reign": "698-726", "aka": null }
+      ],
+      "inscriptions": [
+        "dos-pilas-stela-16"
+      ],
+      "description": {
+        "es": "Dos Pilas fue fundada como enclave de la hegemonía Kaan en el Petén suroccidental, aunque su dinastía compartía el emblema glifo de Tikal (Mutal). B'alaj Chan K'awil, príncipe tikal exiliado, fue instalado como gobernante por Yuknoom Ch'een II de Calakmul. El sitio fue destruido hacia 761 d.C. durante conflictos con Tamarindito. La Estela 16 documenta conquistas y alianzas dinásticas.",
+        "en": "Dos Pilas was founded as a Kaan hegemony enclave in the southwestern Petén, though its dynasty shared Tikal's emblem glyph (Mutal). B'alaj Chan K'awil, an exiled Tikal prince, was installed as ruler by Yuknoom Ch'een II of Calakmul. The site was destroyed around 761 CE during conflicts with Tamarindito. Stela 16 documents conquests and dynastic alliances."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "naranjo",
+      "name": { "es": "Naranjo", "en": "Naranjo" },
+      "ancient_name": "Sa'al",
+      "meaning": { "es": "Lugar del Agua Salada", "en": "Place of the Salt Water" },
+      "coordinates": { "lat": 17.0584, "lng": -89.3851 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "c.250", "to": "c.820", "peak": "693-728" },
+      "dynasty": "Sa'al",
+      "emblem_glyph": "SA'AL-AJAW",
+      "notable_rulers": [
+        { "name": "Ajwosal", "reign": "546-615", "aka": null },
+        { "name": "Lady Sixth Sky", "reign": "682-693", "aka": "Señora del Cielo Seis (regente)" },
+        { "name": "K'ahk' Tiliw Chan Chaak", "reign": "693-728", "aka": null }
+      ],
+      "inscriptions": [
+        "naranjo-stela-24"
+      ],
+      "description": {
+        "es": "Naranjo (Sa'al) fue una de las ciudades más combativas del Petén. Fue refundada militarmente en 682 d.C. cuando Calakmul envió a la Señora Cielo Seis de Dos Pilas para casarse con el gobernante local y restablecer el linaje real. Su hijo K'ahk' Tiliw Chan Chaak lanzó extensas campañas de conquista. La Estela 24 documenta la historia dinástica de este período.",
+        "en": "Naranjo (Sa'al) was one of the most bellicose cities of the Petén. It was militarily refounded in 682 CE when Calakmul sent Lady Six Sky from Dos Pilas to marry the local ruler and reestablish the royal line. Her son K'ahk' Tiliw Chan Chaak launched extensive conquest campaigns. Stela 24 documents the dynastic history of this period."
+      },
+      "sources": ["Martin & Grube, 2000", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "caracol",
+      "name": { "es": "Caracol", "en": "Caracol" },
+      "ancient_name": "Uxwitza'",
+      "meaning": { "es": "Tres Montañas de Agua", "en": "Three Water Mountains" },
+      "coordinates": { "lat": 16.7655, "lng": -89.1173 },
+      "region": "southern_lowlands",
+      "country": "BZ",
+      "period": { "from": "c.331", "to": "c.859", "peak": "553-680" },
+      "dynasty": "Uxwitza'",
+      "emblem_glyph": "UXWITZA'-AJAW",
+      "notable_rulers": [
+        { "name": "K'ahk' Ujol K'inich I", "reign": "484-514", "aka": null },
+        { "name": "Yajaw Te' K'inich II", "reign": "553-599", "aka": "Lord Water" },
+        { "name": "K'ahk' Ujol K'inich II", "reign": "599-c.613", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Caracol (Uxwitza') fue una de las ciudades mayas más extensas de Belice, con una población estimada de 100,000 a 150,000 habitantes en su apogeo. En 562 d.C., aliada con Calakmul, derrotó a Tikal en la llamada 'Guerra Estrella'. Sus extensas calzadas (sacbéob) conectaban el núcleo central con grupos periféricos. El sitio tiene más de 35,000 estructuras identificadas.",
+        "en": "Caracol (Uxwitza') was one of the most extensive Maya cities in Belize, with an estimated population of 100,000 to 150,000 at its peak. In 562 CE, allied with Calakmul, it defeated Tikal in the so-called 'Star War'. Its extensive causeways (sacbéob) connected the central core with peripheral groups. The site has over 35,000 identified structures."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "uxmal",
+      "name": { "es": "Uxmal", "en": "Uxmal" },
+      "ancient_name": "Uxmal",
+      "meaning": { "es": "Construido Tres Veces", "en": "Built Three Times" },
+      "coordinates": { "lat": 20.3594, "lng": -89.7712 },
+      "region": "puuc",
+      "country": "MX",
+      "period": { "from": "c.500", "to": "c.1000", "peak": "850-950" },
+      "dynasty": "Uxmal",
+      "emblem_glyph": "UXMAL-AJAW",
+      "notable_rulers": [
+        { "name": "Chan Chak K'ak'nal Ajaw", "reign": "c.895-910", "aka": "Lord Chak" }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Uxmal es el sitio más importante de la región Puuc en Yucatán. Su arquitectura, caracterizada por mosaicos de piedra elaborados y el uso masivo de la máscara del dios Chak (dios de la lluvia), representa el estilo Puuc en su máxima expresión. La Pirámide del Adivino, el Cuadrángulo de las Monjas y la Casa del Gobernador son sus edificios más emblemáticos. No tiene un lago ni ríos cercanos, por lo que dependía enteramente de chultunes para el agua.",
+        "en": "Uxmal is the most important site in the Puuc region of Yucatán. Its architecture, characterized by elaborate stone mosaics and the pervasive Chak (rain god) mask motif, represents the Puuc style at its finest. The Pyramid of the Magician, the Nunnery Quadrangle, and the Governor's Palace are its most iconic buildings. With no nearby lakes or rivers, it depended entirely on chultunes for water."
+      },
+      "sources": ["Sharer & Traxler, 2006", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "chichen-itza",
+      "name": { "es": "Chichén Itzá", "en": "Chichén Itzá" },
+      "ancient_name": "Chich'en Itza'",
+      "meaning": { "es": "Boca del Pozo de los Itzá", "en": "Mouth of the Well of the Itzá" },
+      "coordinates": { "lat": 20.6843, "lng": -88.5678 },
+      "region": "northern_lowlands",
+      "country": "MX",
+      "period": { "from": "c.600", "to": "c.1200", "peak": "900-1100" },
+      "dynasty": "Itzá",
+      "emblem_glyph": "ITZA'-AJAW",
+      "notable_rulers": [
+        { "name": "K'ak'upakal K'awil", "reign": "c.869-c.890", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Chichén Itzá fue la ciudad más poderosa del período Posclásico Temprano en la Península de Yucatán. Su arquitectura combina el estilo maya tardío con influencias del centro de México, visibles en el Templo de los Guerreros y el Tzompantli. El Castillo (Templo de Kukulcán) es un monumento astronómico preciso: el equinoccio proyecta la sombra de una serpiente emplumada descendiendo por sus escalinatas. Es Patrimonio Mundial de la UNESCO y una de las Nuevas Siete Maravillas del Mundo.",
+        "en": "Chichén Itzá was the most powerful city of the Early Postclassic period on the Yucatán Peninsula. Its architecture blends late Maya style with Central Mexican influences, visible in the Temple of the Warriors and the Tzompantli. El Castillo (Temple of Kukulcán) is a precise astronomical monument: at equinox, a serpent's shadow descends its staircases. It is a UNESCO World Heritage Site and one of the New Seven Wonders of the World."
+      },
+      "sources": ["Sharer & Traxler, 2006", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "cancuen",
+      "name": { "es": "Cancuén", "en": "Cancuén" },
+      "ancient_name": "Talol",
+      "meaning": { "es": "Lugar del Bejuco", "en": "Place of the Vine" },
+      "coordinates": { "lat": 16.0426, "lng": -90.0913 },
+      "region": "southern_lowlands",
+      "country": "GT",
+      "period": { "from": "c.350", "to": "c.800", "peak": "656-800" },
+      "dynasty": "Talol",
+      "emblem_glyph": "TALOL-AJAW",
+      "notable_rulers": [
+        { "name": "Taj Chan Ahk", "reign": "656-677", "aka": null },
+        { "name": "Tah Chan Ahk II", "reign": "c.760-c.800", "aka": null }
+      ],
+      "inscriptions": [
+        "cancuen-panel-3"
+      ],
+      "description": {
+        "es": "Cancuén fue un importante centro comercial situado en la cabecera del río La Pasión, en el sur del Petén. Su extraordinario palacio de tres pisos y 170 habitaciones es uno de los más grandes del mundo maya. A diferencia de otros sitios, no tiene pirámides-templo visibles, lo que sugiere un carácter predominantemente comercial. El Panel 3 documenta su historia dinástica y alianzas con sitios como Tikal y Calakmul.",
+        "en": "Cancuén was an important commercial hub at the headwaters of the La Pasión River in southern Petén. Its extraordinary three-story palace with 170 rooms is one of the largest in the Maya world. Unlike most sites, it has no visible pyramid-temples, suggesting a predominantly commercial character. Panel 3 documents its dynastic history and alliances with sites such as Tikal and Calakmul."
+      },
+      "sources": ["Martin & Grube, 2000", "Sharer & Traxler, 2006"]
+    },
+    {
+      "id": "el-mirador",
+      "name": { "es": "El Mirador", "en": "El Mirador" },
+      "ancient_name": "Nah Tunich",
+      "meaning": { "es": "La Gran Roca", "en": "The Great Rock" },
+      "coordinates": { "lat": 17.7564, "lng": -89.9173 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "1000 a.C.", "to": "150 d.C.", "peak": "300-100 a.C." },
+      "dynasty": "Preclásico (sin dinástía conocida)",
+      "emblem_glyph": "desconocido",
+      "notable_rulers": [],
+      "inscriptions": [],
+      "description": {
+        "es": "El Mirador fue la metrópoli más grande del período Preclásico Maya (ca. 300-100 a.C.), anterior al florecimiento de ciudades como Tikal o Calakmul. La pirámide La Danta, con 72 metros de altura sobre la plataforma basal, es considerada una de las estructuras más grandes del mundo por volumen. El complejo Triádico, el Gran Jaguar Mural y la red de calzadas revelan una sociedad urbana compleja siglos antes del período Clásico.",
+        "en": "El Mirador was the largest metropolis of the Preclassic Maya period (ca. 300-100 BCE), predating the rise of cities like Tikal or Calakmul. The La Danta pyramid, standing 72 meters above its basal platform, is considered one of the largest structures in the world by volume. The Triadic complex, the Great Jaguar Mural, and its causeway network reveal a complex urban society centuries before the Classic period."
+      },
+      "sources": ["Sharer & Traxler, 2006", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "san-bartolo",
+      "name": { "es": "San Bartolo", "en": "San Bartolo" },
+      "ancient_name": "desconocido",
+      "meaning": { "es": "desconocido", "en": "unknown" },
+      "coordinates": { "lat": 17.7490, "lng": -89.6752 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "400 a.C.", "to": "100 d.C.", "peak": "100 a.C." },
+      "dynasty": "Preclásico (sin dynastía conocida)",
+      "emblem_glyph": "desconocido",
+      "notable_rulers": [],
+      "inscriptions": [
+        "san-bartolo-murals"
+      ],
+      "description": {
+        "es": "San Bartolo es mundialmente conocido por sus murales preclásicos del cuarto Pinturas, descubiertos en 2001. Fechados ca. 100 a.C., representan el mito de la creación del maíz y la coronación de los primeros reyes mayas en 28 escenas polícromas. También contienen algunos de los textos jeroglíficos más tempranos conocidos. Los murales demuestran que la escritura y la iconografía mítica maya estaban plenamente desarrolladas siglos antes del período Clásico.",
+        "en": "San Bartolo is world-famous for the Preclassic murals in the Pinturas chamber, discovered in 2001. Dated to ca. 100 BCE, they depict the corn creation myth and the coronation of the first Maya kings in 28 polychrome scenes. They also contain some of the earliest known hieroglyphic texts. The murals demonstrate that Maya writing and mythological iconography were fully developed centuries before the Classic period."
+      },
+      "sources": ["Coe & Houston, 2015", "Saturno, W. et al. (2006). The Murals of San Bartolo."]
+    },
+    {
+      "id": "coba",
+      "name": { "es": "Cobá", "en": "Cobá" },
+      "ancient_name": "Coba",
+      "meaning": { "es": "Aguas Revueltas", "en": "Turbulent Waters" },
+      "coordinates": { "lat": 20.4940, "lng": -87.7233 },
+      "region": "northern_lowlands",
+      "country": "MX",
+      "period": { "from": "c.100", "to": "c.900", "peak": "500-800" },
+      "dynasty": "Cobá",
+      "emblem_glyph": "COBA-AJAW",
+      "notable_rulers": [
+        { "name": "Yax Ehb' Xook", "reign": "c.500-c.550", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Cobá fue una de las ciudades más grandes de la Península de Yucatán, con una red de 16 calzadas (sacbéob) que se extendían hasta 100 kilómetros. La Nohoch Mul, con 42 metros de altura, es la pirámide más alta de Yucatán. A diferencia de otros sitios yucatecos, el estilo de sus estelas sigue la tradición del Petén, lo que sugiere fuertes vínculos con las Tierras Bajas del sur durante el período Clásico.",
+        "en": "Cobá was one of the largest cities on the Yucatán Peninsula, with a network of 16 causeways (sacbéob) extending up to 100 kilometers. Nohoch Mul, at 42 meters, is the tallest pyramid in Yucatán. Unlike other Yucatecan sites, its stela style follows Petén tradition, suggesting strong ties to the southern Lowlands during the Classic period."
+      },
+      "sources": ["Sharer & Traxler, 2006", "Coe & Houston, 2015"]
+    },
+    {
+      "id": "ceibal",
+      "name": { "es": "Ceibal", "en": "Ceibal" },
+      "ancient_name": "Ik'a'",
+      "meaning": { "es": "Lugar del Ceibo", "en": "Place of the Ceiba" },
+      "coordinates": { "lat": 16.5212, "lng": -90.1993 },
+      "region": "peten_lakes",
+      "country": "GT",
+      "period": { "from": "1000 a.C.", "to": "c.900 d.C.", "peak": "830-910" },
+      "dynasty": "Ik'a'",
+      "emblem_glyph": "IK'A'-AJAW",
+      "notable_rulers": [
+        { "name": "Wat'ul Chatel", "reign": "c.830-c.849", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "Ceibal (también escrito Seibal) tiene una de las secuencias de ocupación más largas del Petén, desde el Preclásico Medio hasta el Clásico Terminal. Sufrió un colapso en el siglo VIII y fue refundada por grupos putún (chontales) con influencias del centro de México. Su revitalización Terminal Clásica la convierte en un caso de estudio excepcional para el llamado 'colapso maya'. Sus estelas tardías muestran figuras con rasgos y atuendos no mayas.",
+        "en": "Ceibal (also spelled Seibal) has one of the longest occupation sequences in the Petén, from the Middle Preclassic through the Terminal Classic. It suffered collapse in the 8th century and was refounded by Putún (Chontal) groups with Central Mexican influences. Its Terminal Classic revitalization makes it an exceptional case study for the so-called 'Maya collapse'. Its late stelae show figures with non-Maya traits and attire."
+      },
+      "sources": ["Sharer & Traxler, 2006", "Martin & Grube, 2000"]
+    },
+    {
+      "id": "la-corona",
+      "name": { "es": "La Corona", "en": "La Corona" },
+      "ancient_name": "Sak Nikte'",
+      "meaning": { "es": "Flor Blanca", "en": "White Flower" },
+      "coordinates": { "lat": 17.7169, "lng": -90.5447 },
+      "region": "peten",
+      "country": "GT",
+      "period": { "from": "c.520", "to": "c.810", "peak": "599-741" },
+      "dynasty": "Sak Nikte'",
+      "emblem_glyph": "SAK-NIKTE'-AJAW",
+      "notable_rulers": [
+        { "name": "Chak Ak'ach Yuk", "reign": "c.599", "aka": null },
+        { "name": "Yajaw K'ahk'", "reign": "c.658-c.677", "aka": null }
+      ],
+      "inscriptions": [],
+      "description": {
+        "es": "La Corona (Sak Nikte') es un sitio clave para entender la hegemonía Kaan (Calakmul). Identificado en 2012 como la 'Site Q' —cuya ubicación era un misterio durante décadas—, sus monumentos documentan extensas alianzas matrimoniales y políticas entre Kaan y sitios satélites del Petén noroccidental. Los paneles de La Corona registran visitas de gobernantes de Calakmul y reflejan la red de poder de la serpiente en su máxima extensión.",
+        "en": "La Corona (Sak Nikte') is a key site for understanding the Kaan (Calakmul) hegemony. Identified in 2012 as the long-mysterious 'Site Q', its monuments document extensive marriage and political alliances between Kaan and satellite sites in the northwestern Petén. La Corona's panels record visits by Calakmul rulers and reflect the snake kingdom's power network at its greatest extent."
+      },
+      "sources": ["Martin & Grube, 2000", "Stuart, D. et al. (2012). La Corona Site Q Identification."]
+    }
+  ]
+}
