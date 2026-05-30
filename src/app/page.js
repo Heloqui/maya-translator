@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import ModeSelector from '@/components/ModeSelector'
+import MayaGlyph from '@/components/MayaGlyph'
 import { getStats } from '@/lib/data'
 
 const CARDS = [
@@ -15,6 +16,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+      <MayaGlyph tNumber="T533" size="text-6xl" className="text-maya-gold mb-2" />
       <h1 className="text-3xl md:text-4xl font-bold text-maya-gold tracking-[0.2em] mb-2">
         MAYA GLYPHS
       </h1>

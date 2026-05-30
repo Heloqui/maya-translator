@@ -1,4 +1,5 @@
 'use client'
+import { getGlyphChar } from '@/lib/glyphs'
 
 const CONFIDENCE_BG = {
   confirmed: 'bg-green-900/40 hover:bg-green-900/60',
@@ -29,11 +30,14 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
           <button
             key={v.value}
             onClick={() => onSelect(v)}
-            className={`p-2 rounded text-center text-sm transition-colors cursor-pointer ${CONFIDENCE_BG[v.confidence]} ${
+            className={`p-1 py-2 rounded text-center text-sm transition-colors cursor-pointer flex flex-col items-center ${CONFIDENCE_BG[v.confidence]} ${
               selected?.value === v.value ? 'ring-2 ring-maya-gold' : ''
             }`}
           >
-            {v.value}
+            {v.thompson?.length > 0 && (
+              <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-lg leading-none">{getGlyphChar(v.thompson)}</span>
+            )}
+            <span className="text-[10px]">{v.value}</span>
           </button>
         ))}
       </div>
@@ -46,13 +50,16 @@ export default function SyllabaryGrid({ syllabaryData, selected, onSelect }) {
             <button
               key={s.value}
               onClick={() => s.confidence !== 'unknown' ? onSelect(s) : null}
-              className={`p-2 rounded text-center text-sm transition-colors ${
+              className={`p-1 py-2 rounded text-center text-sm transition-colors flex flex-col items-center ${
                 s.confidence === 'unknown' ? 'cursor-default opacity-40' : 'cursor-pointer'
               } ${CONFIDENCE_BG[s.confidence]} ${
                 selected?.value === s.value ? 'ring-2 ring-maya-gold' : ''
               }`}
             >
-              {s.value}
+              {s.thompson?.length > 0 && (
+                <span style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-lg leading-none">{getGlyphChar(s.thompson)}</span>
+              )}
+              <span className="text-[10px]">{s.value}</span>
             </button>
           ))}
         </div>

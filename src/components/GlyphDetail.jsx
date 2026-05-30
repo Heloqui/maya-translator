@@ -1,6 +1,7 @@
 'use client'
 import { useMode } from '@/lib/modes'
 import ConfidenceBadge from './ConfidenceBadge'
+import MayaGlyph from './MayaGlyph'
 
 export default function GlyphDetail({ glyph, logograms }) {
   const { mode } = useMode()
@@ -21,8 +22,15 @@ export default function GlyphDetail({ glyph, logograms }) {
     <div>
       {/* Glyph display */}
       <div className="flex justify-center mb-4">
-        <div className="w-20 h-20 bg-maya-surface rounded-xl flex items-center justify-center ring-2 ring-maya-gold">
-          <span className="text-3xl font-bold text-maya-gold">{glyph.value}</span>
+        <div className="w-20 h-20 bg-maya-surface rounded-xl flex flex-col items-center justify-center ring-2 ring-maya-gold">
+          {glyph.thompson?.length > 0 ? (
+            <>
+              <MayaGlyph thompson={glyph.thompson} size="text-4xl" className="text-maya-gold" />
+              <span className="text-xs text-maya-muted">{glyph.value}</span>
+            </>
+          ) : (
+            <span className="text-3xl font-bold text-maya-gold">{glyph.value}</span>
+          )}
         </div>
       </div>
 

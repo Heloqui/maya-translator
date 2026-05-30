@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react'
 import { useMode } from '@/lib/modes'
 import { transliterate, reverseLookup } from '@/lib/transliterate'
 import ConfidenceBadge from '@/components/ConfidenceBadge'
+import { getGlyphChar } from '@/lib/glyphs'
 
 export default function TransliteratorPage() {
   const [input, setInput] = useState('')
@@ -56,6 +57,17 @@ export default function TransliteratorPage() {
                 <div className="text-xs text-maya-muted mb-1">Lectura fonética:</div>
                 <div className="text-2xl font-bold text-maya-gold">{result.phonetic}</div>
               </div>
+
+              {result.syllables.some(s => s.thompson.length > 0) && (
+                <div className="flex gap-1 flex-wrap items-center">
+                  {result.syllables.map((s, i) => {
+                    const glyph = getGlyphChar(s.thompson)
+                    return glyph ? (
+                      <span key={i} style={{ fontFamily: 'MayaGlyphs, serif' }} className="text-5xl text-maya-gold">{glyph}</span>
+                    ) : null
+                  })}
+                </div>
+              )}
 
               <div>
                 <div className="text-xs text-maya-muted mb-2">Sílabas:</div>
