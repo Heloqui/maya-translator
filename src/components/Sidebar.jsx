@@ -16,6 +16,9 @@ export default function Sidebar() {
     { href: '/calendar', icon: '📅', label: t.calendar },
     { href: '/math', icon: '🔢', label: t.math },
     { href: '/name', icon: '✍️', label: t.yourName },
+    { href: '/inscriptions', icon: '🏛️', label: t.inscriptions },
+    { href: '/sites', icon: '🗺️', label: t.sites },
+    { href: '/quiz', icon: '❓', label: t.quiz },
   ]
 
   return (
