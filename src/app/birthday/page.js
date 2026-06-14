@@ -63,7 +63,7 @@ export default function BirthdayPage() {
   const meaning = daySignName ? getMeaning(daySignName, lang) : null
 
   const shareText = result
-    ? `${t.bornOn} ${result.tzolkin.number} ${daySignName} ${result.haab.day} ${result.haab.month?.name} 🏛️ ${t.discoverYours}: https://maya-translator.vercel.app/birthday`
+    ? `${t.bornOn} ${result.tzolkin.number} ${daySignName} ${result.haab.day} ${result.haab.month?.name} 🏛️ ${t.discoverYours}: https://mayaglyphs.app/birthday`
     : ''
 
   function handleShare() {

@@ -3,8 +3,10 @@ import { LangProvider } from '@/lib/lang'
 import Sidebar from '@/components/Sidebar'
 import ServiceWorker from '@/components/ServiceWorker'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Maya Glyphs — Traductor de Jeroglíficos Mayas',
     template: '%s | Maya Glyphs',
@@ -23,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: 'Maya Glyphs — Traductor de Jeroglíficos Mayas',
     description: 'Silabario interactivo, diccionario, inscripciones con lectura bloque a bloque, mapa arqueológico y quiz. Sin alucinaciones — datos epigráficos verificados.',
-    url: 'https://maya-translator.vercel.app',
+    url: 'https://mayaglyphs.app',
     siteName: 'Maya Glyphs',
     locale: 'es_MX',
     type: 'website',
