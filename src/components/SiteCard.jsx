@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useLang } from '@/lib/lang'
+import { bookingLink, getYourGuideLink } from '@/lib/affiliates'
 
 export default function SiteCard({ site }) {
   const { t, lang } = useLang()
@@ -47,16 +48,32 @@ export default function SiteCard({ site }) {
         </div>
       )}
 
-      {site.inscriptions?.length > 0 && (
-        <div className="mt-3 border-t border-maya-border pt-2">
+      <div className="mt-3 border-t border-maya-border pt-2 flex flex-wrap gap-2">
+        {site.inscriptions?.length > 0 && (
           <Link
-            href={`/inscriptions`}
+            href="/inscriptions"
             className="text-[10px] text-maya-gold hover:underline"
           >
             {t.viewInscriptions} ({site.inscriptions.length})
           </Link>
-        </div>
-      )}
+        )}
+        <a
+          href={getYourGuideLink(`${name} ruins tour`)}
+          target="_blank"
+          rel="sponsored noreferrer"
+          className="text-[10px] px-2 py-0.5 rounded-full bg-maya-deep border border-maya-border text-maya-muted hover:text-maya-gold hover:border-maya-gold transition-colors"
+        >
+          {lang === 'es' ? '🎫 Tours' : '🎫 Tours'}
+        </a>
+        <a
+          href={bookingLink(name, `maya_${site.id}`)}
+          target="_blank"
+          rel="sponsored noreferrer"
+          className="text-[10px] px-2 py-0.5 rounded-full bg-maya-deep border border-maya-border text-maya-muted hover:text-maya-gold hover:border-maya-gold transition-colors"
+        >
+          {lang === 'es' ? '🏨 Hoteles' : '🏨 Hotels'}
+        </a>
+      </div>
     </div>
   )
 }
