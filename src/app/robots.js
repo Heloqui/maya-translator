@@ -12,6 +12,7 @@ export default function robots() {
       { userAgent: 'Claude-Web', ...COMMON_RULES },
       { userAgent: 'PerplexityBot', ...COMMON_RULES },
       { userAgent: 'Google-Extended', ...COMMON_RULES },
+      { userAgent: 'OAI-SearchBot', ...COMMON_RULES },
       { userAgent: 'Applebot', ...COMMON_RULES },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

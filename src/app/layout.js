@@ -12,6 +12,9 @@ export const metadata = {
     template: '%s | Maya Glyphs',
   },
   description: 'Traductor interactivo de jeroglíficos mayas con silabario, diccionario de 300+ palabras, 20 inscripciones reales, mapa arqueológico y quiz. Basado en datos epigráficos verificados.',
+  alternates: {
+    canonical: '/',
+  },
   manifest: '/manifest.json',
   icons: {
     icon: '/icons/icon-192.png',
@@ -39,7 +42,7 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Maya Glyphs — Traductor de Jeroglíficos Mayas',
     description: 'Traductor interactivo de jeroglíficos mayas. Silabario, diccionario, inscripciones y mapa arqueológico.',
     images: ['/icons/icon-512.png'],
@@ -56,7 +59,6 @@ export const viewport = {
   themeColor: '#0f0f1e',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
 }
 
 export default function RootLayout({ children }) {

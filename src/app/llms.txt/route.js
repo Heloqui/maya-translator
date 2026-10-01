@@ -1,6 +1,9 @@
 export const dynamic = 'force-static'
 
-const CONTENT = `# Maya Glyphs
+const CONTENT = `License: RSL-1.0 (https://responsible-scraping-license.org/)
+Last updated: 2026-10-01
+
+# Maya Glyphs
 
 > Maya Glyphs is an interactive Maya hieroglyphic translator and learning tool. It includes a verified syllabary of 100 signs, a dictionary of 300+ Ch'olan words, a transliterator, three calendar systems (Long Count, Tzolk'in, Haab'), base-20 mathematics, 20 real inscriptions with block-by-block readings, and an archaeological site map. All data is epigraphically verified — no AI-generated translations.
 
@@ -35,6 +38,12 @@ Maya Glyphs is NOT an AI translation tool. It does not use GPT or any LLM to "tr
 
 Available in Spanish and English.
 
+## Author
+
+Created by Hector, independent researcher and developer with a focus on Maya epigraphy and pre-Columbian writing systems. This project builds on the scholarly work of professional epigraphers; all glyph readings are sourced from peer-reviewed academic references.
+
+Contact: https://github.com/Heloqui
+
 ## Links
 
 - Homepage: https://mayaglyphs.app
@@ -44,6 +53,8 @@ Available in Spanish and English.
 - Calendar: https://mayaglyphs.app/calendar
 - Birthday: https://mayaglyphs.app/birthday
 - Sites map: https://mayaglyphs.app/sites
+- About: https://mayaglyphs.app/about
+- Sources & bibliography: https://mayaglyphs.app/sources
 `
 
 export function GET() {
