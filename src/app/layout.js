@@ -32,20 +32,11 @@ export const metadata = {
     siteName: 'Maya Glyphs',
     locale: 'es_MX',
     type: 'website',
-    images: [
-      {
-        url: '/icons/icon-512.png',
-        width: 512,
-        height: 512,
-        alt: 'Maya Glyphs',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Maya Glyphs — Traductor de Jeroglíficos Mayas',
     description: 'Traductor interactivo de jeroglíficos mayas. Silabario, diccionario, inscripciones y mapa arqueológico.',
-    images: ['/icons/icon-512.png'],
   },
   keywords: ['maya', 'hieroglyphs', 'translator', 'syllabary', 'dictionary', 'inscriptions', 'archaeology', 'mesoamerica', 'palenque', 'tikal', 'copan', 'jeroglíficos mayas', 'traductor maya', 'silabario maya', 'escritura maya'],
   authors: [{ name: 'Maya Glyphs' }],
