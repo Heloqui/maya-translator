@@ -42,8 +42,8 @@ export default function DictionaryPage() {
 
   return (
     <>
-      <JsonLd data={dictSchema} />
-      <JsonLd data={breadcrumbSchema} />
+      <JsonLd key="dict" data={dictSchema} />
+      <JsonLd key="breadcrumb" data={breadcrumbSchema} />
       <article className="px-4 pt-6 pb-2 md:px-6 max-w-3xl mx-auto">
         <h2 className="text-base font-bold text-maya-text mb-2">Vocabulario del Maya Clásico</h2>
         <p className="text-sm text-maya-muted leading-relaxed">

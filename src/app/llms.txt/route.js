@@ -53,6 +53,8 @@ Contact: https://github.com/Heloqui
 - Calendar: https://mayaglyphs.app/calendar
 - Birthday: https://mayaglyphs.app/birthday
 - Sites map: https://mayaglyphs.app/sites
+- Inscriptions: https://mayaglyphs.app/inscriptions
+- Quiz: https://mayaglyphs.app/quiz
 - About: https://mayaglyphs.app/about
 - Sources & bibliography: https://mayaglyphs.app/sources
 `

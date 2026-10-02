@@ -43,8 +43,8 @@ export default function Home() {
 
   return (
     <>
-      <JsonLd data={websiteSchema} />
-      <JsonLd data={orgSchema} />
+      <JsonLd key="website" data={websiteSchema} />
+      <JsonLd key="org" data={orgSchema} />
       <HomeClient stats={stats} />
     </>
   )

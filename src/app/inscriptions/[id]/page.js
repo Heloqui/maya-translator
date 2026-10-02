@@ -65,8 +65,8 @@ export default async function InscriptionDetailPage({ params }) {
 
   return (
     <>
-      {artworkSchema && <JsonLd data={artworkSchema} />}
-      <JsonLd data={breadcrumbSchema} />
+      {artworkSchema && <JsonLd key="artwork" data={artworkSchema} />}
+      <JsonLd key="breadcrumb" data={breadcrumbSchema} />
       <InscriptionDetailClient inscription={inscription} site={site} />
     </>
   )

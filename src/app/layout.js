@@ -28,7 +28,7 @@ export const metadata = {
   openGraph: {
     title: 'Maya Glyphs — Traductor de Jeroglíficos Mayas',
     description: 'Silabario interactivo, diccionario, inscripciones con lectura bloque a bloque, mapa arqueológico y quiz. Sin alucinaciones — datos epigráficos verificados.',
-    url: 'https://mayaglyphs.app',
+    url: SITE_URL,
     siteName: 'Maya Glyphs',
     locale: 'es_MX',
     type: 'website',
